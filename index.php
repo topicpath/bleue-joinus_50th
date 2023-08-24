@@ -85,7 +85,7 @@ else if(ua.indexOf('ipad') > -1 || (ua.indexOf('macintosh') > -1 && 'ontouchend'
 	<div class="cover"></div>
 	<div class="text">
 		<picture>
-			<source media="screen and (max-width: 767px)" srcset="t/img/text-sp.svg">
+			<source media="screen and (max-width: 767px)" srcset="t/img/text-sp.png">
 			<img src="t/img/text-pc.svg" alt="いつもと、未来へ。おかげさまで、JOINUSは今年50周年を迎えます。つぎの50年も、みなさんのいつもの存在であり続けるために。みなさんのキモチに応えていくために。いつもを積み重ね、より良い未来へともに進んでいく。あたらしいチャレンジを続けていく。これからもJOINUSにどうぞご期待ください。" width="1300" height="810">
 		</picture>
 

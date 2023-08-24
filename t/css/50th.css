@@ -455,12 +455,13 @@ img {
 }
 @media screen and (max-width: 767px) {
 	#contents .text {
-		width: calc(100% * (325 / 375));
+		width: calc(100% * ((1340 / 4) / 375));
 	}
 	#contents .text picture img {
-		aspect-ratio: 325 / 440;
+		aspect-ratio: 1340 / 1850;
 	}
 	#contents .text .j {
+		display: none;
 		width: 16vw;
 	}
 	#contents .text .j-01 {
@@ -515,7 +516,8 @@ img {
 	#contents .event {
 		width: calc(100% * (335 / 375));
 		max-width: none;
-		margin-top: 40px;
+		/* margin-top: 40px; */
+		margin-top: 30px;
 		padding: 14px 0;
 	}
 	#contents .event img {
