@@ -1,0 +1,3 @@
+<?php
+// GoogleAnalyticsタグ等
+?>
