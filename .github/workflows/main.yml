@@ -15,5 +15,5 @@ jobs:
           server: ${{ secrets.STAGING_SERVER }}
           username: ${{ secrets.STAGING_USERNAME }}
           password: ${{ secrets.STAGING_PASSWORD }}
-          server-dir: "/"
+          server-dir: "/50th_anniversary/"
           exclude: "[**/.**/**, .gitignore,  **/.git/**, **/node_modules/**, **/vendor/**, .editorconfig, README.md, .phpcs.xml.dist, **.json, **.lock, postcss.config.js, **/src/**]"
