@@ -10,10 +10,10 @@ jobs:
     steps:
       - uses: actions/checkout@master
       - name: FTP-Deploy-Action
-        uses: SamKirkland/FTP-Deploy-Action@2.0.0
-        env:
-          FTP_SERVER: ${{ secrets.STAGING_SERVER }}
-          FTP_USERNAME: ${{ secrets.STAGING_USERNAME }}
-          FTP_PASSWORD: ${{ secrets.STAGING_PASSWORD }}
-          LOCAL_DIR: ./
-          REMOTE_DIR: "/"
+        uses: SamKirkland/FTP-Deploy-Action@4.1.0
+        with:
+          server: ${{ secrets.STAGING_SERVER }}
+          username: ${{ secrets.STAGING_USERNAME }}
+          password: ${{ secrets.STAGING_PASSWORD }}
+          server-dir: "/"
+          exclude: "[**/.**/**, .gitignore,  **/.git/**, **/node_modules/**, **/vendor/**, .editorconfig, README.md, .phpcs.xml.dist, **.json, **.lock, postcss.config.js, **/src/**]"
