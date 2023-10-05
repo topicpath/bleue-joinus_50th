@@ -75,7 +75,7 @@ foreach ($file as $i => $line) {
 					$a = $my_data['name'];
 				}
 				$a = mb_convert_kana($a,"kh");
-				$a = mb_ereg_replace("ﾞ|ﾟ","",$a);
+//				$a = mb_ereg_replace("ﾞ|ﾟ","",$a);
 				$a = mb_convert_kana($a,"K");
 			}
 			if($l == 'img') {
