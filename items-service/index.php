@@ -68,15 +68,15 @@ foreach ($file as $i => $line) {
 	if(isset($line[0]) && $line[0]){
 		$my_data = [];
 		foreach ($lines as $k => $l) {
-			$a = trim(mb_convert_kana($line[$k], "KVa"));
+			$a = trim(mb_convert_kana($line[$k], "KVa", 'UTF-8'));
 			if(!$a) continue;
 			if($l == 'kana') {
 				if(!$a) {
 					$a = $my_data['name'];
 				}
-				$a = mb_convert_kana($a,"kh");
-//				$a = mb_ereg_replace("ﾞ|ﾟ","",$a);
-				$a = mb_convert_kana($a,"K");
+				$a = mb_convert_kana($a,"kh", 'UTF-8');
+				$a = mb_ereg_replace("ﾞ|ﾟ","",$a, 'UTF-8');
+				$a = mb_convert_kana($a,"K", 'UTF-8');
 			}
 			if($l == 'img') {
 				$a = $line[$k];
