@@ -16,4 +16,4 @@ jobs:
           FTP_USERNAME: ${{ secrets.STAGING_USERNAME }}
           FTP_PASSWORD: ${{ secrets.STAGING_PASSWORD }}
           LOCAL_DIR: ./
-          REMOTE_DIR: "/home/tsukurite/site-sample.com/public_html/campaign.sotetsu-joinus/"
+          REMOTE_DIR: "/"
