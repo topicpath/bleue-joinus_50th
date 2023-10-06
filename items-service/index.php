@@ -74,9 +74,7 @@ foreach ($file as $i => $line) {
 				if(!$a) {
 					$a = $my_data['name'];
 				}
-				$a = mb_convert_kana($a,"kh", 'UTF-8');
-				$a = mb_ereg_replace("ﾞ|ﾟ","",$a, 'UTF-8');
-				$a = mb_convert_kana($a,"K", 'UTF-8');
+				$a = mb_convert_kana($a,"HcV", 'UTF-8');
 			}
 			if($l == 'img') {
 				$a = $line[$k];
@@ -96,7 +94,7 @@ foreach ($file as $i => $line) {
 	}
 }
 $kanas = array_column($datas, 'kana');
-array_multisort($kanas, SORT_ASC, $datas);
+array_multisort($kanas, SORT_ASC, SORT_LOCALE_STRING, $datas);
 $categories = array_unique($categories);
 ?>
 
