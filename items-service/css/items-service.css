@@ -177,15 +177,6 @@ body.init .category_nav a {
 		flex-grow: 1;
 		padding: 0 5px;
 	}
-
-	/* 多いとき用 */
-	.category_nav li {
-		padding: 0 3px;
-	}
-	.category_nav a {
-		padding: 0 10px;
-		font-size: 1.5rem;
-	}
 }
 @media screen and (max-width: 767px) {
 	.category_nav {
