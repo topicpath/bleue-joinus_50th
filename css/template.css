@@ -9,15 +9,16 @@ body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,p,blockquote,th,t
 /* 変数
 ============================================================================================================ */
 :root {
+	--px: .8px;
 	--color-base: #1b1919;
 	--color-theme: #00a44f;
 	--color-blue: #0070a5;
 	--bg-gray: #eff3f9;
 	--border-color: #f1f6f6;
-	--base-width: 1120px;
-	--base-max-width: 1240px;
-	--base-min-width: 1060px;
-	--pc-base-padding: 40px;
+	--base-width: calc(1120 * var(--px));
+	--base-max-width: calc(1240 * var(--px));
+	--base-min-width: 1020px;
+	--pc-base-padding: calc(40 * var(--px));
 	--sp-base-padding: calc(30 / 375 * 100vw);
 	--font-family-jp: 'Zen Kaku Gothic New', sans-serif;
 	--font-family-noto: 'Noto Sans JP', var(--font-family-jp);
@@ -26,12 +27,22 @@ body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,p,blockquote,th,t
 	--transition-duration: .3s;
 	--transition: var(--transition-duration) ease-in-out;
 }
+@media screen and (max-width: 767px) {
+	:root {
+		--px: 1px;
+	}
+}
 
 /*
 ============================================================================================================ */
 html {
 	font-size: 62.5%;
 	scroll-behavior: smooth;
+}
+@media screen and (min-width: 768px), print {
+	html {
+		font-size: calc(62.5% * .8);
+	}
 }
 html.no-scroll-behavior {
 	scroll-behavior: auto;
@@ -354,10 +365,10 @@ a.target {
 	display: block;
 	position: relative;
 	width: 1px;
-	top: -80px;
+	top: calc(-80 * var(--px));
 }
 a.target.pt {
-	top: -120px;
+	top: calc(-120 * var(--px));
 }
 a.target.abs {
 	position: absolute;
@@ -367,7 +378,7 @@ a.target.abs {
 		top: 0;
 	}
 	a.target.pt {
-		top: -40px;
+		top: calc(-40 * var(--px));
 	}
 }
 
@@ -429,19 +440,19 @@ a.target.abs {
 	left: 0;
 	width: 100%;
 	background-color: #fff;
-	border-bottom: 5px solid var(--border-color);
+	border-bottom: calc(5 * var(--px)) solid var(--border-color);
 	z-index: 1000;
 }
 #header .xw {
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-	height: 100px;
+	height: calc(100 * var(--px));
 }
 #header .gnav a {
 	position: relative;
 	display: block;
-	padding: 10px 20px 6px;
+	padding: calc(10 * var(--px)) calc(20 * var(--px)) calc(6 * var(--px));
 	font-size: 1.9rem;
 	line-height: calc(26 / 19);
 	text-decoration: none;
@@ -453,10 +464,13 @@ a.target.abs {
 	font-size: 1.8rem;
 }
 @media screen and (min-width: 768px), print {
+	#header .logo img {
+		width: calc(80 * var(--px));
+	}
 	#header .gnav {
 		display: flex;
 		align-items: center;
-		margin-right: -20px;
+		margin-right: calc(-20 * var(--px));
 	}
 	#header .gnav a.current {
 		color: var(--color-base);
@@ -472,14 +486,16 @@ a.target.abs {
 		position: absolute;
 	}
 }
+/*
 @media screen and (min-width: 768px) {
 	.init #header .xw {
 		transition: height .4s ease-in-out;
 	}
 	.head-min #header .xw {
-		height: 80px;
+		height: calc(80 * var(--px));
 	}
 }
+*/
 @media screen and (max-width: 767px) {
 	#header {
 		border-bottom: 0;
@@ -627,7 +643,7 @@ a.target.abs {
 /* footer
 ============================================================================================================ */
 #footer {
-	margin-top: 80px;
+	margin-top: calc(80 * var(--px));
 	text-align: center;
 	font-size: 1.6rem;
 	line-height: 1.75;
@@ -638,13 +654,13 @@ a.target.abs {
 	text-decoration: none;
 }
 #footer .logo {
-	margin-bottom: 30px;
+	margin-bottom: calc(30 * var(--px));
 }
 #footer .instagram {
 	position: relative;
-	width: 660px;
-	margin: 30px auto 0;
-	padding: 15px 0;
+	width: calc(660 * var(--px));
+	margin: calc(30 * var(--px)) auto 0;
+	padding: calc(15 * var(--px)) 0;
 	font-size: 1.8rem;
 }
 #footer .instagram::before,
@@ -653,7 +669,7 @@ a.target.abs {
 	position: absolute;
 	top: 0;
 	bottom: 0;
-	width: 20px;
+	width: calc(20 * var(--px));
 	border: 2px solid;
 }
 #footer .instagram::before {
@@ -668,25 +684,26 @@ a.target.abs {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	width: 400px;
-	height: 60px;
-	margin: 15px auto 0;
+	width: calc(400 * var(--px));
+	height: calc(60 * var(--px));
+	margin: calc(15 * var(--px)) auto 0;
 	border-radius: 100px;
 	font-size: 2.2rem;
 	box-shadow: 0 3px 10px rgba(0,0,0,.16);
 }
 #footer .instagram a > span {
 	position: relative;
-	padding-left: 44px;
-	padding-bottom: 3px;
+	padding-left: calc(44 * var(--px));
+	padding-bottom: calc(3 * var(--px));
 }
 #footer .instagram a > span::before {
 	content: "";
 	position: absolute;
 	left: 0;
 	top: calc(50% - 18px);
-	width: 36px;
-	height: 36px;
+	top: calc(50% - (18 * var(--px)));
+	width: calc(36 * var(--px));
+	height: calc(36 * var(--px));
 	background: url(../images/ico-insta.png) no-repeat 50%;
 	background-size: 100%;
 }
@@ -726,9 +743,9 @@ a.target.abs {
 
 #footer small {
 	display: block;
-	padding: 15px;
+	padding: calc(15 * var(--px));
 	background-color: var(--color-theme);
-	margin-top: 50px;
+	margin-top: calc(50 * var(--px));
 	font-size: 1.2rem;
 	line-height: 1.2;
 	letter-spacing: 0.05em;
@@ -740,11 +757,11 @@ a.target.abs {
 #footer #pagetop {
 	position: fixed;
 	overflow: hidden;
-	bottom: 20px;
-	right: 20px;
-	width: 74px;
+	bottom: calc(20 * var(--px));
+	right: calc(20 * var(--px));
+	width: calc(74 * var(--px));
 	height: 0;
-	padding-top: 70px;
+	padding-top: calc(70 * var(--px));
 	background-color: var(--color-theme);
 	border: 2px solid;
 	color: #fff;
@@ -799,7 +816,7 @@ a.target.abs {
 ============================================================================================================ */
 #container {
 	position: relative;
-	padding-top: 105px;
+	padding-top: calc(105 * var(--px));
 }
 
 /* ===================================================================================================================
@@ -811,8 +828,8 @@ a.target.abs {
 /* breadcrumbs
 ============================================================================================================ */
 .breadcrumbs {
-	padding-top: 15px;
-	padding-bottom: 15px;
+	padding-top: calc(15 * var(--px));
+	padding-bottom: calc(15 * var(--px));
 	border-bottom: 1px solid var(--border-color);
 	font-size: 1.4rem;
 	line-height: 1.6;
@@ -820,7 +837,7 @@ a.target.abs {
 }
 .breadcrumbs li {
 	position: relative;
-	padding-right: 20px;
+	padding-right: calc(20 * var(--px));
 }
 .breadcrumbs ol {
 	display: flex;
@@ -831,8 +848,8 @@ a.target.abs {
 	position: absolute;
 	right: .5em;
 	top: 50%;
-	width: 8px;
-	height: 8px;
+	width: calc(8 * var(--px));
+	height: calc(8 * var(--px));
 	border-top: 2px solid;
 	border-right: 2px solid;
 	transform-origin: 100% 0;
@@ -853,7 +870,7 @@ a.target.abs {
 /* back_btn
 ============================================================================================================ */
 .back_btn {
-	margin-top: 60px;
+	margin-top: calc(60 * var(--px));
 }
 @media screen and (max-width: 767px) {
 	.back_btn {
@@ -871,8 +888,8 @@ a .box_btn {
 	justify-content: center;
 	align-items: center;
 	max-width: 100%;
-	width: 300px;
-	height: 40px;
+	width: calc(300 * var(--px));
+	height: calc(40 * var(--px));
 	margin: 0 auto;
 	padding-top: 2px;
 	background-color: var(--color-theme);
