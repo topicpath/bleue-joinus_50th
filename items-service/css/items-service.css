@@ -8,8 +8,8 @@
 ============================================================================================================ */
 .items-service_header {
 	position: relative;
-	height: 330px;
-	padding-top: 60px;
+	height: 270px;
+	padding-top: 50px;
 	text-align: center;
 	z-index: 1;
 }
@@ -33,14 +33,14 @@
 }
 .items-service_header .bg_en {
 	position: absolute;
-	top: 114px;
+	top: 54px;
 	left: 0;
 	right: 0;
 	z-index: -1;
 }
 .items-service_header .start {
 	position: absolute;
-	top: 120px;
+	top: 60px;
 	left: calc(50% + 152px);
 }
 .items-service_header .hanabi {
@@ -54,7 +54,7 @@
 	.items-service_header::before {
 		content: "";
 		position: absolute;
-		top: 10px;
+		top: -20px;
 		left: calc(50% - 292px);
 		width: 633px;
 		height: 293px;
@@ -62,19 +62,19 @@
 	}
 	.items-service_header .hanabi1 {
 		right: calc(50% + 316px);
-		top: 100px;
+		top: 70px;
 		width: 200px;
 	}
 	.items-service_header .hanabi2 {
 		left: calc(50% + 326px);
-		top: 6px;
+		top: -5px;
 		width: 270px;
 	}
 }
 @media screen and (max-width: 767px) {
 	.items-service_header {
-		height: 250px;
-		padding-top: 40px;
+		height: 160px;
+		padding-top: 20px;
 	}
 	.items-service_header::before {
 		content: "";
@@ -83,7 +83,7 @@
 		left: 0;
 		right: 0;
 		height: 250px;
-		background: url(../images/head_bg_sp.png) no-repeat 50%;
+		background: url(../images/head_bg_sp.png) no-repeat 50% -64px;
 		background-size: 375px;
 	}
 	.items-service_header h1 {
@@ -92,21 +92,21 @@
 		line-height: calc(35 / 23);
 	}
 	.items-service_header .bg_en {
-		top: 94px;
+		top: 24px;
 	}
 	.items-service_header .bg_en img {
 		width: auto;
 		height: 124px;
 	}
 	.items-service_header .start {
-		top: 80px;
-		left: calc(50% + 96px);
+		top: 15px;
+		left: calc(50% + 100px);
 		width: 80px;
 	}
 	.items-service_header .hanabi2 {
 		overflow: hidden;
 		right: 0;
-		top: 350px;
+		top: 250px;
 		width: 120px;
 	}
 	.items-service_header .hanabi2 img {
@@ -335,6 +335,9 @@ body.init .category_nav a {
 	}
 }
 @media screen and (max-width: 767px) {
+	.items {
+		margin-top: 30px;
+	}
 	.items::before {
 		top: 200px;
 	}

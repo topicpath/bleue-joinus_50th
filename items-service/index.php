@@ -34,7 +34,6 @@ include_once 'common-meta.php';
 
 	<section>
 		<header class="items-service_header">
-			<p class="en ff_en">Anniversary Limited</p>
 			<h1>ジョイナス50周年<br>限定アイテム&サービス</h1>
 			<p class="bg_en"><img src="images/head_en.svg" alt="ANNIVERSARY ITEMS & SERVICE" width="440" height="160"></p>
 			<p class="start"><img src="images/head_start.png" alt="11.1 WED スタート！" width="87" height="87"></p>

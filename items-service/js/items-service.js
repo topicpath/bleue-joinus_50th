@@ -52,10 +52,11 @@
 		if(!isSpW()) return;
 		var s = $(this).scrollTop();
 		var fn = $('.fix_category_nav');
+		var fnh = fn.outerHeight();
 		var bn = $('.base_nav');
 		var bnt = bn.offset().top;
 		var bnh = bn.outerHeight();
-		if(s < bnt + bnh - 75) {
+		if(s < bnt + bnh - 75 - fnh) {
 			if(fn.hasClass('show')) {
 				fn.removeClass('show');
 			}
