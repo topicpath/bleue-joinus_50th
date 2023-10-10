@@ -391,3 +391,61 @@ body.init .category_nav a {
 		font-size: 1.4rem;
 	}
 }
+
+/* floating_notes
+============================================================================================================ */
+.floating_notes {
+	position: fixed;
+	bottom: 20px;
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+	padding: calc(30 * var(--px)) calc(40 * var(--px));
+	border: 2px solid #e2474e;
+	border-radius: calc(30 * var(--px));
+	background-color: #fff;
+	box-shadow: 0 3px 6px rgba(0,0,0,.16);
+	transform: translateY(100%) translateY(30px);
+	transition: transform .5s;
+	z-index: 100;
+}
+.floating_notes .close {
+	position: absolute;
+	width: 30px;
+	height: 30px;
+	top: -10px;
+	right: -10px;
+	border-radius: 100%;
+	background-color: #e2474e;
+	cursor: pointer;
+}
+.floating_notes .close::before,
+.floating_notes .close::after {
+	content: "";
+	position: absolute;
+	top: 50%;
+	right: 8px;
+	left: 8px;
+	margin-top: -1px;
+	border-top: 2px solid #fff;
+	transform: rotate(45deg);
+}
+.floating_notes .close::after {
+	transform: rotate(-45deg);
+}
+.floating_notes.show {
+	transform: translateY(0);
+}
+@media screen and (min-width: 768px), print {
+	.floating_notes {
+		width: fit-content;
+	}
+}
+@media screen and (max-width: 767px) {
+	.floating_notes {
+		width: calc(295 / 375 * 100%);
+		bottom: 10px;
+		padding: 5vw;
+		border-radius: 20px;
+	}
+}

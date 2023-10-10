@@ -1,4 +1,35 @@
 (function () {
+	var vf = sessionStorage.getItem('view_floating');
+	if(!vf) {
+//		sessionStorage.setItem('view_floating', '1');
+		var items_notes = $('.items_notes').clone();
+		items_notes.addClass('floating_notes');
+		items_notes.append('<a class="close"></a>')
+		$('body').append(items_notes);
+		setTimeout(() => {
+			items_notes.addClass('show');
+		}, 200);
+
+		var checkFloatingPos = function(e) {
+			var s = $(this).scrollTop();
+			var h = $(this).outerHeight();
+			var items = $('.items');
+			var it = items.offset().top;
+			var ih = items.outerHeight();
+			if(s > it + ih - h) {
+				items_notes.removeClass('show');
+				$(window).off('scroll', checkFloatingPos);
+			}
+		}
+		$(window).on('scroll', checkFloatingPos);
+		checkFloatingPos();
+		$('.close', items_notes).on('click', function() {
+			items_notes.removeClass('show');
+			$(window).off('scroll', checkFloatingPos);
+		});
+	}
+
+
 	var __loading = false;
 	$('.category_nav a').on('click', function() {
 		if($(this).hasClass('active')) return false;
