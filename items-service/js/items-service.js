@@ -1,7 +1,7 @@
 (function () {
 	var vf = sessionStorage.getItem('view_floating');
 	if(!vf) {
-//		sessionStorage.setItem('view_floating', '1');
+		sessionStorage.setItem('view_floating', '1');
 		var items_notes = $('.items_notes').clone();
 		items_notes.addClass('floating_notes');
 		items_notes.append('<a class="close"></a>')
