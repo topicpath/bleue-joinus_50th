@@ -5,7 +5,37 @@ setTimeout(
 	300
 );
 
+/* mov_show
+============================================================================================================ */
 (function () {
+	setTimeout(() => {
+		$('.mov_first').addClass('showed')
+	}, 200);
+}());
+(function () {
+	const mov_show = document.querySelectorAll('.mov_show');
+	if(!mov_show.length) return false;
+
+	const options = {
+		root: null,
+		rootMargin: '-20% 0px',
+		threshold: 0,
+	};
+
+	setTimeout(() => {
+		const observer = new IntersectionObserver(intersectionCallback, options);
+		mov_show.forEach((tgt) => {
+			observer.observe(tgt);
+		});
+	}, 400);
+	function intersectionCallback(entries) {
+		entries.forEach((entry) => {
+			if (entry.isIntersecting) {
+				const target = entry.target;
+				target.classList.add('showed');
+			}
+		});
+	}
 }());
 
 /* pagetop

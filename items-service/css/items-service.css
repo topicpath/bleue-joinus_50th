@@ -271,15 +271,14 @@ body.init .category_nav a {
 	border-radius: calc(40 * var(--px));
 	font-size: 1.6rem;
 	line-height: 1.5;
-	transition: opacity .3s;
 }
 .items.all section {
 	order: 0 !important;
 }
 .items.loading section {
-	opacity: 0;
 	transition: none;
 	pointer-events: none;
+	transform: translateX(-200vw);
 }
 .items .img {
 	width: calc(420 / 460 * 100%);

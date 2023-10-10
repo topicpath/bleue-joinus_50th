@@ -33,7 +33,7 @@ include_once 'common-meta.php';
 <?php include_once 'parts-topicpath.php'; ?>
 
 	<section>
-		<header class="items-service_header">
+		<header class="items-service_header mov_header mov_first">
 			<h1>ジョイナス50周年<br>限定アイテム&サービス</h1>
 			<p class="bg_en"><img src="images/head_en.svg" alt="ANNIVERSARY ITEMS & SERVICE" width="440" height="160"></p>
 			<p class="start"><img src="images/head_start.png" alt="11.1 WED スタート！" width="87" height="87"></p>
@@ -100,7 +100,7 @@ array_multisort($kanas, SORT_ASC, SORT_LOCALE_STRING, $datas);
 $categories = array_unique($categories);
 ?>
 
-		<div class="category_nav base_nav">
+		<div class="category_nav base_nav mov_show fadeup mov_first">
 			<ul>
 				<li><a class="all active">すべて</a></li>
 <?php foreach ($categories as $c) : ?>
@@ -121,7 +121,7 @@ $categories = array_unique($categories);
 
 		<div class="items all"><div class="xw">
 <?php foreach ($datas as $item) : ?>
-			<section data-category="<?php echo htmlspecialchars($item['category']); ?>" style="order:<?php echo $item['order']; ?>"><div>
+			<section class="mov_show fadeup" data-category="<?php echo htmlspecialchars($item['category']); ?>" style="order:<?php echo $item['order']; ?>"><div>
 <?php if($item['img']) : ?>
 				<p class="img"><img src="item/<?php echo $item['img']; ?>" alt="<?php echo htmlspecialchars($item['name']); ?>" width="510" height="365" loading="lazy" decoding="async"></p>
 <?php endif; ?>

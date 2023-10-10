@@ -8,7 +8,7 @@
 		$('body').append(items_notes);
 		setTimeout(() => {
 			items_notes.addClass('show');
-		}, 200);
+		}, 400);
 
 		var checkFloatingPos = function(e) {
 			var s = $(this).scrollTop();
@@ -51,7 +51,7 @@
 		});
 
 		$('.items').addClass('loading');
-		$('.items section').each(function() {
+		$('.items section').removeClass('showed').each(function() {
 			if(my_cat == 'すべて' || my_cat == $(this).data('category')) {
 				$(this).removeClass('hidden');
 			} else {
@@ -70,7 +70,6 @@
 			if(s > $('.items').offset().top - tg) {
 				$(window).scrollTop($('.items').offset().top - tg)
 			}
-
 			$('.items').removeClass('loading');
 			__loading = false;
 		}, 100);

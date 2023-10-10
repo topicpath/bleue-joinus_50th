@@ -1056,3 +1056,48 @@ a .box_btn {
 	}
 }
 
+
+/* mov
+============================================================================================================ */
+@media screen {
+	.mov_header {
+		opacity: 0;
+	}
+	.mov_header.showed {
+		transition: opacity 1s linear;
+		opacity: 1;
+	}
+	.mov_show.fade {
+		opacity: 0;
+	}
+	.mov_show.fade.showed {
+		transition: opacity .5s linear;
+		opacity: 1;
+	}
+	.mov_show.fadeup {
+		opacity: 0;
+		transform: translateY(50px);
+	}
+	.mov_show.fadeup.showed {
+		transition: transform .5s cubic-bezier(0.5, 1, 0.89, 1), opacity .5s linear;
+		opacity: 1;
+		transform: translateY(0);
+	}
+	.mov_show.fadedown {
+		opacity: 0;
+		transform: translateY(-30px);
+	}
+	.mov_show.fadedown.showed {
+		transition: transform .5s cubic-bezier(0.5, 1, 0.89, 1), opacity .5s linear;
+		opacity: 1;
+		transform: translateY(0);
+	}
+	@media screen and (min-width: 768px) {
+		.mov_show.pc_delay1.showed {
+			transition-delay: .1s;
+		}
+		.mov_show.pc_delay2.showed {
+			transition-delay: .2s;
+		}
+	}
+}
