@@ -27,6 +27,11 @@
 				$(this).addClass('hidden');
 			}
 		})
+		if(my_cat == 'すべて') {
+			$('.items').addClass('all');
+		} else {
+			$('.items').removeClass('all');
+		}
 
 		setTimeout(() => {
 			var s = $(window).scrollTop();

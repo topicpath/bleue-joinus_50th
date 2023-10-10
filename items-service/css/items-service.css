@@ -258,6 +258,9 @@ body.init .category_nav a {
 	background: url(../images/item_dot.svg) 50% 0;
 	z-index: -1;
 }
+.items .xw {
+	display: flex;
+}
 .items section {
 	padding: 40px;
 	background: #fff3f4 url(../images/item_bg.svg) no-repeat 50% 300px;
@@ -267,6 +270,9 @@ body.init .category_nav a {
 	font-size: 1.6rem;
 	line-height: 1.5;
 	transition: opacity .3s;
+}
+.items.all section {
+	order: 0 !important;
 }
 .items.loading section {
 	opacity: 0;
@@ -309,7 +315,6 @@ body.init .category_nav a {
 @media screen and (min-width: 768px), print {
 	.items .xw {
 		width: calc(var(--base-max-width) - 20px * 2);
-		display: flex;
 		justify-content: space-between;
 		flex-wrap: wrap;
 	}
@@ -332,6 +337,9 @@ body.init .category_nav a {
 @media screen and (max-width: 767px) {
 	.items::before {
 		top: 200px;
+	}
+	.items .xw {
+		flex-direction: column;
 	}
 	.items section {
 		width: calc(295 / 375 * 100%);

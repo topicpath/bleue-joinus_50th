@@ -64,6 +64,7 @@ $lines = [
 
 $file = new SplFileObject('data.csv');
 $file->setFlags(SplFileObject::READ_CSV);
+$order = 1;
 foreach ($file as $i => $line) {
 	if(isset($line[0]) && $line[0]){
 		$my_data = [];
@@ -87,8 +88,10 @@ foreach ($file as $i => $line) {
 				$my_data[$l] = $a;
 			}
 		}
+		$my_data['order'] = $order;
 
 		$datas[] = $my_data;
+		$order ++;
 
 		$categories[] = $my_data['category'];
 	}
@@ -117,9 +120,9 @@ $categories = array_unique($categories);
 		</div><!-- /.category_nav -->
 
 
-		<div class="items"><div class="xw">
+		<div class="items all"><div class="xw">
 <?php foreach ($datas as $item) : ?>
-			<section data-category="<?php echo htmlspecialchars($item['category']); ?>"><div>
+			<section data-category="<?php echo htmlspecialchars($item['category']); ?>" style="order:<?php echo $item['order']; ?>"><div>
 <?php if($item['img']) : ?>
 				<p class="img"><img src="item/<?php echo $item['img']; ?>" alt="<?php echo htmlspecialchars($item['name']); ?>" width="510" height="365" loading="lazy" decoding="async"></p>
 <?php endif; ?>
