@@ -692,7 +692,7 @@ img {
 	bottom: 0;
 	left: 0;
 	padding: 20px 10px;
-	background-color: #00a44f;
+	pointer-events: none;
 	z-index: 100;
 }
 #bnr ul {
@@ -703,6 +703,7 @@ img {
 	width: calc(1 / 3 * 100%);
 }
 #bnr a {
+	pointer-events: auto;
 	display: block;
 	overflow: hidden;
 	border-radius: 20px;
