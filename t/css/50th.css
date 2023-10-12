@@ -733,13 +733,6 @@ img {
 	#bnr li {
 		padding: 0 10px;
 	}
-	#bnr ul.single {
-		width: auto;
-		justify-content: flex-end;
-	}
-	#bnr ul.single li {
-		width: 320px;
-	}
 }
 @media screen and (max-width: 767px) {
 	#bnr,
@@ -749,9 +742,6 @@ img {
 	#bnr {
 		padding-top: 10px;
 		padding-bottom: 10px;
-	}
-	#bnr ul.single {
-		justify-content: flex-end;
 	}
 	#footer small {
 		padding-bottom: calc((120 / 375 * 100vw) + 20px + 15px);

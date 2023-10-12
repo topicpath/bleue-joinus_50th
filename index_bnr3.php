@@ -117,7 +117,7 @@ else if(ua.indexOf('ipad') > -1 || (ua.indexOf('macintosh') > -1 && 'ontouchend'
 
 <div id="bnr">
 	<ul>
-		<li><a href="#" target="_blank"><picture>
+		<li><a href="https://www.sotetsu-joinus.com/news/4331" target="_blank"><picture>
 			<source media="screen and (max-width: 767px)" srcset="t/img/bnr01_sp.png">
 			<img src="t/img/bnr01.png" alt="コート下取り2DAYS 10.28 SAT. 29 SUN" width="640" height="240">
 		</picture></a></li>
