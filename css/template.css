@@ -13,6 +13,7 @@ body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,p,blockquote,th,t
 	--color-base: #1b1919;
 	--color-theme: #00a44f;
 	--color-blue: #0070a5;
+	--color-pink: #df3d8e;
 	--bg-gray: #eff3f9;
 	--border-color: #f1f6f6;
 	--base-width: calc(1120 * var(--px));
@@ -230,9 +231,9 @@ a.c_theme {
 a.c_blue {
 	color: var(--color-blue);
 }
-/* .bg_gray {
-	background-color: var(--bg-gray);
-} */
+.bg_blue {
+	background-color: var(--color-blue);
+}
 
 /* font
 ============================================================================================================ */
@@ -717,6 +718,9 @@ a.target.abs {
 	}
 }
 @media screen and (max-width: 767px) {
+	#footer {
+		margin-top: 40px;
+	}
 	#footer .instagram {
 		width: calc(100% - 10vw);
 		margin-top: 25px;
@@ -763,7 +767,8 @@ a.target.abs {
 	height: 0;
 	padding-top: calc(70 * var(--px));
 	background-color: var(--color-theme);
-	border: 2px solid;
+	/* border: 2px solid; */
+	border: 2px solid var(--color-theme);
 	color: #fff;
 	border-radius: 100%;
 	pointer-events: none;
@@ -867,6 +872,17 @@ a.target.abs {
 @media screen and (max-width: 767px) {
 }
 
+/* pb
+============================================================================================================ */
+.base_pb {
+	padding-bottom: calc(100 * var(--px));
+}
+@media screen and (max-width: 767px) {
+	.base_pb {
+		padding-bottom: calc(60 * var(--px));
+	}
+}
+
 /* back_btn
 ============================================================================================================ */
 .back_btn {
@@ -875,6 +891,7 @@ a.target.abs {
 @media screen and (max-width: 767px) {
 	.back_btn {
 		margin-top: 40px;
+		margin-bottom: 80px;
 	}
 }
 
@@ -890,17 +907,37 @@ a .box_btn {
 	max-width: 100%;
 	width: calc(300 * var(--px));
 	height: calc(40 * var(--px));
+	width: 300px;
+	height: 40px;
 	margin: 0 auto;
 	padding-top: 2px;
 	background-color: var(--color-theme);
-	border: 2px solid var(--color-theme);
+	border: 1px solid var(--color-theme);
 	border-radius: 20px;
 	text-decoration: none;
 	text-align: center;
 	color: #fff;
 	font-size: 1.4rem;
+	font-size: calc(1.4rem * (10 / 8));
 	line-height: 1.5;
 	letter-spacing: 0.1em;
+}
+.box_btn.outline {
+	background-color: #fff;
+	color: var(--color-theme);
+}
+.box_btn.arrow::after {
+	content: "";
+	position: absolute;
+	top: 50%;
+	right: 20px;
+	width: .75em;
+	height: .75em;
+	border-top: 3px solid;
+	border-right: 3px solid;
+	transform-origin: 100% 0;
+	transform: rotate(45deg);
+	transition: none !important;
 }
 @media (hover) {
 	body.init a .box_btn {
@@ -919,12 +956,35 @@ a .box_btn {
 		color: #fff;
 	}
 }
+@media screen and (min-width: 768px), print {
+	.box_btn.large {
+		width: calc(440 * var(--px));
+		height: calc(60 * var(--px));
+		border-radius: 30px;
+		font-size: 1.8rem;
+		font-weight: 700;
+		letter-spacing: 0.05em;
+	}
+}
 @media screen and (max-width: 767px) {
 	button.box_btn,
 	a.box_btn,
 	a .box_btn {
 		width: 100%;
 		max-width: calc(295 / 375 * 100vw);
+	}
+	.box_btn.arrow {
+		padding-right: 10px;
+	}
+	.box_btn.arrow::after {
+		right: 15px;
+		width: .6em;
+		height: .6em;
+	}
+	.box_btn.large {
+		font-size: 1.6rem;
+		font-weight: 700;
+		letter-spacing: 0.03em;
 	}
 }
 
@@ -943,17 +1003,20 @@ a .box_btn {
 
 .circle_li > li {
 	position: relative;
-	padding-left: 1em;
+	padding-left: 1.6em;
 }
 .circle_li > li::before {
-	content: "";
+	content: "●";
 	position: absolute;
-	top: .6em;
+	top: 0;
 	left: 0;
-	width: 8px;
-	height: 8px;
-	background-color: #005f8b;
-	border-radius: 100%;
+	color: var(--color-blue);
+	transform: scale(.8);
+}
+@media screen and (max-width: 767px) {
+	.circle_li > li + li {
+		margin-top: 1em;
+	}
 }
 
 .parentheses_li > li {
