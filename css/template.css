@@ -24,6 +24,7 @@ body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,p,blockquote,th,t
 	--font-family-jp: 'Zen Kaku Gothic New', sans-serif;
 	--font-family-noto: 'Noto Sans JP', var(--font-family-jp);
 	--font-family-en: 'Arvo', var(--font-family-jp);
+	--font-family-din: 'Barlow Condensed', var(--font-family-jp);
 	--font-weight: 500;
 	--transition-duration: .3s;
 	--transition: var(--transition-duration) ease-in-out;
@@ -206,6 +207,11 @@ iframe {
 	font-family: var(--font-family-en);
 	font-style: normal;
 	font-weight: 700;
+}
+.ff_din {
+	font-family: var(--font-family-din);
+	font-style: normal;
+	font-weight: 600;
 }
 .ff_noto {
 	font-family: var(--font-family-noto);
@@ -870,6 +876,17 @@ a.target.abs {
 @media screen and (min-width: 768px), print {
 }
 @media screen and (max-width: 767px) {
+	.breadcrumbs {
+		overflow-x: auto;
+	}
+	.breadcrumbs ol {
+		display: table;
+		white-space: nowrap;
+	}
+	.breadcrumbs ol li {
+		display: table-cell;
+		white-space: nowrap;
+	}
 }
 
 /* pb
@@ -939,6 +956,10 @@ a .box_btn {
 	transform: rotate(45deg);
 	transition: none !important;
 }
+.box_btn.black {
+	background-color: #000;
+	border-color: #000;
+}
 @media (hover) {
 	body.init a .box_btn {
 		transition: color var(--transition), background var(--transition);
@@ -954,6 +975,11 @@ a .box_btn {
 	a[href]:hover .box_btn.outline {
 		background-color: var(--color-theme);
 		color: #fff;
+	}
+	button.box_btn.black:hover,
+	a[href].box_btn.black:hover,
+	a[href]:hover .box_btn.black {
+		color: #000;
 	}
 }
 @media screen and (min-width: 768px), print {
