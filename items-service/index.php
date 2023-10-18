@@ -53,12 +53,13 @@ $lines = [
 	'6' => 'arr_title',
 	'7' => 'arr_title',
 	'8' => 'arr_title',
-	'9' => 'arr_txt',
+	'9' => 'arr_title',
 	'10' => 'arr_txt',
 	'11' => 'arr_txt',
 	'12' => 'arr_txt',
-	'13' => 'arr_notes',
+	'13' => 'arr_txt',
 	'14' => 'arr_notes',
+	'15' => 'arr_notes',
 ];
 
 $file = new SplFileObject('data.csv');
