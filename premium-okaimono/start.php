@@ -50,16 +50,8 @@ include_once 'common-meta.php';
 				<p class="fuki">限定<br class="sp"><span class="num ff_en">5,000</span>セット！<span class="note">お1人様1回2セット<br class="sp">まで</span></p>
 				<p class="start">予約<br class="sp">受付中<span>！</span></p>
 				<p class="start_notes">※上限に達し次第終了</p>
-				<p class="notes">購入日・購入時間を指定した予約となります。<br>予約にはジョイナスポイント会員番号の入力が必要になります。</p>
+				<p class="notes">購入日・購入時間を指定した予約となります。<br>予約にはジョイナスポイント会員番号の入力が必要になります。<br>※ご購入は現金のみとなります。</p>
 			</div><!-- /.start_box -->
-
-			<div class="period_box mov_show fadeup">
-				<p><picture>
-					<source media="screen and (max-width: 767px)" srcset="images/period_sp.svg">
-					<img src="images/period.svg" alt="[販売期間]11.10 FRI 11 SAT 10時～20時（日時予約制）" width="800" height="76">
-				</picture></p>
-				<p class="btn"><a href="sale/" class="box_btn outline large arrow">販売についてはこちら</a></p>
-			</div><!-- /.period_box -->
 
 
 			<section class="outline_section">
@@ -85,25 +77,25 @@ include_once 'common-meta.php';
 						<th>予約方法</th>
 						<td>
 							<ol class="num_li">
-								<li>以下の注意事項確認し、同意をチェックする。</li>
-								<li>予約ページへ遷移します。</li>
+								<li>以下の注意事項確認し、同意をチェック</li>
+								<li>予約ページへ遷移</li>
 								<li>メールアドレスの登録
-									<span class="s">プライバシーポリシーをご確認いただき、個人情報の取扱いの同意にチェック<br>表示された画面にメールアドレスを入力します。<br>メールの受信に制限をかけている場合は、「　　　　　　　　　　　」からのメールが受信できるように設定をお願いします。</span>
+									<span class="s">プライバシーポリシーをご確認いただき、個人情報の取扱いの同意にチェックの上、表示された画面にメールアドレスを入力します。<br>メールの受信に制限をかけている場合は、「JOINUS_PREMIUM@jmb-expo.com」からのメールが受信できるように設定をお願いします。</span>
 								</li>
 								<li>メールに届いたURLをクリックして予約サイトへ
-									<span class="s">ジョイナスポイント会員証をお手元にご用意の上、予約サイトへお進みください。<br>URLは登録から30分のみ有効です。</span>
+									<span class="s">ジョイナスポイント会員証をお手元に用意して進みます。<br>URLは登録から30分のみ有効です。</span>
 								</li>
 								<li>予約内容の入力
-									<span class="s">日ごと・時間別にチェックボックスが表示されます。<br>自分が希望する日時を選んでクリック。「購入セット数」を選び、「ジョイナスポイント会員番号」を入力し、「確認画面」へ進んでください。</span>
+									<span class="s">日ごと・時間別にチェックボックスが表示されます。<br>自分が希望する日時を選んでクリック。「購入セット数」を選び、「ジョイナスポイント会員番号」を入力し、「確認画面」へと進みます。</span>
 								</li>
 								<li>予約内容を確認
-									<span class="s">予約内容が表示されますので、間違いがない確認してください。</span>
+									<span class="s">予約内容が表示されますので、間違いがないか確認します。</span>
 								</li>
 								<li>予約を確定
-									<span class="s">予約内容を確認したら、画面下の赤い「予約を確定する」ボタンをクリックする。</span>
+									<span class="s">予約内容を確認したら、画面下の「予約を確定する」ボタンをクリックします。</span>
 								</li>
 								<li>メールに予約確定メールが届いていることを確認
-									<span class="s">届いていれば予約は無事に完了です。<br>※予約が埋まっているときは、再選択のメッセージが表示されます。<br>メールが届かない場合は、迷惑メールに入っているか、予約手続きが完了していないことが考えられます。</span>
+									<span class="s">届いていれば予約は無事に完了です。<br>予約が埋まっているときは、再選択のメッセージが表示されます。<br>※メールが届かない場合は、迷惑メールに入っているか、予約手続きが完了していないことが考えられます。</span>
 								</li>
 							</ol>
 						</td>
@@ -122,11 +114,19 @@ include_once 'common-meta.php';
 					</ul>
 				</section><!-- /.outline_notes -->
 
+				<div class="period_box mov_show fadeup">
+					<p><picture>
+						<source media="screen and (max-width: 767px)" srcset="images/period_sp.svg">
+						<img src="images/period.svg" alt="[販売期間]11.10 FRI 11 SAT 10時～20時（日時予約制）" width="800" height="76">
+					</picture></p>
+					<p class="btn"><a href="sale/" class="box_btn outline large arrow">販売についてはこちら</a></p>
+				</div><!-- /.period_box -->
+
 
 				<div class="reserve_btn mov_show fadeup">
 					<input type="checkbox" id="reserve_check">
 					<label for="reserve_check"><span>上記確認しました。</span></label>
-					<p class="btn"><a href="#" target="_blank" class="box_btn arrow">予約へ進む</a></p>
+					<p class="btn"><a href="https://hijapan01.jmb0.com/JOINUS_Premium/" target="_blank" class="box_btn arrow">予約へ進む</a></p>
 				</div><!-- /.reserve_btn -->
 			</section><!-- /.outline_section -->
 
