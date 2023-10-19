@@ -41,13 +41,13 @@ else if(ua.indexOf('ipad') > -1 || (ua.indexOf('macintosh') > -1 && 'ontouchend'
 <script src="t/js/50th.js" defer></script>
 <!-- / script -->
 
-<link rel="canonical" href="https://www.sotetsu-joinus.com/50th/">
+<link rel="canonical" href="https://campaign.sotetsu-joinus.com/50th_anniversary/">
 
 <!-- ogp -->
 <meta property="og:title" content="JOINUS 50th | ジョイナス50周年">
 <meta property="og:type" content="article">
-<meta property="og:url" content="https://www.sotetsu-joinus.com/50th/">
-<meta property="og:image" content="https://www.sotetsu-joinus.com/50th/ogp.png">
+<meta property="og:url" content="https://campaign.sotetsu-joinus.com/50th_anniversary/">
+<meta property="og:image" content="https://campaign.sotetsu-joinus.com/50th_anniversary/ogp.png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta property="og:site_name" content="JOINUS | ジョイナス">
@@ -120,6 +120,10 @@ else if(ua.indexOf('ipad') > -1 || (ua.indexOf('macintosh') > -1 && 'ontouchend'
 		<li><a href="https://www.sotetsu-joinus.com/news/4331" target="_blank"><picture>
 			<source media="screen and (max-width: 767px)" srcset="t/img/bnr01_sp.png">
 			<img src="t/img/bnr01.png" alt="コート下取り2DAYS 10.28 SAT. 29 SUN" width="640" height="240">
+		</picture></a></li>
+		<li><a href="premium-okaimono/"><picture>
+			<source media="screen and (max-width: 767px)" srcset="t/img/bnr02_sp.png">
+			<img src="t/img/bnr02.png" alt="プレミアムお買物券 11.2 THU 朝10時予約スタート!!" width="640" height="240">
 		</picture></a></li>
 	</ul>
 </div><!-- /#bnr -->
