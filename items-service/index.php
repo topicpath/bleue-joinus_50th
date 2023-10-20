@@ -93,12 +93,19 @@ foreach ($file as $i => $line) {
 		$datas[] = $my_data;
 		$order ++;
 
-		$categories[] = $my_data['category'];
+//		$categories[] = $my_data['category'];
 	}
 }
 $kanas = array_column($datas, 'kana');
 array_multisort($kanas, SORT_ASC, SORT_LOCALE_STRING, $datas);
-$categories = array_unique($categories);
+// $categories = array_unique($categories);
+$categories = [
+	'ファッション',
+	'ファッショングッズ',
+	'ライフスタイル&コスメ',
+	'グルメ',
+	'サービス',
+];
 ?>
 
 		<div class="category_nav base_nav mov_show fadeup mov_first">
