@@ -125,6 +125,10 @@ else if(ua.indexOf('ipad') > -1 || (ua.indexOf('macintosh') > -1 && 'ontouchend'
 			<source media="screen and (max-width: 767px)" srcset="t/img/bnr02_sp.png">
 			<img src="t/img/bnr02.png" alt="プレミアムお買物券 11.2 THU 朝10時予約スタート!!" width="640" height="240">
 		</picture></a></li>
+		<li><a href="items-service/"><picture>
+			<source media="screen and (max-width: 767px)" srcset="t/img/bnr03_sp.png">
+			<img src="t/img/bnr03.png" alt="ジョイナス50周年記念 限定アイテム＆サービス 11.1WED スタート" width="640" height="240">
+		</picture></a></li>
 	</ul>
 </div><!-- /#bnr -->
 
