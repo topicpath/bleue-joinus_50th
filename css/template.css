@@ -934,7 +934,6 @@ a .box_btn {
 	text-decoration: none;
 	text-align: center;
 	color: #fff;
-	font-size: 1.4rem;
 	font-size: calc(1.4rem * (10 / 8));
 	line-height: 1.5;
 	letter-spacing: 0.1em;
@@ -998,6 +997,7 @@ a .box_btn {
 	a .box_btn {
 		width: 100%;
 		max-width: calc(295 / 375 * 100vw);
+		font-size: 1.4rem;
 	}
 	.box_btn.arrow {
 		padding-right: 10px;
