@@ -470,6 +470,9 @@ a.target.abs {
 #header .gnav a span {
 	font-size: 1.8rem;
 }
+#header .gnav a.coming {
+	color: #ccc;
+}
 @media screen and (min-width: 768px), print {
 	#header .logo img {
 		width: calc(80 * var(--px));
@@ -631,6 +634,10 @@ a.target.abs {
 	}
 	#header .gnav li + li {
 		border-top: 1px solid rgba(255,255,255,0.3);
+	}
+	#header .gnav a.coming {
+		color: #fff;
+		opacity: 0.2;
 	}
 
 	/* head-min */
