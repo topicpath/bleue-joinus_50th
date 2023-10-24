@@ -129,7 +129,7 @@ $categories = [
 
 		<div class="items all"><div class="xw">
 <?php foreach ($datas as $item) : ?>
-			<section class="mov_show fadeup" data-category="<?php echo htmlspecialchars($item['category']); ?>" style="order:<?php echo $item['order']; ?>"><div>
+			<section data-category="<?php echo htmlspecialchars($item['category']); ?>" style="order:<?php echo $item['order']; ?>"><div>
 <?php if($item['img']) : ?>
 				<p class="img"><img src="item/<?php echo $item['img']; ?>" alt="<?php echo htmlspecialchars($item['name']); ?>" width="510" height="365" loading="lazy" decoding="async"></p>
 <?php endif; ?>
@@ -155,9 +155,9 @@ $categories = [
 		<ul class="items_notes point_li xw">
 			<li><span>※</span>限定商品・メニュー・プレゼント等はご提供できる数に限りがあるため、なくなり次第終了となります。</li>
 			<li><span>※</span>商品は仕入状況や、在庫状況により、ご提供できない場合や、内容や量が変更になる場合がございます。</li>
-			<li><span>※</span>掲載内容は予告なく中止・延期・変更等させていただく場合がございます。予めご了承ください。</li>
 			<li><span>※</span>写真はイメージです。</li>
 			<li><span>※</span>掲載価格はすべて税込価格です。</li>
+			<li><span>※</span>詳細は各店頭スタッフへお問合せください。</li>
 		</ul>
 
 		<p class="back_btn"><a href="<?php echo $root; ?>" class="box_btn ff_en">Joinus 50th TOP</a></p>
