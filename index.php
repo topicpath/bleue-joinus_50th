@@ -46,21 +46,38 @@ include_once 'common-meta.php';
 			<h2>TOPICS</h2>
 			<p class="more"><a href="#" class="box_btn">View More</a></p>
 		</header>
-
-		<ul class="topics">
-			<li>
-				<span class="time ff_en">2023.11.2</span>
-				<span class="title">プレミアムお買物券の事前予約受付スタート！！</span>
-			</li>
-			<li>
-				<span class="time ff_en">2023.11.1</span>
-				<span class="title">「世界にひとつだけのJちゃんを作ろう」SDGsワークショップ11月3日4日開催。<br>ジョイナスオリジナルノベルティがもらえる！</span>
-			</li>
-			<li>
-				<span class="time ff_en">2023.11.1</span>
-				<span class="title">プレミアムお買物券の事前予約受付、明日より開始！</span>
-			</li>
-		</ul>
+		<div>
+			<ul class="topics">
+				<li><a href="https://www.sotetsu-joinus.com/news/4329" target="_blank">
+					<span class="time ff_en">2023.11.1</span>
+					<span class="title">ジョイナス50周年特別企画！ジョイナスポイント5倍！！11月22日（水）～11月26日（日）実施決定！</span>
+				</li></a>
+				<li><a href="premium-okaimono/">
+					<span class="time ff_en">2023.11.1</span>
+					<span class="title">ジョイナスポイント会員限定！「プレミアムお買物券」販売の事前予約が11月2日（木）朝10時スタート！</span>
+				</li></a>
+				<li><a href="https://www.sotetsu-joinus.com/news/4328" target="_blank">
+					<span class="time ff_en">2023.11.1</span>
+					<span class="title">Anniversary ワークショップ「廃材を使って作ろう！世界にひとつだけのJちゃん」を11月3日（金）4日（土）開催。</span>
+				</li></a>
+			</ul>
+			<div class="more_topics">
+				<ul class="topics">
+					<li><a>
+						<span class="time ff_en">2023.11.1</span>
+						<span class="title">「懐かしのジョイナス」など歴史写真展を開催。B2広場にて12月31日（日）まで展示いたします。</span>
+					</li></a>
+					<li><a href="https://www.sotetsu-joinus.com/news/4283" target="_blank">
+						<span class="time ff_en">2023.11.1</span>
+						<span class="title">ジョイナス50周年特別企画！～おかいもの電車が帰ってきた！～「JOINUS×相模鉄道 スタンプラリー」を年11月3日（金）～11月19日（日）開催。</span>
+					</li></a>
+					<li><a>
+						<span class="time ff_en">2023.10.28</span>
+						<span class="title">「コート下取り2DAYS」を10月28日（土）29日（日）開催。 </span>
+					</li></a>
+				</ul>
+			</div><!-- /.more -->
+		</div>
 	</section><!-- /.index_topics -->
 
 
@@ -222,16 +239,18 @@ foreach ($phs as $ph) {
 
 	<div class="index_bnr hv_op">
 		<ul class="large">
-			<li class="mov_show fadeup"><a href="#"><img src="images/index/bnr_point.png" alt="JOINUSポイント5倍！" width="700" height="960" loading="lazy" decoding="async"></a></li>
+			<li class="mov_show fadeup"><a href="https://www.sotetsu-joinus.com/news/4329" target="_blank"><img src="images/index/bnr_point.png" alt="JOINUSポイント5倍！" width="700" height="960" loading="lazy" decoding="async"></a></li>
 			<li class="mov_show fadeup"><a href="premium-okaimono/"><img src="images/index/bnr_premium.png" alt="プレミアムお買物券 5,000円が6,000円分のお買物券・お食事券に！" width="700" height="960" loading="lazy" decoding="async"></a></li>
 		</ul>
 		<ul class="small">
-			<li class="mov_show fadeup"><a href="#">
+			<li class="mov_show fadeup"><a href="https://www.sotetsu-joinus.com/news/4328" target="_blank">
 				<picture>
 					<source media="screen and (max-width: 767px)" srcset="images/index/bnr_onlyone_sp.png">
 					<img src="images/index/bnr_onlyone.png" alt="廃材を使って作ろう！世界にひとつだけのJちゃん" width="440" height="540" loading="lazy" decoding="async">
 				</picture>
 			</a></li>
+<?php
+/*
 			<li class="mov_show fadeup"><a href="#">
 				<picture>
 					<source media="screen and (max-width: 767px)" srcset="images/index/bnr_sdgs_sp.png">
@@ -242,7 +261,9 @@ foreach ($phs as $ph) {
 					<dd>テキストテキストテキストテキストテキスト</dd>
 				</dl>
 			</a></li>
-			<li class="mov_show fadeup"><a href="#">
+*/
+?>
+			<li class="mov_show fadeup"><a href="https://www.sotetsu-joinus.com/news/4283" target="_blank">
 				<picture>
 					<source media="screen and (max-width: 767px)" srcset="images/index/bnr_sdgs_sp.png">
 					<img src="images/index/bnr_sdgs.png" alt="" width="440" height="260" loading="lazy" decoding="async">
@@ -258,16 +279,20 @@ foreach ($phs as $ph) {
 
 <?php include_once 'common-foot.php'; ?>
 
+<?php
+/*
+<div class="fix_btn hv_op">
+	<a href="https://www.sotetsu-joinus.com/news/4329" target="_blank"><img src="images/index/fix_btn_point5bai.png" alt="JOINUSポイント5倍!" width="450" height="450"></a>
+</div><!-- /.fix_bnr -->
+*/
+?>
+
 <div class="fix_bnr">
 	<a href="premium-okaimono/">
 		<span class="title">プレミアムお買物券</span>
 		<span class="start"><span class="num">11</span>月<span class="num">2</span>日事前予約スタート!!</span>
 		<span class="more basic_trs">受け付けはコチラ</span>
 	</a>
-</div><!-- /.fix_bnr -->
-
-<div class="fix_btn hv_op">
-	<a href="#"><img src="images/index/fix_btn_point5bai.png" alt="JOINUSポイント5倍!" width="450" height="450"></a>
 </div><!-- /.fix_bnr -->
 
 </body>

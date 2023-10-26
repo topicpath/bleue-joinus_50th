@@ -291,6 +291,19 @@ function removeJ(ele) {
 }());
 
 (function () {
+	$('.index_topics .more a').on('click', function() {
+		$(this).toggleClass('open');
+		var target = $('.index_topics .more_topics');
+		if($(this).hasClass('open')) {
+			target.css('height', $('>*', target).outerHeight())
+		} else {
+			target.removeAttr('style');
+		}
+		return false;
+	})
+}());
+
+(function () {
 	var len = 6 * 3;
 
 	var smiles_phs_obj = $($('#smiles_phs').html());

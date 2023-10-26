@@ -602,18 +602,39 @@
 	width: 200px;
 }
 .index_topics .topics li {
+	padding: 15px 0;
 	font-size: 16px;
 	line-height: 1.5;
 }
-.index_topics .topics li + li {
-	margin-top: 15px;
-	padding-top: 15px;
+.index_topics .topics li + li,
+.index_topics .more_topics li {
 	border-top: 1px solid #D6DEDE;
+}
+.index_topics .topics li a {
+	display: block;
+	text-decoration: none;
+	color: var(--color-base);
 }
 .index_topics .topics li .time {
 	font-size: 2rem;
 	line-height: 1.6;
 	letter-spacing: 0.1em;
+}
+.index_topics .topics li a[href] .title {
+	text-decoration: underline;
+}
+.index_topics .more_topics {
+	position: relative;
+	overflow: hidden;
+	height: 0;
+}
+.init .index_topics .more_topics {
+	transition: height .3s;
+}
+@media (hover) {
+	.index_topics .topics li a[href]:hover .title {
+		text-decoration: none;
+	}
 }
 @media screen and (min-width: 768px), print {
 	.index_topics {
@@ -623,21 +644,21 @@
 		margin-left: auto;
 		margin-right: auto;
 		display: flex;
-		padding: 50px 60px;
+		padding: 35px 60px;
 	}
 	.index_topics header {
 		width: 28.125%;
 		flex-shrink: 0;
 		text-align: center;
-		padding-top: 20px;
+		padding-top: 35px;
 	}
 	.index_topics .more {
 		margin-top: 20px;
 	}
-	.index_topics ul {
+	.index_topics header + * {
 		flex-grow: 1;
 	}
-	.index_topics .topics li {
+	.index_topics .topics li a {
 		display: flex;
 	}
 	.index_topics .topics li .time {
@@ -651,7 +672,6 @@
 		padding: 30px 20px 110px;
 	}
 	.index_topics h2 {
-		margin-bottom: 10px;
 		text-align: center;
 	}
 	.index_topics .more {
@@ -1342,8 +1362,15 @@
 	.index_bnr .large li {
 		width: 350px;
 	}
+	.index_bnr .small {
+		justify-content: center;
+	}
 	.index_bnr .small li {
 		width: 220px;
+		margin-left: 45px;
+	}
+	.index_bnr .small li:first-child {
+		margin-left: 0;
 	}
 	.index_bnr .small a {
 		height: 100%;
@@ -1543,7 +1570,7 @@
 	#footer.has_fix_bnr small {
 		padding-bottom: 100px;
 	}
-	.fix_bnr {
+	.fix_btn + .fix_bnr {
 		padding-right: max(0px, calc((1400px - 100vw) * .6));
 	}
 	.fix_bnr a .more {
@@ -1560,9 +1587,13 @@
 }
 @media screen and (max-width: 767px) {
 	.fix_bnr {
+		right: 60px;
+		left: 60px;
+		bottom: 20px;
+	}
+	.fix_btn + .fix_bnr {
 		right: 130px;
 		left: 20px;
-		bottom: 20px;
 	}
 	.fix_bnr a {
 		justify-content: center;
