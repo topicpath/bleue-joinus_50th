@@ -100,3 +100,31 @@
 	$(window).on('scroll', checkPos);
 	checkPos();
 }());
+
+(function () {
+	var pd = $('#pagedown');
+
+	if(!pd.length) return false;
+
+	var checkPos = function() {
+//		if(isSpW()) return;
+		var s = $(this).scrollTop(),
+			h = $(this).height();
+
+		if(s >= $('.items').offset().top + $('.items').outerHeight() - h - 100) {
+			if(pd.hasClass('show')) pd.removeClass('show');
+		} else {
+			if(!pd.hasClass('show')) pd.addClass('show');
+		}
+	}
+	$(window).on('scroll resize', checkPos);
+	checkPos();
+
+	pd.on('click', function() {
+		var target = $('.items').offset().top + $('.items').outerHeight() - $(window).outerHeight();
+		goScroll('', '', '', target);
+		return false;
+	});
+}());
+
+

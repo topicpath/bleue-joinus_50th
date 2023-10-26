@@ -165,5 +165,7 @@ $categories = [
 
 <?php include_once 'common-foot.php'; ?>
 
+<a href="#" id="pagedown" class="show"></a>
+
 </body>
 </html>

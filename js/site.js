@@ -128,8 +128,8 @@ setTimeout(
 	})
 }());
 
-function goScroll(hash, time, offset) {
-	var target = $(hash).offset().top;
+function goScroll(hash, time, offset, target) {
+	if(!target) target = $(hash).offset().top;
 	if(!time) time = 1000;
 	if(!offset) offset = 0;
 
