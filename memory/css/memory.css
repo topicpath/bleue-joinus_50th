@@ -73,6 +73,10 @@
 	border-radius: 100px;
 	z-index: -1;
 }
+.memory_header .s {
+	margin-top: 0.2em;
+	font-size: 80%;
+}
 @media screen and (min-width: 768px), print {
 }
 @media screen and (max-width: 767px) {
@@ -96,6 +100,10 @@
 	}
 	.memory_header h1 > span + span {
 		margin-top: -10px;
+	}
+	.memory_header .s {
+		margin-top: 0.3em;
+		font-size: 1rem;
 	}
 }
 
@@ -134,14 +142,18 @@
 	text-align: center;
 	color: #fff;
 	font-size: 2.4rem;
-	line-height: 1.5;
+	line-height: 1.3;
+}
+.memory_history_ph figure figcaption strong {
+	display: block;
+	font-size: 3rem;
 }
 .memory_history_ph .arrow {
 	position: absolute;
 	left: auto;
 	right: auto;
-	width: calc(60 * var(--px));
-	height: calc(60 * var(--px));
+	width: calc(50 * var(--px));
+	height: calc(50 * var(--px));
 	border-radius: 100%;
 	background-color: #fff;
 	z-index: 3;
@@ -179,16 +191,16 @@
 		top: calc(470 / 2 * var(--px));
 	}
 	.memory_history_ph .arrow.swiper-button-prev {
-		right: calc(50% + (570 * var(--px)) / 2 - (60 * var(--px)) / 2);
+		right: calc(50% + (570 * var(--px)) / 2 + 4px);
 	}
 	.memory_history_ph .arrow.swiper-button-next {
-		left: calc(50% + (570 * var(--px)) / 2 - (60 * var(--px)) / 2);
+		left: calc(50% + (570 * var(--px)) / 2 + 12px);
 	}
 }
 @media screen and (max-width: 767px) {
 	.memory_history_ph figure .ph {
 		margin: 0 auto;
-		width: calc(255 / 375 * 100vw);
+		width: calc(315 / 375 * 100vw);
 	}
 	.memory_history_ph figure .ph::before {
 		transform: translate(5px, 5px);
@@ -197,21 +209,24 @@
 		margin-top: 20px;
 		text-align: center;
 		color: #fff;
-		font-size: 1.9rem;
+		font-size: 1.8rem;
 		line-height: 1.5;
 	}
-	.memory_history_ph .arrow {
-		width: 48px;
-		height: 48px;
+	.memory_history_ph figure figcaption strong {
+		font-size: 2.4rem;
 	}
 	.memory_history_ph .arrow {
-		top: calc((255 / 375 * 100vw) * (470 / 570) / 2);
+		width: 30px;
+		height: 30px;
+	}
+	.memory_history_ph .arrow {
+		top: calc((315 / 375 * 100vw) * (470 / 570) / 2);
 	}
 	.memory_history_ph .arrow.swiper-button-prev {
-		right: calc(50% + (255 / 375 * 100vw) / 2 - 18px);
+		right: calc(50% + (315 / 375 * 100vw) / 2 - 12px);
 	}
 	.memory_history_ph .arrow.swiper-button-next {
-		left: calc(50% + (255 / 375 * 100vw) / 2 - 18px);
+		left: calc(50% + (315 / 375 * 100vw) / 2 - 12px);
 	}
 }
 
