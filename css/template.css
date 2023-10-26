@@ -1181,6 +1181,15 @@ a .box_btn {
 		opacity: 1;
 		transform: translateY(0);
 	}
+	.mov_show.zoomin {
+		opacity: 0;
+		transform: scale(1.5);
+	}
+	.mov_show.zoomin.showed {
+		transition: transform .5s cubic-bezier(0.34, 1.56, 0.64, 1), opacity .5s linear;
+		opacity: 1;
+		transform: scale(1);
+	}
 	@media screen and (min-width: 768px) {
 		.mov_show.pc_delay1.showed {
 			transition-delay: .1s;

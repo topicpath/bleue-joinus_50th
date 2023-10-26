@@ -65,9 +65,9 @@ setTimeout(
 ============================================================================================================ */
 (function () {
 	var b = $('body');
-	var h = b.hasClass('page-index') ? 400 : 200;
 	var checkPos = function(e) {
 //		if(isSpW()) return;
+		var h = b.hasClass('page-index') ? $(window).height() : 200;
 		var s = $(this).scrollTop();
 		if(s < h) {
 			if(b.hasClass('head-min')) {

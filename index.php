@@ -34,9 +34,14 @@ include_once 'common-meta.php';
 			<source media="screen and (max-width: 767px)" srcset="images/index/main_txt_sp.svg">
 			<img src="images/index/main_txt.svg" alt="おかげさまで、JOINUSは今年50周年" width="464" height="100">
 		</picture></p>
+
+		<p class="scroll"><a href="#contents" class="ff_din">SCROLL DOWN</a></p>
+
+		<div class="j_images" id="main_j"></div>
 	</div><!-- /.index_main -->
 
-	<section class="index_topics">
+	<a id="contents" class="target" tabindex="-1"></a>
+	<section class="index_topics mov_show fadeup">
 		<header class="ff_en">
 			<h2>TOPICS</h2>
 			<p class="more"><a href="#" class="box_btn">View More</a></p>
@@ -65,17 +70,16 @@ $svg_arrow = '<svg xmlns="http://www.w3.org/2000/svg" width="40" height="35" vie
 ?>
 
 	<div class="hanabi_area">
-
 		<section class="index_items">
 			<a href="items-service/">
-				<header>
-					<p class="title_en wide ff_en">Anniversary Limited</p>
-					<h2><img src="images/index/items_en.svg" alt="ANNIVERSARY ITEMS & SERVICE" width="406" height="148" loading="lazy" decoding="async"></h2>
+				<header class="mov_show">
+					<p class="title_en wide ff_en mov_show fadeup">Anniversary Limited</p>
+					<h2 class="mov_show fadeup"><img src="images/index/items_en.svg" alt="ANNIVERSARY ITEMS & SERVICE" width="406" height="148" loading="lazy" decoding="async"></h2>
 				</header>
-				<p class="lead">限定アイテムをはじめ、<br>特別メニューや特典が<br class="sp">盛りだくさん！</p>
-				<p class="check">180のショップが参加！<strong>今すぐCheck！</strong></p>
+				<p class="lead mov_show fadeup">限定アイテムをはじめ、<br>特別メニューや特典が<br class="sp">盛りだくさん！</p>
+				<p class="check mov_show fadeup">180のショップが参加！<strong>今すぐCheck！</strong></p>
 
-				<div class="items swiper">
+				<div class="items swiper mov_show fadeup">
 					<ul class="swiper-wrapper">
 						<li class="swiper-slide">
 							<span class="ph"><img src="images/index/items_ph01.jpg" alt="" width="440" height="500" loading="lazy" decoding="async"></span>
@@ -152,7 +156,7 @@ $svg_arrow = '<svg xmlns="http://www.w3.org/2000/svg" width="40" height="35" vie
 					</ul>
 				</div><!-- /.items -->
 
-				<p class="all_btn ff_en"><span>View All 180 Shops  <?php echo $svg_arrow; ?></span></p>
+				<p class="all_btn ff_en mov_show fadeup"><span>View All 180 Shops  <?php echo $svg_arrow; ?></span></p>
 			</a>
 		</section><!-- /.index_items -->
 
@@ -160,32 +164,32 @@ $svg_arrow = '<svg xmlns="http://www.w3.org/2000/svg" width="40" height="35" vie
 		<section class="index_zoomin">
 			<a href="zoomin/">
 				<header>
-					<p class="title_en ff_en">Staff Interview</p>
-					<h2><img src="images/index/zoomin_en.png" alt="Zoom in!" width="365" height="144" loading="lazy" decoding="async"></h2>
+					<p class="title_en ff_en mov_show fadeup">Staff Interview</p>
+					<h2 class="mov_show zoomin"><img src="images/index/zoomin_en.png" alt="Zoom in!" width="365" height="144" loading="lazy" decoding="async"></h2>
 				</header>
-				<p class="lead">ジョイナスのショップ<br>スタッフにズームイン！</p>
-				<p>ジョイナスの各店舗で活躍する<br>6名のスタッフにインタビュー！<br>仕事への思いから趣味まで、<br class="sp">素顔に迫ります。</p>
-				<p class="all_btn ff_en"><span>View All <?php echo $svg_arrow; ?></span></p>
+				<p class="lead mov_show fadeup">ジョイナスのショップ<br>スタッフにズームイン！</p>
+				<p class="mov_show fadeup">ジョイナスの各店舗で活躍する<br>6名のスタッフにインタビュー！<br>仕事への思いから趣味まで、<br class="sp">素顔に迫ります。</p>
+				<p class="all_btn ff_en  mov_show fadeup"><span>View All <?php echo $svg_arrow; ?></span></p>
 
-				<div class="ph01"><img src="images/index/zoomin_ph01.jpg" alt="" width="230" height="310" loading="lazy" decoding="async"><img src="images/index/zoomin_ph01_sub.png" alt="" width="100" height="200" class="sub" loading="lazy" decoding="async"></div>
-				<div class="ph02"><img src="images/index/zoomin_ph02.jpg" alt="" width="230" height="310" loading="lazy" decoding="async"><img src="images/index/zoomin_ph02_sub.png" alt="" width="100" height="150" class="sub" loading="lazy" decoding="async"></div>
+				<div class="ph01 mov_show fadeup"><img src="images/index/zoomin_ph01.jpg" alt="" width="230" height="310" loading="lazy" decoding="async"><img src="images/index/zoomin_ph01_sub.png" alt="" width="100" height="200" class="sub" loading="lazy" decoding="async"></div>
+				<div class="ph02 mov_show fadeup"><img src="images/index/zoomin_ph02.jpg" alt="" width="230" height="310" loading="lazy" decoding="async"><img src="images/index/zoomin_ph02_sub.png" alt="" width="100" height="150" class="sub" loading="lazy" decoding="async"></div>
 			</a>
 		</section><!-- /.index_zoomin -->
 
 	</div><!-- /.hanabi_area -->
 
 
-	<section class="index_smiles">
+	<section class="index_smiles mov_show">
 		<a href="smiles/">
-			<div class="ph_loop"></div>
+			<div class="ph_loop mov_show fadeup"></div>
 			<header>
-				<p class="title_en ff_en">Let's Celebration</p>
-				<h2><img src="smiles/images/head_en.svg" alt="SMILES" width="524" height="134" loading="lazy" decoding="async"></h2>
+				<p class="title_en ff_en mov_show fadeup">Let's Celebration</p>
+				<h2 class="mov_show fadeup"><img src="smiles/images/head_en.svg" alt="SMILES" width="524" height="134" loading="lazy" decoding="async"></h2>
 			</header>
-			<p class="lead">アニバーサリーを祝して<br>いつもの笑顔を未来へ</p>
-			<div class="ph_loop"></div>
-			<p>「<span class="num">50</span>周年おめでとう！」の声を寄せに<br>集まった、スタッフたち。<br>そのはじける<span class="num">50</span>名の笑顔を笑顔を<br class="sp">お届けします。</p>
-			<p class="all_btn ff_en"><span>View All <?php echo $svg_arrow; ?></span></p>
+			<p class="lead mov_show fadeup">アニバーサリーを祝して<br>いつもの笑顔を未来へ</p>
+			<div class="ph_loop mov_show fadeup"></div>
+			<p class="mov_show fadeup">「<span class="num">50</span>周年おめでとう！」の声を寄せに<br>集まった、スタッフたち。<br>そのはじける<span class="num">50</span>名の笑顔を笑顔を<br class="sp">お届けします。</p>
+			<p class="all_btn ff_en mov_show fadeup"><span>View All <?php echo $svg_arrow; ?></span></p>
 
 			<div class="ph_bg ph01"></div>
 			<div class="ph_bg ph02"></div>
@@ -204,7 +208,7 @@ foreach ($phs as $ph) {
 
 
 	<section class="index_memory">
-		<a href="memory/">
+		<a href="memory/" class="mov_show fadeup">
 			<h2><span><img src="memory/images/logo.svg" alt="#JOINUS" width="198" height="34" loading="lazy" decoding="async">の思い出</span><span>教えてください</span></h2>
 			<p>「相鉄 公式」Twitterアカウントで<br class="sp">実施した<br class="pc">「#JOINUSの思い出教え<br class="sp">てください」投稿募集企画に、<br>おかげさまで多くの思い出が<br class="sp">寄せられました。<br>そんな皆さまの思い出を<br class="sp">紹介します。</p>
 			<p class="more box_btn ff_en">View More</p>
@@ -218,17 +222,17 @@ foreach ($phs as $ph) {
 
 	<div class="index_bnr hv_op">
 		<ul class="large">
-			<li><a href="#"><img src="images/index/bnr_point.png" alt="JOINUSポイント5倍！" width="700" height="960" loading="lazy" decoding="async"></a></li>
-			<li><a href="premium-okaimono/"><img src="images/index/bnr_premium.png" alt="プレミアムお買物券 5,000円が6,000円分のお買物券・お食事券に！" width="700" height="960" loading="lazy" decoding="async"></a></li>
+			<li class="mov_show fadeup"><a href="#"><img src="images/index/bnr_point.png" alt="JOINUSポイント5倍！" width="700" height="960" loading="lazy" decoding="async"></a></li>
+			<li class="mov_show fadeup"><a href="premium-okaimono/"><img src="images/index/bnr_premium.png" alt="プレミアムお買物券 5,000円が6,000円分のお買物券・お食事券に！" width="700" height="960" loading="lazy" decoding="async"></a></li>
 		</ul>
 		<ul class="small">
-			<li><a href="#">
+			<li class="mov_show fadeup"><a href="#">
 				<picture>
 					<source media="screen and (max-width: 767px)" srcset="images/index/bnr_onlyone_sp.png">
 					<img src="images/index/bnr_onlyone.png" alt="廃材を使って作ろう！世界にひとつだけのJちゃん" width="440" height="540" loading="lazy" decoding="async">
 				</picture>
 			</a></li>
-			<li><a href="#">
+			<li class="mov_show fadeup"><a href="#">
 				<picture>
 					<source media="screen and (max-width: 767px)" srcset="images/index/bnr_sdgs_sp.png">
 					<img src="images/index/bnr_sdgs.png" alt="" width="440" height="260" loading="lazy" decoding="async">
@@ -238,7 +242,7 @@ foreach ($phs as $ph) {
 					<dd>テキストテキストテキストテキストテキスト</dd>
 				</dl>
 			</a></li>
-			<li><a href="#">
+			<li class="mov_show fadeup"><a href="#">
 				<picture>
 					<source media="screen and (max-width: 767px)" srcset="images/index/bnr_sdgs_sp.png">
 					<img src="images/index/bnr_sdgs.png" alt="" width="440" height="260" loading="lazy" decoding="async">
@@ -249,6 +253,7 @@ foreach ($phs as $ph) {
 				</dl>
 			</a></li>
 		</ul>
+		<div class="j_images" id="bnr_j"></div>
 	</div><!-- /.index_bnr -->
 
 <?php include_once 'common-foot.php'; ?>
