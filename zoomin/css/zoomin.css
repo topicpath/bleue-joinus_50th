@@ -537,7 +537,7 @@
 	.zoomin_article.zoomin04 .ontime .image {
 		bottom: calc(100% - 10px);
 	}
-	.zoomin_article.zoomin05 .ontime .image {
+	.zoomin_article.zoomin03 .ontime .image {
 		bottom: calc(100% - 10px);
 	}
 	.zoomin_article.zoomin06 .ontime .image {
@@ -706,7 +706,7 @@
 		left: calc(-160 * var(--px));
 		top: calc(-74 * var(--px));
 	}
-	.zoomin_article.zoomin03 .joinus .image {
+	.zoomin_article.zoomin05 .joinus .image {
 		left: calc(-148 * var(--px));
 		top: calc(-290 * var(--px));
 	}
@@ -714,7 +714,7 @@
 		left: calc(-154 * var(--px));
 		top: calc(-190 * var(--px));
 	}
-	.zoomin_article.zoomin05 .joinus .image {
+	.zoomin_article.zoomin03 .joinus .image {
 		left: calc(-128 * var(--px));
 		top: calc(-260 * var(--px));
 	}
@@ -749,7 +749,7 @@
 		left: -5px;
 		top: calc(100% - 80px);
 	}
-	.zoomin_article.zoomin03 .joinus .image {
+	.zoomin_article.zoomin05 .joinus .image {
 		left: -15px;
 		top: calc(100% - 80px);
 	}
@@ -757,7 +757,7 @@
 		left: -25px;
 		top: calc(100% - 100px);
 	}
-	.zoomin_article.zoomin05 .joinus .image {
+	.zoomin_article.zoomin03 .joinus .image {
 		left: -25px;
 		top: calc(100% - 100px);
 	}
@@ -882,6 +882,9 @@
 	.zoomin_article .information .contents .main {
 		width: calc(520 * var(--px));
 		padding-top: calc(30 * var(--px));
+	}
+	.zoomin_article .information .contents .name a {
+		margin-left: 0.7em;
 	}
 }
 @media screen and (max-width: 767px) {

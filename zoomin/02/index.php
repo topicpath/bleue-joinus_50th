@@ -53,7 +53,7 @@ include_once 'common-meta.php';
 
 
 			<div class="article_lead mov_show fadeup">
-				<p class="lead">「 ジョイナスでの<br class="sp">バイトが人生を変えた 」</p>
+				<p class="lead">ジョイナスでの<br class="sp">バイトが人生を変えた</p>
 				<p>阿部さんは、ジョイナス店での<br class="sp">アルバイトが<br class="pc">きっかけで<br class="sp">飲食業界へ進んだといいます。</p>
 			</div><!-- /.article_lead -->
 
@@ -66,7 +66,7 @@ include_once 'common-meta.php';
 				<dl class="qa_block mov_show fadeup">
 					<dt>お仕事の中で嬉しかったことは？</dt>
 					<dd><span class="strong">「戻ってきてくれてありがとう」</span><span class="strong">「前もお店にいましたよね」の声</span>
-						学生時代にジョイナス店でアルバイトを始め、そのまま社員に。施設の改装とともに一度は閉店しましたが、2022年にカムバックしました！私の顔を覚えてくださっていたお客様もいらして、感無量です。
+						学生時代にジョイナス店でアルバイトを始め、そのまま社員に。施設の改装とともに一度は閉店しましたが、2022年にカムバックしました！私の顔を覚えていてくださったお客様もいらして、感無量です。
 					</dd>
 				</dl><!-- /.qa_block -->
 
@@ -95,7 +95,7 @@ include_once 'common-meta.php';
 							<dl class="qa_block">
 								<dt>休日の過ごし方は？</dt>
 								<dd><span class="strong">愛娘とデート</span>
-									娘と遊んでいることが多いです！自転車の練習をしたり、人形で遊んだり。かわいくて仕方ないですね（笑）。家族との時間を少しでも多く作れるように心がけています。
+									娘と遊んでいることが多いです！自転車の練習をしたり、人形で遊んだり。かわいくて仕方ないですね（笑）。家族との時間を少しでも多くつくれるように心がけています。
 								</dd>
 							</dl><!-- /.qa_block -->
 							<p class="ph"><img src="images/offtime02.jpg" alt="" width="736" height="736" loading="lazy" decoding="async"></p>
@@ -108,7 +108,7 @@ include_once 'common-meta.php';
 
 
 			<section class="joinus w">
-				<h2 class="ff_din mov_show fadeup"><span>JOINUS /</span> YOKOHAMA</h2>
+				<h2 class="ff_din mov_show fadeup">YOKOHAMA</h2>
 
 				<div class="contents">
 					<dl class="qa_block mov_show fadeup">
@@ -129,8 +129,8 @@ include_once 'common-meta.php';
 					<p class="ph"><img src="images/shop_ph.jpg" alt="しゃぶせん" width="754" height="590" loading="lazy" decoding="async"></p>
 					<div class="main">
 						<p class="logo"><img src="images/shop_logo.svg" alt="しゃぶせん" width="400" height="80" loading="lazy" decoding="async"></p><!-- /.logo -->
-						<p class="name">しゃぶせん / B2</p>
-						<p>2022年8月再オープン。全席でひとりから鍋を楽しめるしゃぶしゃぶ専門店です。豚、国産牛、黒毛和牛が選べるお肉はもちろん、野菜もたっぷりセットに。スタッフがあく取りや出汁の追加をしますので、気軽にお声がけください。</p>
+						<p class="name">しゃぶせん / B2 <br class="sp"><a href="https://www.sotetsu-joinus.com/shop/shop_1517#floorMap" target="_blank" class="map">MAP</a></p>
+						<p>2022年8月再オープン。全席でひとりから鍋を楽しめるしゃぶしゃぶ専門店です。豚、国産牛、黒毛和牛が選べるお肉はもちろん、野菜もたっぷりセットに。スタッフがあく取りや出汁の追加をしますので、お気軽にお声がけください。</p>
 					</div><!-- /.main -->
 				</div><!-- /.contents -->
 			</section><!-- /.joinus -->

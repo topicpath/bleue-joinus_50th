@@ -53,7 +53,7 @@ include_once 'common-meta.php';
 
 
 			<div class="article_lead mov_show fadeup">
-				<p class="lead">「 私に会いたい！<br class="sp">と思われる接客を 」</p>
+				<p class="lead">私に会いたい！<br class="sp">と思われる接客を</p>
 				<p>ブランドのファンになって<br class="sp">もらえるよう<br class="pc">お礼状を欠かさない、<br class="sp">マメさも魅力の鈴木さん。</p>
 			</div><!-- /.article_lead -->
 
@@ -65,8 +65,8 @@ include_once 'common-meta.php';
 				</picture></h2>
 				<dl class="qa_block mov_show fadeup">
 					<dt>あなたにとってジョイナスとは？</dt>
-					<dd><span class="strong">子どもの頃から縁があり</span><span class="strong">たくさんの幸せをくれる場所。</span>
-						ジョイナスは昔家族でごはんを食べにきていた、思い出の場所。ここで働くことになり、さらにたくさんの縁を感じています。「選んでもらったコーデが気に入って」と再来店してくださった方が印象に残っています。
+					<dd><span class="strong">子どもの頃から縁があり</span><span class="strong">たくさんの幸せをくれる場所</span>
+						ジョイナスは昔家族でごはんを食べに来ていた、思い出の場所。ここで働くことになり、さらにたくさんの縁を感じています。「選んでもらったコーデが気に入って」と通ってくださる方もいて、毎日が充実しています！
 					</dd>
 				</dl><!-- /.qa_block -->
 
@@ -85,7 +85,7 @@ include_once 'common-meta.php';
 						<div class="item mov_show fadeup swiper-slide">
 							<dl class="qa_block">
 								<dt>休日の過ごし方は？</dt>
-								<dd><span class="strong">友人家族とおしゃべり</span>
+								<dd><span class="strong">友人や家族とおしゃべり</span>
 									同級生や家族とお茶や食事をしながら、ひたすらおしゃべりを楽しみます。内容は他愛ないことばかりですが、大切な人たちとの時間は何よりのエネルギーチャージになります。
 								</dd>
 							</dl><!-- /.qa_block -->
@@ -108,12 +108,12 @@ include_once 'common-meta.php';
 
 
 			<section class="joinus w">
-				<h2 class="ff_din mov_show fadeup"><span>JOINUS /</span> YOKOHAMA</h2>
+				<h2 class="ff_din mov_show fadeup">YOKOHAMA</h2>
 
 				<div class="contents">
 					<dl class="qa_block mov_show fadeup">
 						<dt>横浜のお気に入りコースは？</dt>
-						<dd>気分のおもむくままに「横浜ベイクォーター」から「みなとみらい」、大桟橋あたりまでお散歩。イヤホンでお気に入りのK-POPなどを聴きながら、ノープランでテクテクと歩きます。</dd>
+						<dd>気分のおもむくままに「横浜ベイクォーター」から「みなとみらい」や「大さん橋」あたりまでお散歩。イヤホンでお気に入りのK-POPなどを聴きながら、ノープランでテクテクと歩きます。</dd>
 					</dl><!-- /.qa_block -->
 					<p class="ph mov_show fadeup"><img src="images/joinus_ph.jpg" alt="" width="754" height="590" loading="lazy" decoding="async"></p>
 				</div><!-- /.contents -->
@@ -129,7 +129,7 @@ include_once 'common-meta.php';
 					<p class="ph"><img src="images/shop_ph.jpg" alt="ココディール" width="754" height="590" loading="lazy" decoding="async"></p>
 					<div class="main">
 						<p class="logo"><img src="images/shop_logo.svg" alt="ココディール" width="400" height="60" loading="lazy" decoding="async"></p><!-- /.logo -->
-						<p class="name">ココディール / B1</p>
+						<p class="name">ココディール / B1 <br class="sp"><a href="https://www.sotetsu-joinus.com/shop/shop_498#floorMap" target="_blank" class="map">MAP</a></p>
 						<p>フェミニンとカジュアル、ベーシックとトレンドを程よくMIXしたレディースブランド。フリルやフラワープリントだけでなく、シンプルながら着用時にスタイルアップして見える洋服が自慢です。ぜひ試着で縫製やラインの違いを感じてください。</p>
 					</div><!-- /.main -->
 				</div><!-- /.contents -->

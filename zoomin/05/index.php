@@ -1,6 +1,6 @@
 <?php
 // タイトル・ディスクリプション
-$page_title = ['ヒステリックグラマー 三堀さん', 'Staff Interview Zoom in!'];
+$page_title = ['ルートート ギャラリー 児平さん', 'Staff Interview Zoom in!'];
 $page_description = '';
 
 // ページカテゴリ
@@ -21,7 +21,7 @@ $topicpath = [
 		'href' => '/zoomin/',
 	],
 	[
-		'name' => '05. ヒステリックグラマー 三堀さん',
+		'name' => '05. ルートート ギャラリー 児平さん',
 		'href' => $canonical_url,
 	],
 ];
@@ -42,20 +42,19 @@ include_once 'common-meta.php';
 			<header class="article_header mov_header mov_first">
 				<picture class="ph">
 					<source media="screen and (max-width: 767px)" srcset="images/main_sq.jpg">
-					<img src="images/main.jpg" alt="ヒステリックグラマー 三堀さん" width="1240" height="617">
+					<img src="images/main.jpg" alt="ルートート ギャラリー 児平さん" width="1240" height="617">
 				</picture>
 				<p class="num"><img src="images/number.svg" alt="05" width="180" height="110" loading="lazy" decoding="async"></p>
 				<div class="box">
-					<h1><span class="shop">ヒステリックグラマー</span> <span class="name">三堀</span>さん</h1>
+					<h1><span class="shop">ルートート ギャラリー</span> <span class="name">児平</span>さん</h1>
 					<p class="history">ジョイナス歴5年</p>
-					<p class="insta hv_op"><a href="#" target="_blank"><img src="../../images/ico-insta.png" alt="instagram" width="72" height="72"></a></p>
 				</div><!-- /.box -->
 			</header><!-- /.article_header -->
 
 
 			<div class="article_lead mov_show fadeup">
-				<p class="lead">「 SNSで<br class="sp">スタイルを発信！ 」</p>
-				<p>ブランドと自分の世界観を<br class="sp">SNSで表現する三堀さん。<br>フォロワーの反応が<br class="sp">モチベーションになるそう。</p>
+				<p class="lead">気配りを忘れない</p>
+				<p>元気な笑顔がトレードマークの<br class="sp">児平さん。<br class="pc">親近感ある接客の<br class="sp">中にも、心がけていることが。</p>
 			</div><!-- /.article_lead -->
 
 
@@ -65,9 +64,9 @@ include_once 'common-meta.php';
 					<img src="../images/ontime.svg" alt="ZOOM IN! ON TIME" width="274" height="260" loading="lazy" decoding="async">
 				</picture></h2>
 				<dl class="qa_block mov_show fadeup">
-					<dt>仕事の面白さは？</dt>
-					<dd><span class="strong">お客様と一緒にファッションや</span><span class="strong">カルチャーを楽しむこと。</span>
-						僕自身、ロックの文化が背景にある洋服が好き。「ヒステリック グラマー」のかっこよさを体現し、共感してもらえたら嬉しいです。「インスタグラムを見ました」「同じアイテムが欲しいです」と、来店につながった時はやはり嬉しいですね。
+					<dt>仕事でやりがいを感じるのはどんな時？</dt>
+					<dd><span class="strong">「あなたに接客してもらえて</span><span class="strong">よかった」と言われたこと</span>
+						「接客をされるのが苦手」な方っていますよね。実は私もなんです。おひとりで色々と見ていらっしゃる時は、不要にお声がけをしないのも配慮。でも、ちょっとした気配りで打ち解けてくださる瞬間がうれしいです。
 					</dd>
 				</dl><!-- /.qa_block -->
 
@@ -85,9 +84,9 @@ include_once 'common-meta.php';
 					<div class="swiper-wrapper">
 						<div class="item mov_show fadeup swiper-slide">
 							<dl class="qa_block">
-								<dt>最近ハマっているものは？</dt>
-								<dd><span class="strong">ヴィンテージデニム</span>
-									これは1960年代の「リーバイス BIG E」です。ファッションについて色々と調べていくと、デニムに辿り着くんです。4年前ぐらいからハマりだし、知識は仕事にも役立っています。
+								<dt>最近ハマっていることは？</dt>
+								<dd><span class="strong">推しキャラの刺繍</span>
+									大好きなスヌーピー（PEANUTS）。<br>グッズ収集では飽き足らず、オリジナル作品をつくっています！こちらは「ルートート」のエコ素材のトートに自ら刺繍をしました！
 								</dd>
 							</dl><!-- /.qa_block -->
 							<p class="ph"><img src="images/offtime01.jpg" alt="" width="736" height="736" loading="lazy" decoding="async"></p>
@@ -95,8 +94,8 @@ include_once 'common-meta.php';
 						<div class="item mov_show fadeup reverse swiper-slide">
 							<dl class="qa_block">
 								<dt>休日の過ごし方は？</dt>
-								<dd><span class="strong">ギター演奏と古着屋巡り</span>
-									以前バンドをやっていたこともあり、部屋でギターを触ることが多いです。好きなジャンルはラウドロック系！あとは古着屋巡りですね。デニムやロックTシャツに目がありません。
+								<dd><span class="strong">子どもと野毛山動物園へ</span>
+									子どもと遊びに行く場所がネタ切れしたら、ここへ！入場無料なのにライオンやレッサーパンダ、は虫類など見どころがたくさん。お散歩できる公園も併設しているのがGoodですね。
 								</dd>
 							</dl><!-- /.qa_block -->
 							<p class="ph"><img src="images/offtime02.jpg" alt="" width="736" height="736" loading="lazy" decoding="async"></p>
@@ -109,12 +108,12 @@ include_once 'common-meta.php';
 
 
 			<section class="joinus w">
-				<h2 class="ff_din mov_show fadeup"><span>JOINUS /</span> YOKOHAMA</h2>
+				<h2 class="ff_din mov_show fadeup">YOKOHAMA</h2>
 
 				<div class="contents">
 					<dl class="qa_block mov_show fadeup">
-						<dt>横浜でよく行く場所は？</dt>
-						<dd>新相鉄ビルの1Fにある町中華「中華一 龍王」！ボリューム満点で安いので、ランチに通う頻度は高め。炒め物全般、みそラーメンがおすすめです。こういう町中華や居酒屋が多いのも横浜のいいところ。</dd>
+						<dt>横浜のおすすめ情報は？</dt>
+						<dd>夏休みは子どもと一緒に「金沢動物園」のナイトズーへ出かけるのが毎年恒例。日が暮れて涼しくなると、ゾウやキリンも動きが活発になって、いつもと違う表情が見られますよ。</dd>
 					</dl><!-- /.qa_block -->
 					<p class="ph mov_show fadeup"><img src="images/joinus_ph.jpg" alt="" width="754" height="590" loading="lazy" decoding="async"></p>
 				</div><!-- /.contents -->
@@ -127,12 +126,11 @@ include_once 'common-meta.php';
 				<h2><span><img src="../images/information.svg" alt="SHOP INFORMATION" width="250" height="30" loading="lazy" decoding="async"></span></h2>
 
 				<div class="contents">
-					<p class="ph"><img src="images/shop_ph.jpg" alt="ヒステリック グラマー" width="754" height="590" loading="lazy" decoding="async"></p>
+					<p class="ph"><img src="images/shop_ph.jpg" alt="ルートート ギャラリー" width="754" height="590" loading="lazy" decoding="async"></p>
 					<div class="main">
-						<p class="logo"><img src="images/shop_logo.svg" alt="ヒステリック グラマー" width="400" height="40" loading="lazy" decoding="async"></p><!-- /.logo -->
-						<p class="name">ヒステリック グラマー / 1F</p>
-						<p>デニムやミリタリーテイストを中心としたアメカジをお探しなら。ロックやヒッピー、グランジなど、カルチャーのエッセンスも遊び心をくすぐります。店舗は駅直結で間口が広く、好アクセス。アットホームな空間にぜひ遊びに来てください。</p>
-						<p class="more_btn"><a href="" target="_blank"><span>三堀さんのInstagramをCHECK！</span></a></p>
+						<p class="logo"><img src="images/shop_logo.png" alt="ルートート ギャラリー" width="400" height="60" loading="lazy" decoding="async"></p><!-- /.logo -->
+						<p class="name">ルートート ギャラリー / 1F <br class="sp"><a href="https://www.sotetsu-joinus.com/shop/shop_277#floorMap" target="_blank" class="map">MAP</a></p>
+						<p>1F通路に、2023年8月リニューアルオープン。<br>「Fun Outing!～楽しいお出かけ！～」を届けるトートバッグ専門ブランド「ROOTOTE」のオフィシャルショップ。店頭アイテム以外もバックからストックをお持ちしますので、お気軽にお声がけください。</p>
 					</div><!-- /.main -->
 				</div><!-- /.contents -->
 			</section><!-- /.joinus -->

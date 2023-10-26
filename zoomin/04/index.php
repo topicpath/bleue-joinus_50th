@@ -53,7 +53,7 @@ include_once 'common-meta.php';
 
 
 			<div class="article_lead mov_show fadeup">
-				<p class="lead">「 接客から生まれる<br class="sp">つながり 」</p>
+				<p class="lead">接客から生まれる<br class="sp">つながり</p>
 				<p>「ご自宅用ですか？<br class="sp">贈り物ですか？」に始まり<br>広がっていく会話の楽しさを<br class="sp">語ってくれました。</p>
 			</div><!-- /.article_lead -->
 
@@ -65,8 +65,8 @@ include_once 'common-meta.php';
 				</picture></h2>
 				<dl class="qa_block mov_show fadeup">
 					<dt>職場の好きなところは？</dt>
-					<dd><span class="strong">お客様も仲間も温かいところ。</span>
-						GODIVAに入社してからジョイナスの店舗ひと筋です！ジョイナスらしく、幅広い層のお客様との出会いに恵まれ、リピーターの方も多くいらっしゃいます。スタッフも温かく、2度の育休の際も笑顔でサポートしてもらえて感謝しかありません。
+					<dd><span class="strong">お客様も仲間も温かいところ</span>
+						「GODIVA」に入社してからジョイナスの店舗ひと筋です！ジョイナスらしく、幅広い層のお客様との出会いに恵まれ、世間話を交わすような方も多くいらっしゃいます。スタッフも温かく、2度の育休の際も笑顔でサポートしてもらえて感謝しかありません。
 					</dd>
 				</dl><!-- /.qa_block -->
 
@@ -95,7 +95,7 @@ include_once 'common-meta.php';
 							<dl class="qa_block">
 								<dt>自分なりの息抜き法は？</dt>
 								<dd><span class="strong">やっぱりチョコがご褒美</span>
-									学生時代から大のスイーツ好きは変わらず。家にはコンビニ菓子からDODIVAまで、何がしか常備しています。息子に気づかれないよう、素早く口に運ぶのがポイントです（笑）
+									学生時代から大のスイーツ好きは変わらず。家にはコンビニ菓子から「GODIVA」まで、何かしら常備しています。息子に気づかれないよう、素早く口に運ぶのがポイントです（笑）
 								</dd>
 							</dl><!-- /.qa_block -->
 							<p class="ph"><img src="images/offtime02.jpg" alt="" width="736" height="736" loading="lazy" decoding="async"></p>
@@ -108,12 +108,12 @@ include_once 'common-meta.php';
 
 
 			<section class="joinus w">
-				<h2 class="ff_din mov_show fadeup"><span>JOINUS /</span> YOKOHAMA</h2>
+				<h2 class="ff_din mov_show fadeup">JOINUS</h2>
 
 				<div class="contents">
 					<dl class="qa_block mov_show fadeup">
 						<dt>ジョイナスでよく行く場所は？</dt>
-						<dd>ジョイナス彫刻の森公園。ジョイナスに、緑豊かな屋上庭園があるって知っていましたか？ベンチやちょっとした遊歩道があり、横浜駅の上とは信じられないほど閑静です。休憩時間に訪れることが多いですね。</dd>
+						<dd>ジョイナスの森彫刻公園。ジョイナスに、緑豊かな屋上庭園があるって知っていましたか？ベンチやちょっとした遊歩道があり、横浜駅の上とは信じられないほど閑静です。休憩時間に訪れることが多いですね。</dd>
 					</dl><!-- /.qa_block -->
 					<p class="ph mov_show fadeup"><img src="images/joinus_ph.jpg" alt="" width="754" height="590" loading="lazy" decoding="async"></p>
 				</div><!-- /.contents -->
@@ -129,8 +129,8 @@ include_once 'common-meta.php';
 					<p class="ph"><img src="images/shop_ph.jpg" alt="ゴディバ" width="754" height="590" loading="lazy" decoding="async"></p>
 					<div class="main">
 						<p class="logo"><img src="images/shop_logo.svg" alt="ゴディバ" width="400" height="104" loading="lazy" decoding="async"></p><!-- /.logo -->
-						<p class="name">ゴディバ / 1F</p>
-						<p>チョコや焼き菓子はもちろん、オーダーを受けてから作るチョコレートドリンク「ショコリキサー」もご用意。また、次々と登場する期間限定の「マンスリー シェフズ セレクション」もお見逃しなく。他ブランドとのコラボ商品もお目見えします。</p>
+						<p class="name">ゴディバ / 1F <br class="sp"><a href="https://www.sotetsu-joinus.com/shop/shop_280#floorMap" target="_blank" class="map">MAP</a></p>
+						<p>チョコや焼き菓子はもちろん、オーダーを受けてからつくるチョコレートドリンク「ショコリキサー」もご用意。また、次々と登場する期間限定の「マンスリー シェフズ セレクション」もお見逃しなく。他ブランドとのコラボ商品もお目見えします。</p>
 					</div><!-- /.main -->
 				</div><!-- /.contents -->
 			</section><!-- /.joinus -->

@@ -47,13 +47,13 @@ include_once 'common-meta.php';
 				<p class="num"><img src="images/number.svg" alt="06" width="180" height="110" loading="lazy" decoding="async"></p>
 				<div class="box">
 					<h1><span class="shop">ザ・コスメティックテラスタシロ</span> <span class="name">倉野</span>さん</h1>
-					<p class="history">ジョイナス歴23年</p>
+					<p class="history">ジョイナス歴21年</p>
 				</div><!-- /.box -->
 			</header><!-- /.article_header -->
 
 
 			<div class="article_lead mov_show fadeup">
-				<p class="lead">「 お客様とともに<br class="sp">楽しむ 」</p>
+				<p class="lead">お客様とともに<br class="sp">楽しむ</p>
 				<p>若い方、年配の方、<br class="sp">幅広い客層と交流できる<br>ジョイナスでの接客を<br class="sp">楽しむ姿が印象的！</p>
 			</div><!-- /.article_lead -->
 
@@ -65,8 +65,8 @@ include_once 'common-meta.php';
 				</picture></h2>
 				<dl class="qa_block mov_show fadeup">
 					<dt>お仕事でのこだわりは？</dt>
-					<dd><span class="strong">フレンドリーな会話の中で</span><span class="strong">お客様と一緒に発見し、学ぶことも。</span>
-						勤続23年。「倉野さんの顔を見ると安心する」と、長く通ってくださる方もいます。多彩なメーカーのコスメを実際に使い比べ、納得して購入いただけるようフレンドリーな接客を心がけています。
+					<dd><span class="strong">フレンドリーな会話の中で</span><span class="strong">お客様と一緒に発見し、学ぶことも</span>
+						勤続21年。「倉野さんの顔を見ると安心する」と、長く通ってくださる方もいます。多彩なメーカーのコスメを実際に使い比べ、納得して購入いただけるようフレンドリーな接客を心がけています。
 					</dd>
 				</dl><!-- /.qa_block -->
 
@@ -108,12 +108,12 @@ include_once 'common-meta.php';
 
 
 			<section class="joinus w">
-				<h2 class="ff_din mov_show fadeup"><span>JOINUS /</span> YOKOHAMA</h2>
+				<h2 class="ff_din mov_show fadeup">JOINUS</h2>
 
 				<div class="contents">
 					<dl class="qa_block mov_show fadeup">
 						<dt>ジョイナスでよく行くのは？</dt>
-						<dd>無印良品の食品コーナー。出退勤時に入りやすい立地なので、よく立ち寄ります。カーレーやミートソースのようなレトルト食品も重宝するし、小腹用にいつも買うのはバウムクーヘン。お気に入りはバナナ味です！</dd>
+						<dd>「無印良品」の食品コーナー。出退勤時に入りやすい立地なので、よく立ち寄ります。カレーやミートソースのようなレトルト食品も重宝するし、小腹がすいた時にいつも買うのはバウムクーヘン。お気に入りはバナナ味です！</dd>
 					</dl><!-- /.qa_block -->
 					<p class="ph mov_show fadeup"><img src="images/joinus_ph.jpg" alt="" width="754" height="590" loading="lazy" decoding="async"></p>
 				</div><!-- /.contents -->
@@ -129,8 +129,8 @@ include_once 'common-meta.php';
 					<p class="ph"><img src="images/shop_ph.jpg" alt="ザ・コスメティックテラス タシロ" width="754" height="590" loading="lazy" decoding="async"></p>
 					<div class="main">
 						<p class="logo"><img src="images/shop_logo.svg" alt="ザ・コスメティックテラス タシロ" width="400" height="56" loading="lazy" decoding="async"></p><!-- /.logo -->
-						<p class="name">ザ・コスメティックテラス タシロ / B1</p>
-						<p>国内ブランドを中心に、デパコスからプチプラまでを一堂に扱うコスメセレクトショップです。幅広い層の人が入りやすい雰囲気を心がけ、さまざまなアイテム自由にお試しいただけます。カウンセリングや肌診断も気軽にお声がけください。</p>
+						<p class="name">ザ・コスメティックテラス タシロ / B1 <br class="sp"><a href="https://www.sotetsu-joinus.com/shop/shop_507#floorMap" target="_blank" class="map">MAP</a></p>
+						<p>国内ブランドを中心に、デパコスからプチプラまでを一堂に扱うコスメセレクトショップです。幅広い層の人が入りやすい雰囲気を心がけ、さまざまなアイテムを自由にお試しいただけます。カウンセリングや肌診断もお気軽にお声がけください。</p>
 					</div><!-- /.main -->
 				</div><!-- /.contents -->
 			</section><!-- /.joinus -->
