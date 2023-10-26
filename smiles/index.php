@@ -35,7 +35,7 @@ include_once 'common-meta.php';
 	<section>
 		<header class="smiles_header mov_header mov_first">
 			<h1>アニバーサリーを祝して<br class="sp">いつもの笑顔を未来へ</h1>
-			<p>「<span class="num">50</span>周年おめでとう！」の声を寄せに<br>集まった、スタッフたち。<br>そのはじける<span class="num">50</span>名の笑顔を笑顔をお届けします。</p>
+			<p>「<span class="num">50</span>周年おめでとう！」の声を寄せに<br>集まったスタッフたち。<br><span class="num">50</span>名のはじける笑顔をお届けします。</p>
 			<p class="bg_en"><img src="images/head_en.svg" alt="SMILES" width="524" height="134"></p>
 			<div class="hanabi hanabi1 pc"><img src="images/head_hanabi01.png" alt="" width="400" height="400"></div>
 			<div class="hanabi hanabi2 pc"><img src="images/head_hanabi02.png" alt="" width="540" height="540"></div>
@@ -47,12 +47,12 @@ include_once 'common-meta.php';
 <?php
 $datas = [
 	[
-		'img' => '001.jpg',
+		'img' => '002.jpg',
 		'shop' => 'アインズ＆トルペ',
 		'floor' => '3F',
 	],
 	[
-		'img' => '002.jpg',
+		'img' => '001.jpg',
 		'shop' => 'アインズ＆トルペ',
 		'floor' => '3F',
 	],
@@ -64,30 +64,30 @@ $datas = [
 	],
 	[
 		'img' => '005.jpg',
-		'shop' => 'ウサギオンラインストア',
+		'shop' => 'ウサギ オンライン ストア',
 		'floor' => '3F',
 		'name' => ['村山'],
 	],
 	[
 		'img' => '006.jpg',
-		'shop' => 'ウサギオンラインストア',
+		'shop' => 'ウサギ オンライン ストア',
 		'floor' => '3F',
 	],
 	[
 		'img' => '007.jpg',
-		'shop' => 'ウサギオンラインストア',
+		'shop' => 'ウサギ オンライン ストア',
 		'floor' => '3F',
+	],
+	[
+		'img' => '009.jpg',
+		'shop' => 'エーユー スタイル ヨコハマ',
+		'floor' => '4F',
 	],
 	[
 		'img' => '008.jpg',
 		'shop' => 'エーユー スタイル ヨコハマ',
 		'floor' => '4F',
 		'name' => ['嶋口'],
-	],
-	[
-		'img' => '009.jpg',
-		'shop' => 'エーユー スタイル ヨコハマ',
-		'floor' => '4F',
 	],
 	[
 		'img' => '011.jpg',
@@ -118,12 +118,12 @@ $datas = [
 		'name' => ['みい'],
 	],
 	[
-		'img' => '016.jpg',
+		'img' => '017.jpg',
 		'shop' => '神戸レタス',
 		'floor' => '4F',
 	],
 	[
-		'img' => '017.jpg',
+		'img' => '016.jpg',
 		'shop' => '神戸レタス',
 		'floor' => '4F',
 	],
@@ -191,7 +191,7 @@ $datas = [
 	[
 		'img' => '033.jpg',
 		'shop' => 'トランテアン ソン ドゥ モード',
-		'floor' => '3F',
+		'floor' => 'B1',
 	],
 	[
 		'img' => '034.jpg',
@@ -249,7 +249,6 @@ $datas = [
 		'img' => '047.jpg',
 		'shop' => 'ラコレ',
 		'floor' => '3F',
-		'name' => ['碩'],
 	],
 	[
 		'img' => '049.jpg',
