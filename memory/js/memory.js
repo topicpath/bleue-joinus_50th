@@ -2,6 +2,11 @@
 	const swiper = new Swiper('.swiper', {
 		loop: true,
 		centeredSlides: true,
+		autoplay: {
+			delay: 2500,
+			disableOnInteraction: false
+		},
+		speed: 800,
 		breakpoints: {
 			768: {
 				slidesPerView: 'auto',
