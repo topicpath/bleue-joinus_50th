@@ -23,6 +23,7 @@
 			setTimeout(function() {
 				$('#opening').addClass('hide');
 				setTimeout(function() {
+					$('#opening').remove();
 					$('body').removeClass('has_opening');
 					showingMain();
 				}, 500);

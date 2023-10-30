@@ -173,7 +173,7 @@ $svg_arrow = '<svg xmlns="http://www.w3.org/2000/svg" width="40" height="35" vie
 					</ul>
 				</div><!-- /.items -->
 
-				<p class="all_btn ff_en mov_show fadeup"><span>View All 180 Shops  <?php echo $svg_arrow; ?></span></p>
+				<p class="all_btn ff_en"><span>View All 180 Shops  <?php echo $svg_arrow; ?></span></p>
 			</a>
 		</section><!-- /.index_items -->
 
@@ -186,10 +186,10 @@ $svg_arrow = '<svg xmlns="http://www.w3.org/2000/svg" width="40" height="35" vie
 				</header>
 				<p class="lead mov_show fadeup">ジョイナスのショップ<br>スタッフにズームイン！</p>
 				<p class="mov_show fadeup">ジョイナスの各店舗で活躍する<br>6名のスタッフにインタビュー！<br>仕事への思いから趣味まで、<br class="sp">素顔に迫ります。</p>
-				<p class="all_btn ff_en  mov_show fadeup"><span>View All <?php echo $svg_arrow; ?></span></p>
+				<p class="all_btn ff_en"><span>View All <?php echo $svg_arrow; ?></span></p>
 
-				<div class="ph01 mov_show fadeup"><img src="images/index/zoomin_ph01.jpg" alt="" width="230" height="310" loading="lazy" decoding="async"><img src="images/index/zoomin_ph01_sub.png" alt="" width="100" height="200" class="sub" loading="lazy" decoding="async"></div>
-				<div class="ph02 mov_show fadeup"><img src="images/index/zoomin_ph02.jpg" alt="" width="230" height="310" loading="lazy" decoding="async"><img src="images/index/zoomin_ph02_sub.png" alt="" width="100" height="150" class="sub" loading="lazy" decoding="async"></div>
+				<div class="ph01 mov_show"><img src="images/index/zoomin_ph01.jpg" alt="" width="230" height="310" class="m" loading="lazy" decoding="async"><img src="images/index/zoomin_ph01_sub.png" alt="" width="100" height="200" class="sub" loading="lazy" decoding="async"></div>
+				<div class="ph02 mov_show"><img src="images/index/zoomin_ph02.jpg" alt="" width="230" height="310" class="m" loading="lazy" decoding="async"><img src="images/index/zoomin_ph02_sub.png" alt="" width="100" height="150" class="sub" loading="lazy" decoding="async"></div>
 			</a>
 		</section><!-- /.index_zoomin -->
 
@@ -206,7 +206,7 @@ $svg_arrow = '<svg xmlns="http://www.w3.org/2000/svg" width="40" height="35" vie
 			<p class="lead mov_show fadeup">アニバーサリーを祝して<br>いつもの笑顔を未来へ</p>
 			<div class="ph_loop mov_show fadeup"></div>
 			<p class="mov_show fadeup">「<span class="num">50</span>周年おめでとう！」の声を寄せに<br>集まった、スタッフたち。<br>そのはじける<span class="num">50</span>名の笑顔を笑顔を<br class="sp">お届けします。</p>
-			<p class="all_btn ff_en mov_show fadeup"><span>View All <?php echo $svg_arrow; ?></span></p>
+			<p class="all_btn ff_en"><span>View All <?php echo $svg_arrow; ?></span></p>
 
 			<div class="ph_bg ph01"></div>
 			<div class="ph_bg ph02"></div>
@@ -227,7 +227,8 @@ foreach ($phs as $ph) {
 	<section class="index_memory">
 		<a href="memory/" class="mov_show fadeup">
 			<h2><span><img src="memory/images/logo.svg" alt="#JOINUS" width="198" height="34" loading="lazy" decoding="async">の思い出</span><span>教えてください</span></h2>
-			<p>「相鉄 公式」Twitterアカウントで<br class="sp">実施した<br class="pc">「#JOINUSの思い出教え<br class="sp">てください」投稿募集企画に、<br>おかげさまで多くの思い出が<br class="sp">寄せられました。<br>そんな皆さまの思い出を<br class="sp">紹介します。</p>
+			<p>「相鉄 公式」X（旧Twitter）に寄せられた<br>皆様からの思い出を<br class="sp">当時の写真とともに紹介します。<br>
+				（「#JOINUSの思い出教えてください」<br class="sp">2023年7月14日～23日実施）</p>
 			<p class="more box_btn ff_en">View More</p>
 			<div class="ph1"><img src="images/index/memory_ph01.jpg" alt="" width="444" height="346" loading="lazy" decoding="async"></div>
 			<div class="ph2"><img src="images/index/memory_ph02.jpg" alt="" width="444" height="346" loading="lazy" decoding="async"></div>

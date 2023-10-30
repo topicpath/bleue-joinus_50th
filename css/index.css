@@ -187,7 +187,7 @@
 	padding: 1px 0;
 	display: inline-block;
 	text-decoration: none;
-	font-size: 14px;
+	font-size: 20px;
 	letter-spacing: 0.05em;
 }
 .index_main .scroll a::after {
@@ -205,7 +205,6 @@
 }
 @media screen and (min-width: 768px), print {
 	.index_main {
-		min-height: 650px;
 		padding-top: 50px;
 	}
 	.index_main .j_images .j01 {
@@ -448,6 +447,35 @@
 	}
 }
 
+/* バナーある場合 */
+@media screen and (min-width: 768px), print {
+	.index_main {
+		padding-top: min(25px, calc(25px - (820px - 100vh)));
+		padding-bottom: clamp(0px, calc((780px - 100vh) * .6), 60px);
+	}
+	.index_main .logo {
+		margin-bottom: clamp(30px, calc(70px - (780px - 100vh) * .2), 70px);
+	}
+	.index_main .scroll {
+		margin-top: clamp(40px, calc(80px - (780px - 100vh) * .2), 80px);
+	}
+}
+@media screen and (max-width: 767px) {
+	.index_main {
+		padding-top: min(40px, calc(40px - (780px - 100vh)));
+		padding-bottom: clamp(0px, calc((740px - 100vh) * .8), 200px);
+	}
+	.j_images {
+		top: min(0px, calc((100vh - 780px) * .6));
+	}
+	.index_main .logo {
+		margin-bottom: clamp(20px, calc(50px - (700px - 100vh) * .2), 50px);
+	}
+	.index_main .scroll {
+		margin-top: clamp(20px, calc(50px - (700px - 100vh) * .2), 50px);
+	}
+}
+
 /* title_en
 ============================================================================================================ */
 .title_en {
@@ -480,7 +508,8 @@
 ============================================================================================================ */
 .all_btn {
 	position: relative;
-	margin-top: 20px;
+	margin-top: 15px;
+	padding: 5px 0;
 	font-size: 22px;
 	line-height: 1.5;
 	letter-spacing: 0.05em;
@@ -535,7 +564,6 @@
 	position: relative;
 	overflow: hidden;
 	padding-top: 200px;
-	padding-bottom: 160px;
 }
 .hanabi_area .hanabi {
 	position: fixed;
@@ -575,7 +603,6 @@
 @media screen and (max-width: 767px) {
 	.hanabi_area {
 		padding-top: 165px;
-		padding-bottom: 150px;
 	}
 	.hanabi_area .hanabi {
 		width: 150px;
@@ -691,7 +718,7 @@
 ============================================================================================================ */
 .index_items {
 	position: relative;
-	margin-bottom: 110px;
+	margin-bottom: 30px;
 	z-index: 3;
 }
 .index_items a {
@@ -831,7 +858,7 @@
 }
 @media screen and (max-width: 767px) {
 	.index_items {
-		margin-bottom: 130px;
+		margin-bottom: 50px;
 	}
 	.index_items header::before {
 		top: -50px;
@@ -867,6 +894,8 @@
 ============================================================================================================ */
 .index_zoomin {
 	position: relative;
+	padding: 80px 0 160px;
+	background-color: rgba(255,255,255,.8);
 	z-index: 4;
 }
 .index_zoomin a {
@@ -895,6 +924,10 @@
 	position: absolute;
 }
 @media screen and (min-width: 768px), print {
+	.index_zoomin {
+		margin: 0 auto;
+		/* max-width: 1200px; */
+	}
 	.index_zoomin a {
 		width: 880px;
 		height: 480px;
@@ -921,6 +954,9 @@
 	}
 }
 @media screen and (max-width: 767px) {
+	.index_zoomin {
+		padding: 80px 0 140px;
+	}
 	.index_zoomin a {
 		padding-top: 70px;
 		padding-bottom: 25px;
@@ -949,6 +985,51 @@
 	.index_zoomin .ph02 {
 		bottom: 0;
 		left: calc(50% + 80px);
+	}
+}
+@media screen {
+	.index_zoomin .ph01 .m {
+		opacity: 0;
+		transform: scale(1.2);
+	}
+	.index_zoomin .ph01 .sub {
+		opacity: 0;
+		transform: translateY(-30px);
+	}
+	.index_zoomin .ph02 .m {
+		opacity: 0;
+		transform: scale(1.2);
+	}
+	.index_zoomin .ph02 .sub {
+		opacity: 0;
+		transform: translateY(30px);
+	}
+
+	.index_zoomin .ph01.showed .m {
+		transition: transform .5s .5s cubic-bezier(0.5, 1, 0.89, 1), opacity .5s .5s linear;
+		opacity: 1;
+		transform: scale(1);
+	}
+	.index_zoomin .ph01.showed.showed .sub {
+		transition: transform .5s .8s cubic-bezier(0.5, 1, 0.89, 1), opacity .5s .8s linear;
+		opacity: 1;
+		transform: translateY(0);
+	}
+	.index_zoomin .ph02.showed .m {
+		transition: transform .5s .5s cubic-bezier(0.5, 1, 0.89, 1), opacity .5s .7s linear;
+		opacity: 1;
+		transform: scale(1);
+	}
+	.index_zoomin .ph02.showed.showed .sub {
+		transition: transform .5s 1s cubic-bezier(0.5, 1, 0.89, 1), opacity .5s 1s linear;
+		opacity: 1;
+		transform: translateY(0);
+	}
+	@media (max-width: 767px) {
+		.index_zoomin .ph01.showed .m,
+		.index_zoomin .ph02.showed .m {
+			transition-delay: 0s;
+		}
 	}
 }
 
@@ -1266,6 +1347,7 @@
 		margin: 0 auto;
 		padding-top: 30px;
 		padding-bottom: 30px;
+		font-size: 15px;
 	}
 	.index_memory a::before {
 		top: 0;
