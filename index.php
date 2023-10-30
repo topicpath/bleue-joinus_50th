@@ -266,13 +266,9 @@ foreach ($phs as $ph) {
 ?>
 			<li class="mov_show fadeup"><a href="https://www.sotetsu-joinus.com/news/4283" target="_blank">
 				<picture>
-					<source media="screen and (max-width: 767px)" srcset="images/index/bnr_sdgs_sp.png">
-					<img src="images/index/bnr_sdgs.png" alt="" width="440" height="260" loading="lazy" decoding="async">
+					<source media="screen and (max-width: 767px)" srcset="images/index/bnr_densya_sp.jpg">
+					<img src="images/index/bnr_densya.jpg" alt="JOINUS 50th Anniversary おかいもの電車が帰ってきた！" width="440" height="260" loading="lazy" decoding="async">
 				</picture>
-				<dl>
-					<dt>スタンプラリー</dt>
-					<dd>テキストテキストテキストテキストテキスト</dd>
-				</dl>
 			</a></li>
 		</ul>
 		<div class="j_images" id="bnr_j"></div>
