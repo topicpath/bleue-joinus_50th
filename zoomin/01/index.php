@@ -48,6 +48,7 @@ include_once 'common-meta.php';
 				<div class="box">
 					<h1><span class="shop">ココディール</span> <span class="name">鈴木</span>さん</h1>
 					<p class="history">ジョイナス歴1年4ヵ月</p>
+					<p class="insta hv_op"><a href="https://www.instagram.com/coco_miho28/?hl=ja" target="_blank"><img src="../../images/ico-insta.png" alt="instagram" width="72" height="72"></a></p>
 				</div><!-- /.box -->
 			</header><!-- /.article_header -->
 
@@ -131,6 +132,7 @@ include_once 'common-meta.php';
 						<p class="logo"><img src="images/shop_logo.svg" alt="ココディール" width="400" height="60" loading="lazy" decoding="async"></p><!-- /.logo -->
 						<p class="name">ココディール / B1 <br class="sp"><a href="https://www.sotetsu-joinus.com/shop/shop_498#floorMap" target="_blank" class="map">MAP</a></p>
 						<p>フェミニンとカジュアル、ベーシックとトレンドを程よくMIXしたレディースブランド。フリルやフラワープリントだけでなく、シンプルながら着用時にスタイルアップして見える洋服が自慢です。ぜひ試着で縫製やラインの違いを感じてください。</p>
+						<p class="more_btn"><a href="https://www.instagram.com/coco_miho28/?hl=ja" target="_blank"><span>鈴木さんのInstagramをCHECK！</span></a></p>
 					</div><!-- /.main -->
 				</div><!-- /.contents -->
 			</section><!-- /.joinus -->
