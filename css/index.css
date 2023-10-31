@@ -1421,7 +1421,8 @@
 	border: 1px solid #000;
 }
 .index_bnr a,
-.index_bnr a::after {
+.index_bnr a::after,
+.index_bnr a::before {
 	border-radius: 30px;
 }
 .index_bnr .small {
@@ -1445,6 +1446,30 @@
 	color: #E177AB;
 	z-index: 2;
 }
+
+.index_bnr .fin a::before {
+	content: "終了しました";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: #fff;
+	font-weight: 700;
+	background-color: rgba(97,97,97,.8);
+	font-size: 3rem;
+	z-index: 3;
+}
+.index_bnr .small .fin a::before {
+	font-size: 2rem;
+}
+.index_bnr .fin a .fin_txt {
+	display: none;
+}
+
 @media screen and (min-width: 768px), print {
 	.index_bnr ul {
 		display: flex;
@@ -1456,14 +1481,13 @@
 		width: 350px;
 	}
 	.index_bnr .small {
+		max-width: calc(750px + 45px * 2);
 		justify-content: center;
+		padding-right: 45px;
 	}
 	.index_bnr .small li {
 		width: 220px;
 		margin-left: 45px;
-	}
-	.index_bnr .small li:first-child {
-		margin-left: 0;
 	}
 	.index_bnr .small a {
 		height: 100%;
@@ -1530,7 +1554,8 @@
 		line-height: calc(16 / 12);
 	}
 	.index_bnr a,
-	.index_bnr a::after {
+	.index_bnr a::after,
+	.index_bnr a::before {
 		border-radius: 25px;
 	}
 	.index_bnr .large {
@@ -1580,7 +1605,7 @@
 		background-size: 100%;
 		pointer-events: none;
 		animation: 1s ease-in-out 0s infinite alternate j_rote;
-		z-index: 3;
+		z-index: 5;
 	}
 	.index_bnr .small li:first-child::before {
 		top: -40px;
@@ -1595,6 +1620,9 @@
 	}
 	.index_bnr a img {
 		width: 100%;
+	}
+	.index_bnr .fin a::before {
+		font-size: 2.4rem;
 	}
 	.index_bnr .j_images {
 		display: none;
