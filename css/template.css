@@ -372,20 +372,20 @@ a.target {
 	display: block;
 	position: relative;
 	width: 1px;
-	top: calc(-80 * var(--px));
+	top: calc(-100 * var(--px));
 }
 a.target.pt {
-	top: calc(-120 * var(--px));
+	top: calc(-130 * var(--px));
 }
 a.target.abs {
 	position: absolute;
 }
 @media screen and (max-width: 767px) {
 	a.target {
-		top: 0;
+		top: 75px;
 	}
 	a.target.pt {
-		top: calc(-40 * var(--px));
+		top: 100px;
 	}
 }
 

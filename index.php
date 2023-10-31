@@ -95,84 +95,104 @@ $svg_arrow = '<svg xmlns="http://www.w3.org/2000/svg" width="40" height="35" vie
 				</header>
 				<p class="lead mov_show fadeup">限定アイテムをはじめ、<br>特別メニューや特典が<br class="sp">盛りだくさん！</p>
 				<p class="check mov_show fadeup">180のショップが参加！<strong>今すぐCheck！</strong></p>
+			</a>
 
-				<div class="items swiper mov_show fadeup">
-					<ul class="swiper-wrapper">
-						<li class="swiper-slide">
+			<div class="items swiper mov_show fadeup">
+				<ul class="swiper-wrapper">
+					<li class="swiper-slide">
+						<a href="items-service/#item015">
 							<span class="ph"><img src="images/index/items_ph01.jpg" alt="" width="440" height="500" loading="lazy" decoding="async"></span>
 							<span class="tag">限定カラー</span>
 							<span class="shop">
 								<span>エヌ ナチュラル<br> ビューティーベーシック</span>
 								<span class="floor ff_din">2F</span>
 							</span>
-						</li>
-						<li class="swiper-slide">
+						</a>
+					</li>
+					<li class="swiper-slide">
+						<a href="items-service/#item129">
 							<span class="ph"><img src="images/index/items_ph02.jpg" alt="" width="440" height="500" loading="lazy" decoding="async"></span>
 							<span class="tag">限定バッグ</span>
 							<span class="shop">
 								<span>アフタヌーンティー・<br>ティールーム</span>
 								<span class="floor ff_din">B1</span>
 							</span>
-						</li>
-						<li class="swiper-slide">
+						</a>
+					</li>
+					<li class="swiper-slide">
+						<a href="items-service/#item124">
 							<span class="ph"><img src="images/index/items_ph03.jpg" alt="" width="440" height="500" loading="lazy" decoding="async"></span>
 							<span class="tag">限定商品</span>
 							<span class="shop">
 								<span>ラブラリー バイ フェイラー</span>
 								<span class="floor ff_din">3F</span>
 							</span>
-						</li>
-						<li class="swiper-slide">
+						</a>
+					</li>
+					<li class="swiper-slide">
+						<a href="items-service/#item030">
 							<span class="ph"><img src="images/index/items_ph04.jpg" alt="" width="440" height="500" loading="lazy" decoding="async"></span>
 							<span class="tag">お買物でプレゼント</span>
 							<span class="shop">
 								<span>サルート バイ ワコール</span>
 								<span class="floor ff_din">B1</span>
 							</span>
-						</li>
-						<li class="swiper-slide">
+						</a>
+					</li>
+					<li class="swiper-slide">
+						<a href="items-service/#item145">
 							<span class="ph"><img src="images/index/items_ph05.jpg" alt="" width="440" height="500" loading="lazy" decoding="async"></span>
 							<span class="tag">特別セット</span>
 							<span class="shop">
 								<span>バケット</span>
 								<span class="floor ff_din">B2</span>
 							</span>
-						</li>
-						<li class="swiper-slide">
+						</a>
+					</li>
+					<li class="swiper-slide">
+						<a href="items-service/#item073">
 							<span class="ph"><img src="images/index/items_ph06.jpg" alt="" width="440" height="500" loading="lazy" decoding="async"></span>
 							<span class="tag">お買物でプレゼント</span>
 							<span class="shop">
 								<span>ア ドゥ ヴィーヴル</span>
 								<span class="floor ff_din">3F</span>
 							</span>
-						</li>
-						<li class="swiper-slide">
+						</a>
+					</li>
+					<li class="swiper-slide">
+						<a href="items-service/#item047">
 							<span class="ph"><img src="images/index/items_ph07.jpg" alt="" width="440" height="500" loading="lazy" decoding="async"></span>
 							<span class="tag">限定カラー</span>
 							<span class="shop">
 								<span>ノーリーズ</span>
 								<span class="floor ff_din">B1</span>
 							</span>
-						</li>
-						<li class="swiper-slide">
+						</a>
+					</li>
+					<li class="swiper-slide">
+						<a href="items-service/#item001">
 							<span class="ph"><img src="images/index/items_ph08.jpg" alt="" width="440" height="500" loading="lazy" decoding="async"></span>
 							<span class="tag">お買物でプレゼント</span>
 							<span class="shop">
 								<span>トプカピ</span>
 								<span class="floor ff_din">1F</span>
 							</span>
-						</li>
-						<li class="swiper-slide">
+						</a>
+					</li>
+					<li class="swiper-slide">
+						<a href="items-service/#item067">
 							<span class="ph"><img src="images/index/items_ph09.jpg" alt="" width="440" height="500" loading="lazy" decoding="async"></span>
 							<span class="tag">限定商品</span>
 							<span class="shop">
 								<span>ル・クール ブラン</span>
 								<span class="floor ff_din">B1</span>
 							</span>
-						</li>
-					</ul>
-				</div><!-- /.items -->
+						</a>
+					</li>
+				</ul>
+			</div><!-- /.items -->
 
+			<a href="items-service/">
 				<p class="all_btn ff_en"><span>View All 180 Shops  <?php echo $svg_arrow; ?></span></p>
 			</a>
 		</section><!-- /.index_items -->

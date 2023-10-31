@@ -264,6 +264,7 @@ body.init .category_nav a {
 	display: flex;
 }
 .items section {
+	position: relative;
 	padding: calc(40 * var(--px));
 	background: #fff3f4 url(../images/item_bg.svg) no-repeat 50% calc(300 * var(--px));
 	background-size: 100%;
@@ -370,6 +371,14 @@ body.init .category_nav a {
 	}
 }
 
+.items a.target.pt {
+	top: calc((-100 - 60 - 30) * var(--px));
+}
+@media screen and (max-width: 767px) {
+	.items a.target.pt {
+		top: -140px;
+	}
+}
 
 /* items_notes
 ============================================================================================================ */

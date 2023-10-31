@@ -721,7 +721,7 @@
 	margin-bottom: 30px;
 	z-index: 3;
 }
-.index_items a {
+.index_items > a {
 	position: relative;
 	display: block;
 	text-decoration: none;
@@ -774,6 +774,14 @@
 }
 .index_items .items li span {
 	display: block;
+}
+.index_items .items a {
+	position: relative;
+	display: block;
+	text-decoration: none;
+	color: #000;
+	font-size: 16px;
+	line-height: calc(24 / 16);
 }
 .index_items .items .ph {
 	position: relative;
@@ -838,7 +846,7 @@
 	margin-top: 30px;
 }
 @media screen and (min-width: 768px), print {
-	.index_items a {
+	.index_items > a {
 		max-width: calc(250px * 5);
 		margin: 0 auto;
 	}
