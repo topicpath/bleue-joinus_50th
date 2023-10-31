@@ -1590,6 +1590,9 @@
 		right: -20px;
 		background-image: url(../images/j/j-20.webp);
 	}
+	.index_bnr a img {
+		width: 100%;
+	}
 	.index_bnr .j_images {
 		display: none;
 	}
