@@ -1,9 +1,4 @@
 (function () {
-	var so = sessionStorage.getItem('show_opening');
-	if(!so) {
-//		sessionStorage.setItem('show_opening', '1');
-	}
-
 	if($('.fix_bnr').length) {
 		$('#footer').addClass('has_fix_bnr');
 	}
@@ -17,18 +12,42 @@
 	}
 	if(!viewed_opening) {
 		$('body').addClass('has_opening');
-		$('body').append('<div id="opening"><p class="logo"><img src="images/logo.svg" alt="JOINUS 50th" width="80" height="62"></p><div class="h"><div><img src="images/index/opening.png" alt="" width="1920" height="1920"></div></div></div>')
-		setTimeout(function() {
-			$('#opening').addClass('show');
+		$('body').append('<div id="opening"><p class="logo"><img src="images/logo.svg" alt="JOINUS 50th" width="80" height="62"></p><div class="h"><div><img src="images/index/opening.png" alt="" width="1920" height="1920"></div></div></div>');
+
+		var load_imgs = [];
+		var load_img = document.querySelectorAll('#opening img');
+		load_img.forEach(function(v) {
+			var src = v.currentSrc;
+			if(!src) {
+				src = v.src;
+			}
+			load_imgs.push(src);
+		})
+		var img_len = load_imgs.length;
+		var img_cnt = 0;
+		$.each(load_imgs, function(i, v) {
+			var nimg = $(new Image());
+			nimg.bind('load', function() {
+				img_cnt ++;
+				if(img_len <= img_cnt) {
+					startOpening();
+				}
+			});
+			nimg.attr('src', v);
+		})
+		function startOpening() {
 			setTimeout(function() {
-				$('#opening').addClass('hide');
+				$('#opening').addClass('show');
 				setTimeout(function() {
-					$('#opening').remove();
-					$('body').removeClass('has_opening');
-					showingMain();
-				}, 500);
-			}, 2000);
-		}, 200);
+					$('#opening').addClass('hide');
+					setTimeout(function() {
+						$('#opening').remove();
+						$('body').removeClass('has_opening');
+						showingMain();
+					}, 500);
+				}, 2000);
+			}, 200);
+		}
 	} else {
 		setTimeout(function() {
 			showingMain();
@@ -61,7 +80,6 @@
 	});
 	function intersectionCallback(entries) {
 		entries.forEach((entry) => {
-			console.log(entry.isIntersecting)
 			if (entry.isIntersecting) {
 				_isIntersecting = true;
 				set_hanabi();
@@ -200,6 +218,7 @@
 	var len = 11;
 	var gap = 4;
 	var j = $('#bnr_j');
+	var load_imgs = [];
 
 	var e_arr = [];
 	for (let i = 0; i < len; i++) {
@@ -209,9 +228,15 @@
 
 	var j_arr = [];
 	for (let i = 0; i < jlen; i++) {
-		j_arr.push('<img src="images/j/j-' + ('00' + (i+1)).slice(-2) + '.webp" alt="" width="260" height="320">');
+		var src = 'images/j/j-' + ('00' + (i+1)).slice(-2) + '.webp';
+		j_arr.push('<img src="' + src + '" alt="" width="260" height="320">');
+		load_imgs.push(src);
 	}
 	j_arr = arrayShuffle(j_arr);
+	$.each(load_imgs, function(i, v) {
+		var nimg = $(new Image());
+		nimg.attr('src', v);
+	})
 
 	for (let i = 0; i < len; i++) {
 		var div = '<div class="j' + ('00' + (i+1)).slice(-2) + '"></div>';
