@@ -233,7 +233,7 @@ $svg_arrow = '<svg xmlns="http://www.w3.org/2000/svg" width="40" height="35" vie
 			</header>
 			<p class="lead mov_show fadeup">アニバーサリーを祝して<br>いつもの笑顔を未来へ</p>
 			<div class="ph_loop mov_show fadeup"></div>
-			<p class="mov_show fadeup">「<span class="num">50</span>周年おめでとう！」の声を寄せに<br>集まった、スタッフたち。<br>そのはじける<span class="num">50</span>名の笑顔を笑顔を<br class="sp">お届けします。</p>
+			<p class="mov_show fadeup">「<span class="num">50</span>周年おめでとう！」の声を寄せに<br>集まったスタッフたち。<br><span class="num">50</span>名のはじける笑顔をお届けします。</p>
 			<p class="all_btn ff_en"><span>View All <?php echo $svg_arrow; ?></span></p>
 
 			<div class="ph_bg ph01"></div>
