@@ -50,7 +50,7 @@ include_once 'common-meta.php';
 			<ul class="topics">
 				<li><a href="https://www.sotetsu-joinus.com/news/4329" target="_blank">
 					<span class="time ff_en">2023.11.1</span>
-					<span class="title">ジョイナス50周年特別企画！ジョイナスポイント5倍！！11月22日（水）～11月26日（日）実施決定！</span>
+					<span class="title">ジョイナス50周年特別企画！ジョイナスポイント5倍!!11月22日（水）～11月26日（日）実施決定！</span>
 				</li></a>
 				<li><a href="premium-okaimono/">
 					<span class="time ff_en">2023.11.1</span>
@@ -63,6 +63,10 @@ include_once 'common-meta.php';
 			</ul>
 			<div class="more_topics">
 				<ul class="topics">
+					<li><a href="https://www.sotetsu-joinus.com/news/4330" target="_blank">
+						<span class="time ff_en">2023.11.1</span>
+						<span class="title">11月19日（日）に開催するSDGsワークショップ「さつまいも掘りと植樹体験」の参加者募集開始。</span>
+					</li></a>
 					<li><a>
 						<span class="time ff_en">2023.11.1</span>
 						<span class="title">「懐かしのジョイナス」など歴史写真展を開催。B2広場にて12月31日（日）まで展示いたします。</span>
@@ -73,7 +77,7 @@ include_once 'common-meta.php';
 					</li></a>
 					<li><a>
 						<span class="time ff_en">2023.10.28</span>
-						<span class="title">「コート下取り2DAYS」を10月28日（土）29日（日）開催。 </span>
+						<span class="title">「コート下取り2DAYS」を10月28日（土）29日（日）開催。</span>
 					</li></a>
 				</ul>
 			</div><!-- /.more -->
