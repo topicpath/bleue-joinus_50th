@@ -113,7 +113,7 @@ $svg_arrow = '<svg xmlns="http://www.w3.org/2000/svg" width="40" height="35" vie
 							<span class="tag">限定カラー</span>
 							<span class="shop">
 								<span>エヌ ナチュラル<br> ビューティーベーシック</span>
-								<span class="floor ff_din">2F</span>
+								<span class="floor ff_din">3F</span>
 							</span>
 						</a>
 					</li>
