@@ -382,10 +382,10 @@ a.target.abs {
 }
 @media screen and (max-width: 767px) {
 	a.target {
-		top: 75px;
+		top: -75px;
 	}
 	a.target.pt {
-		top: 100px;
+		top: -100px;
 	}
 }
 
