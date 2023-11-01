@@ -40,6 +40,9 @@ include_once 'common-meta.php';
 		<div class="j_images" id="main_j"></div>
 	</div><!-- /.index_main -->
 
+	<div class="hidden" id="hide_main_j"></div>
+
+
 	<a id="contents" class="target" tabindex="-1"></a>
 	<section class="index_topics mov_show fadeup">
 		<header class="ff_en">
@@ -260,7 +263,7 @@ $svg_arrow = '<svg xmlns="http://www.w3.org/2000/svg" width="40" height="35" vie
 $phs = glob('images/index/smiles/*.webp');
 foreach ($phs as $ph) {
 	if (is_file($ph)) {
-		echo '<img src="' . $ph . '" alt="" width="300" height="300">';
+		echo '<img src="' . $ph . '" alt="" width="300" height="300" loading="lazy" decoding="async">';
 	}
 }
 ?></template>
@@ -307,6 +310,8 @@ foreach ($phs as $ph) {
 		</ul>
 		<div class="j_images" id="bnr_j"></div>
 	</div><!-- /.index_bnr -->
+
+	<div class="hidden" id="hide_bnr_j"></div>
 
 <?php include_once 'common-foot.php'; ?>
 
