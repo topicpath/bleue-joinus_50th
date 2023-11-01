@@ -101,11 +101,12 @@ include_once 'common-meta.php';
 				<span class="time ff_en">2023.11.5</span>
 				<span class="title">Anniversary ワークショップ「廃材を使って作ろう！世界にひとつだけのJちゃん」にご参加いただいた皆さまのオリジナル作品を、B1ホテル前広場にて12月31日（日）まで展示いたします。</span>
 			</li></a>
+			<li data-publish="2023-11-22 09:00"><a href="https://www.sotetsu-joinus.com/news/4329" target="_blank">
+				<span class="time ff_en">2023.11.22</span>
+				<span class="title">おトクな5日間！ジョイナスポイント5倍、本日より開始。</span>
+			</li></a>
 		</ul>
 	</template>
-
-
-
 
 <?php
 $svg_arrow = '<svg xmlns="http://www.w3.org/2000/svg" width="40" height="35" viewBox="0 0 40 35"><path d="m40,17.5c0,9.665-8.954,17.5-20,17.5S0,27.165,0,17.5,8.954,0,20,0s20,7.835,20,17.5" stroke-width="0"/><line x1="28.255" y1="17.5" x2="9.374" y2="17.5" fill="none" stroke="#fff" stroke-linejoin="bevel" stroke-width="3"/><path d="m20.192,26.898c0-8.1,10.431-9.4,10.431-9.4,0,0-10.431-1.3-10.431-9.4" fill="none" stroke="#fff" stroke-linejoin="bevel" stroke-width="3"/></svg>';
