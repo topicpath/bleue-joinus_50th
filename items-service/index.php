@@ -135,7 +135,14 @@ $categories = [
 <?php foreach ($datas as $item) : ?>
 			<section data-category="<?php echo htmlspecialchars($item['category']); ?>" style="order:<?php echo $item['order']; ?>"><a id="item<?php echo $item['id']; ?>" class="target abs pt" tabindex="-1"></a><div>
 <?php if($item['img']) : ?>
-				<p class="img"><img src="item/<?php echo $item['img']; ?>" alt="<?php echo htmlspecialchars($item['name']); ?>" width="510" height="365" loading="lazy" decoding="async"></p>
+<?php
+$filetime = '';
+$img_file = __DIR__ . '/item/' . $item['img'];
+if(file_exists($img_file)) {
+	$filetime = '?' . filemtime($img_file);
+}
+?>
+				<p class="img"><img src="item/<?php echo $item['img'] . $filetime; ?>" alt="<?php echo htmlspecialchars($item['name']); ?>" width="510" height="365" loading="lazy" decoding="async"></p>
 <?php endif; ?>
 				<div class="info">
 <?php if($item['title'] && is_array($item['title'])) : ?>
