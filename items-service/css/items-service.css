@@ -264,6 +264,7 @@ body.init .category_nav a {
 	display: flex;
 }
 .items section {
+	position: relative;
 	padding: calc(40 * var(--px));
 	background: #fff3f4 url(../images/item_bg.svg) no-repeat 50% calc(300 * var(--px));
 	background-size: 100%;
@@ -370,6 +371,14 @@ body.init .category_nav a {
 	}
 }
 
+.items a.target.pt {
+	top: calc((-100 - 60 - 30) * var(--px));
+}
+@media screen and (max-width: 767px) {
+	.items a.target.pt {
+		top: -140px;
+	}
+}
 
 /* items_notes
 ============================================================================================================ */
@@ -448,3 +457,78 @@ body.init .category_nav a {
 		border-radius: 20px;
 	}
 }
+
+/* pagetop
+============================================================================================================ */
+#footer #pagetop {
+	bottom: calc(20 * var(--px) + (74 * var(--px)) + 10px);
+}
+@media screen and (max-width: 767px) {
+	#footer #pagetop {
+		right: 10px;
+		transform-origin: 100% 100%;
+		transform: scale(calc(50 / 74));
+	}
+}
+
+/* pagedown
+============================================================================================================ */
+#pagedown {
+	position: fixed;
+	overflow: hidden;
+	bottom: calc(20 * var(--px));
+	right: calc(20 * var(--px));
+	width: calc(74 * var(--px));
+	height: 0;
+	padding-top: calc(70 * var(--px));
+	background-color: var(--color-theme);
+	/* border: 2px solid; */
+	border: 2px solid var(--color-theme);
+	color: #fff;
+	border-radius: 100%;
+	pointer-events: none;
+	opacity: 0;
+	z-index: 990;
+}
+#pagedown::after {
+	content: "";
+	position: absolute;
+	top: calc(50% + 6px);
+	right: 50%;
+	width: 12px;
+	height: 12px;
+	border-top: 3px solid;
+	border-right: 3px solid;
+	transform-origin: 100% 0;
+	transform: rotate(-225deg);
+	transition: none !important;
+}
+
+
+.init #pagedown {
+	transition: background var(--transition), color var(--transition), opacity var(--transition-duration) ease-out;
+}
+#pagedown.show {
+	opacity: 1;
+	pointer-events: auto;
+}
+@media print {
+	#pagedown {
+		display: none;
+	}
+}
+@media (hover) {
+	#pagedown:hover {
+		background-color: #fff;
+		color: var(--color-theme);
+	}
+}
+@media screen and (max-width: 767px) {
+	#pagedown {
+		right: 10px;
+		transform-origin: 100% 100%;
+		transform: scale(calc(50 / 74));
+	}
+}
+
+

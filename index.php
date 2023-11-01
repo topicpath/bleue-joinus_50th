@@ -1,132 +1,321 @@
-<!DOCTYPE html>
-<html lang="ja">
-<head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# website: http://ogp.me/ns/website#">
-<meta charset="UTF-8">
-<!-- Google tag (gtag.js) -->
-<script async src=" https://www.googletagmanager.com/gtag/js?id=G-EFY7FD6VT5 "></script>
-<script>
-window.dataLayer = window.dataLayer || [];
-function gtag(){dataLayer.push(arguments);}
-gtag('js', new Date());
+<?php
+// タイトル・ディスクリプション
+$page_title = ['JOINUS 50th'];
+$page_description = 'いつもと、未来へ。おかげさまで、JOINUSは今年50周年を迎えます。つぎの50年も、みなさんのいつもの存在であり続けるために。みなさんのキモチに応えていくために。いつもを積み重ね、より良い未来へともに進んでいく。あたらしいチャレンジを続けていく。これからもJOINUSにどうぞご期待ください。';
 
-gtag('config', 'G-EFY7FD6VT5');
-</script>
+// ページカテゴリ
+$page_category = 'index';
 
-<title>JOINUS 50th | ジョイナス50周年</title>
-<meta name="description" content="いつもと、未来へ。おかげさまで、JOINUSは今年50周年を迎えます。つぎの50年も、みなさんのいつもの存在であり続けるために。みなさんのキモチに応えていくために。いつもを積み重ね、より良い未来へともに進んでいく。あたらしいチャレンジを続けていく。これからもJOINUSにどうぞご期待ください。">
-<meta name="viewport" content="width=device-width,initial-scale=1.0">
-<meta name="format-detection" content="telephone=no">
-<script>
-var ua = navigator.userAgent.toLowerCase();
-if ((ua.indexOf('iphone') != -1) || ua.indexOf('ipod') != -1 || (ua.indexOf("android") != -1 && ua.indexOf("mobile") != -1) || (ua.indexOf("firefox") != -1 && ua.indexOf("mobile") != -1) || (ua.indexOf("windows") != -1 && ua.indexOf("phone") != -1)) {
-//	document.write('<meta name="viewport" content="width=1300">');
-}
-else if(ua.indexOf('ipad') > -1 || (ua.indexOf('macintosh') > -1 && 'ontouchend' in document) || ua.indexOf('android') > -1){
-//	document.write('<meta name="viewport" content="width=1300">');
-}
-</script>
+// ローカルcss・js設定
+$local_css = ['css/index.css'];
+$local_js = ['js/index.js'];
+$use_swiper = true;
 
-<!-- font -->
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@500;600&display=swap" rel="stylesheet">
-<!-- / font -->
+// canonical
+$canonical_url = '/';
 
-<!-- css -->
-<link href="t/css/50th.css" rel="stylesheet">
-<!-- / css -->
+// config読み込み
+require_once __DIR__ . '/include/site-config.php';
 
-<!-- script -->
-<script src="t/js/jquery-3.7.0.min.js" defer></script>
-<script src="t/js/50th.js" defer></script>
-<!-- / script -->
+// meta読み込み
+include_once 'common-meta.php';
+?>
 
-<link rel="canonical" href="https://campaign.sotetsu-joinus.com/50th_anniversary/">
+<body class="page-<?php echo $page_category; ?>">
+<?php include_once 'common-head.php'; ?>
 
-<!-- ogp -->
-<meta property="og:title" content="JOINUS 50th | ジョイナス50周年">
-<meta property="og:type" content="article">
-<meta property="og:url" content="https://campaign.sotetsu-joinus.com/50th_anniversary/">
-<meta property="og:image" content="https://campaign.sotetsu-joinus.com/50th_anniversary/ogp.png">
-<meta property="og:image:width" content="1200">
-<meta property="og:image:height" content="630">
-<meta property="og:site_name" content="JOINUS | ジョイナス">
-<meta property="og:description" content="いつもと、未来へ。おかげさまで、JOINUSは今年50周年を迎えます。つぎの50年も、みなさんのいつもの存在であり続けるために。みなさんのキモチに応えていくために。いつもを積み重ね、より良い未来へともに進んでいく。あたらしいチャレンジを続けていく。これからもJOINUSにどうぞご期待ください。">
-<meta name="twitter:card" content="summary_large_image">
-<!-- / ogp -->
+	<div class="index_main">
+		<p class="logo"><img src="<?php echo $root; ?>images/logo.svg" alt="JOINUS 50th" width="80" height="62"></p>
+		<p class="lead"><picture>
+			<source media="screen and (max-width: 767px)" srcset="images/index/main_lead_sp.svg">
+			<img src="images/index/main_lead.svg" alt="いつもと、未来へ。" width="510" height="55">
+		</picture></p>
+		<p class="txt"><picture>
+			<source media="screen and (max-width: 767px)" srcset="images/index/main_txt_sp.svg">
+			<img src="images/index/main_txt.svg" alt="おかげさまで、JOINUSは今年50周年" width="464" height="100">
+		</picture></p>
 
-<link rel="icon" href="https://www.sotetsu-joinus.com/sites/default/files/cropped-favicon-192x192.png" type="image/png">
+		<p class="scroll"><a href="#contents" class="ff_din">SCROLL DOWN</a></p>
 
-</head>
+		<div class="j_images" id="main_j"></div>
+	</div><!-- /.index_main -->
 
-<body>
-<div id="main">
-	<h1 id="logo"><img src="t/img/logo-50th.svg" alt="JOINUS 50th" width="384" height="280"></h1>
-	<div id="j">
-<?php for($i = 1; $i <= 50; $i ++) : ?>
-		<div class="j-<?php echo sprintf('%02d', $i); ?>"><img src="t/img/j-<?php echo sprintf('%02d', $i); ?>.webp" alt="" width="260" height="320"></div>
-<?php endfor; ?>
-	</div>
+	<div class="hidden" id="hide_main_j"></div>
 
-	<div class="swipe_notes">
-		<div class="arrow">
-			<picture>
-				<source media="screen and (max-width: 767px)" srcset="t/img/ico-arrow-sp.svg">
-				<img src="t/img/ico-arrow-pc.svg" alt="" width="380" height="70">
-			</picture>
+
+	<a id="contents" class="target" tabindex="-1"></a>
+	<section class="index_topics mov_show fadeup">
+		<header class="ff_en">
+			<h2>TOPICS</h2>
+			<p class="more"><a href="#" class="box_btn">View More</a></p>
+		</header>
+		<div>
+			<ul class="topics">
+				<li><a href="premium-okaimono/">
+					<span class="time ff_en">2023.11.2</span>
+					<span class="title">「プレミアムお買物券」事前予約受付を開始。</span>
+				</li></a>
+				<li><a href="https://www.sotetsu-joinus.com/news/4329" target="_blank">
+					<span class="time ff_en">2023.11.1</span>
+					<span class="title">ジョイナス50周年特別企画！ジョイナスポイント5倍!!11月22日（水）～11月26日（日）実施決定！</span>
+				</li></a>
+				<li><a href="premium-okaimono/">
+					<span class="time ff_en">2023.11.1</span>
+					<span class="title">ジョイナスポイント会員限定！「プレミアムお買物券」販売の事前予約が11月2日（木）朝10時スタート！</span>
+				</li></a>
+			</ul>
+			<div class="more_topics">
+				<ul class="topics">
+					<li><a href="https://www.sotetsu-joinus.com/news/4328" target="_blank">
+						<span class="time ff_en">2023.11.1</span>
+						<span class="title">Anniversary ワークショップ「廃材を使って作ろう！世界にひとつだけのJちゃん」を11月3日（金）4日（土）開催。</span>
+					</li></a>
+					<li><a href="https://www.sotetsu-joinus.com/news/4330" target="_blank">
+						<span class="time ff_en">2023.11.1</span>
+						<span class="title">11月19日（日）に開催するSDGsワークショップ「さつまいも掘りと植樹体験」の参加者募集開始。</span>
+					</li></a>
+					<li><a>
+						<span class="time ff_en">2023.11.1</span>
+						<span class="title">「懐かしのジョイナス」など歴史写真展を開催。B2広場にて12月31日（日）まで展示いたします。</span>
+					</li></a>
+					<li><a href="https://www.sotetsu-joinus.com/news/4283" target="_blank">
+						<span class="time ff_en">2023.11.1</span>
+						<span class="title">ジョイナス50周年特別企画！～おかいもの電車が帰ってきた！～「JOINUS×相模鉄道 スタンプラリー」を年11月3日（金）～11月19日（日）開催。</span>
+					</li></a>
+					<li><a>
+						<span class="time ff_en">2023.10.28</span>
+						<span class="title">「コート下取り2DAYS」を10月28日（土）29日（日）開催。</span>
+					</li></a>
+				</ul>
+			</div><!-- /.more -->
 		</div>
-		<p class="pc">左から右へマウスを動かし火を吹き消してください</p>
-		<p class="sp">左から右へ<span>スワイプして</span><br>火を吹き消してください</p>
-	</div><!-- /.swipe_notes -->
-</div><!-- /#main -->
-
-<div id="contents">
-	<div class="logo-header"><a href="https://www.sotetsu-joinus.com/" target="_blank"><img src="https://www.sotetsu-joinus.com/img/top/logo.svg" alt="相鉄ジョイナス" width="232" height="97"></a></div>
-	<div class="cover"></div>
-	<div class="text">
-		<picture>
-			<source media="screen and (max-width: 767px)" srcset="t/img/text-sp.png">
-			<img src="t/img/text-pc.svg" alt="いつもと、未来へ。おかげさまで、JOINUSは今年50周年を迎えます。つぎの50年も、みなさんのいつもの存在であり続けるために。みなさんのキモチに応えていくために。いつもを積み重ね、より良い未来へともに進んでいく。あたらしいチャレンジを続けていく。これからもJOINUSにどうぞご期待ください。" width="1300" height="810">
-		</picture>
-
-		<img src="t/img/j-06.webp" alt="" width="260" height="320" class="j j-01">
-		<img src="t/img/j-16.webp" alt="" width="260" height="320" class="j j-02">
-		<img src="t/img/j-28.webp" alt="" width="260" height="320" class="j j-03">
-		<img src="t/img/j-35.webp" alt="" width="260" height="320" class="j j-04">
-		<img src="t/img/j-15.webp" alt="" width="260" height="320" class="j j-05">
-		<img src="t/img/j-26.webp" alt="" width="260" height="320" class="j j-06">
-		<img src="t/img/j-25.webp" alt="" width="260" height="320" class="j j-07">
-		<img src="t/img/j-36.webp" alt="" width="260" height="320" class="j j-08">
-		<img src="t/img/j-24.webp" alt="" width="260" height="320" class="j j-09">
-	</div><!-- /.text -->
-
-	<p class="event">
-		<picture>
-			<source media="screen and (max-width: 767px)" srcset="t/img/event-sp.svg">
-			<img src="t/img/event-pc.svg" alt="11月には感謝を込めて、50周年を記念した限定アイテムや特典サービス、イベントが開催されます。" width="834" height="126">
-		</picture>
-	</p><!-- /.event -->
+	</section><!-- /.index_topics -->
 
 
-	<footer id="footer">
-		<p class="logo"><a href="https://www.sotetsu-joinus.com/" target="_blank"><img src="t/img/logo-joinus.svg" alt="JOINUS YOKOHAMA" width="130" height="56"></a></p>
-		<p class="address">〒220-0005 神奈川県横浜市西区南幸1-5-1<br>TEL：<a href="tel:045-316-3200">045-316-3200</a></p>
-		<small>Copyright©2023 JOINUS All Rights Reserved.</small>
-	</footer><!-- /#footer -->
-</div><!-- /#contents -->
 
-<div id="bnr">
-	<ul>
-		<li><a href="premium-okaimono/"><picture>
-			<source media="screen and (max-width: 767px)" srcset="t/img/bnr02_sp.png">
-			<img src="t/img/bnr02.png" alt="プレミアムお買物券 11.2 THU 朝10時予約スタート!!" width="640" height="240">
-		</picture></a></li>
-		<li><a href="items-service/"><picture>
-			<source media="screen and (max-width: 767px)" srcset="t/img/bnr03_sp.png">
-			<img src="t/img/bnr03.png" alt="ジョイナス50周年記念 限定アイテム＆サービス 11.1WED スタート" width="640" height="240">
-		</picture></a></li>
-	</ul>
-</div><!-- /#bnr -->
+<?php
+$svg_arrow = '<svg xmlns="http://www.w3.org/2000/svg" width="40" height="35" viewBox="0 0 40 35"><path d="m40,17.5c0,9.665-8.954,17.5-20,17.5S0,27.165,0,17.5,8.954,0,20,0s20,7.835,20,17.5" stroke-width="0"/><line x1="28.255" y1="17.5" x2="9.374" y2="17.5" fill="none" stroke="#fff" stroke-linejoin="bevel" stroke-width="3"/><path d="m20.192,26.898c0-8.1,10.431-9.4,10.431-9.4,0,0-10.431-1.3-10.431-9.4" fill="none" stroke="#fff" stroke-linejoin="bevel" stroke-width="3"/></svg>';
+?>
+
+	<div class="hanabi_area">
+		<section class="index_items">
+			<a href="items-service/">
+				<header class="mov_show">
+					<p class="title_en wide ff_en mov_show fadeup">Anniversary Limited</p>
+					<h2 class="mov_show fadeup"><img src="images/index/items_en.svg" alt="ANNIVERSARY ITEMS & SERVICE" width="406" height="148" loading="lazy" decoding="async"></h2>
+				</header>
+				<p class="lead mov_show fadeup">限定アイテムをはじめ、<br>特別メニューや特典が<br class="sp">盛りだくさん！</p>
+				<p class="check mov_show fadeup">180のショップが参加！<strong>今すぐCheck！</strong></p>
+			</a>
+
+			<div class="items swiper mov_show fadeup">
+				<ul class="swiper-wrapper">
+					<li class="swiper-slide">
+						<a href="items-service/#item015">
+							<span class="ph"><img src="images/index/items_ph01.jpg" alt="" width="440" height="500" loading="lazy" decoding="async"></span>
+							<span class="tag">限定カラー</span>
+							<span class="shop">
+								<span>エヌ ナチュラル<br> ビューティーベーシック</span>
+								<span class="floor ff_din">3F</span>
+							</span>
+						</a>
+					</li>
+					<li class="swiper-slide">
+						<a href="items-service/#item129">
+							<span class="ph"><img src="images/index/items_ph02.jpg" alt="" width="440" height="500" loading="lazy" decoding="async"></span>
+							<span class="tag">限定バッグ</span>
+							<span class="shop">
+								<span>アフタヌーンティー・<br>ティールーム</span>
+								<span class="floor ff_din">B1</span>
+							</span>
+						</a>
+					</li>
+					<li class="swiper-slide">
+						<a href="items-service/#item124">
+							<span class="ph"><img src="images/index/items_ph03.jpg" alt="" width="440" height="500" loading="lazy" decoding="async"></span>
+							<span class="tag">限定商品</span>
+							<span class="shop">
+								<span>ラブラリー バイ フェイラー</span>
+								<span class="floor ff_din">3F</span>
+							</span>
+						</a>
+					</li>
+					<li class="swiper-slide">
+						<a href="items-service/#item030">
+							<span class="ph"><img src="images/index/items_ph04.jpg" alt="" width="440" height="500" loading="lazy" decoding="async"></span>
+							<span class="tag">お買物でプレゼント</span>
+							<span class="shop">
+								<span>サルート バイ ワコール</span>
+								<span class="floor ff_din">B1</span>
+							</span>
+						</a>
+					</li>
+					<li class="swiper-slide">
+						<a href="items-service/#item145">
+							<span class="ph"><img src="images/index/items_ph05.jpg" alt="" width="440" height="500" loading="lazy" decoding="async"></span>
+							<span class="tag">特別セット</span>
+							<span class="shop">
+								<span>バケット</span>
+								<span class="floor ff_din">B2</span>
+							</span>
+						</a>
+					</li>
+					<li class="swiper-slide">
+						<a href="items-service/#item073">
+							<span class="ph"><img src="images/index/items_ph06.jpg" alt="" width="440" height="500" loading="lazy" decoding="async"></span>
+							<span class="tag">お買物でプレゼント</span>
+							<span class="shop">
+								<span>ア ドゥ ヴィーヴル</span>
+								<span class="floor ff_din">3F</span>
+							</span>
+						</a>
+					</li>
+					<li class="swiper-slide">
+						<a href="items-service/#item047">
+							<span class="ph"><img src="images/index/items_ph07.jpg" alt="" width="440" height="500" loading="lazy" decoding="async"></span>
+							<span class="tag">限定カラー</span>
+							<span class="shop">
+								<span>ノーリーズ</span>
+								<span class="floor ff_din">B1</span>
+							</span>
+						</a>
+					</li>
+					<li class="swiper-slide">
+						<a href="items-service/#item001">
+							<span class="ph"><img src="images/index/items_ph08.jpg" alt="" width="440" height="500" loading="lazy" decoding="async"></span>
+							<span class="tag">お買物でプレゼント</span>
+							<span class="shop">
+								<span>トプカピ</span>
+								<span class="floor ff_din">1F</span>
+							</span>
+						</a>
+					</li>
+					<li class="swiper-slide">
+						<a href="items-service/#item067">
+							<span class="ph"><img src="images/index/items_ph09.jpg" alt="" width="440" height="500" loading="lazy" decoding="async"></span>
+							<span class="tag">限定商品</span>
+							<span class="shop">
+								<span>ル・クール ブラン</span>
+								<span class="floor ff_din">B1</span>
+							</span>
+						</a>
+					</li>
+				</ul>
+			</div><!-- /.items -->
+
+			<a href="items-service/">
+				<p class="all_btn ff_en"><span>View All 180 Shops  <?php echo $svg_arrow; ?></span></p>
+			</a>
+		</section><!-- /.index_items -->
+
+
+		<section class="index_zoomin">
+			<a href="zoomin/">
+				<header>
+					<p class="title_en ff_en mov_show fadeup">Staff Interview</p>
+					<h2 class="mov_show zoomin"><img src="images/index/zoomin_en.png" alt="Zoom in!" width="365" height="144" loading="lazy" decoding="async"></h2>
+				</header>
+				<p class="lead mov_show fadeup">ジョイナスのショップ<br>スタッフにズームイン！</p>
+				<p class="mov_show fadeup">ジョイナスの各店舗で活躍する<br>6名のスタッフにインタビュー！<br>仕事への思いから趣味まで、<br class="sp">素顔に迫ります。</p>
+				<p class="all_btn ff_en"><span>View All <?php echo $svg_arrow; ?></span></p>
+
+				<div class="ph01 mov_show"><img src="images/index/zoomin_ph01.jpg" alt="" width="230" height="310" class="m" loading="lazy" decoding="async"><img src="images/index/zoomin_ph01_sub.png" alt="" width="100" height="200" class="sub" loading="lazy" decoding="async"></div>
+				<div class="ph02 mov_show"><img src="images/index/zoomin_ph02.jpg" alt="" width="230" height="310" class="m" loading="lazy" decoding="async"><img src="images/index/zoomin_ph02_sub.png" alt="" width="100" height="150" class="sub" loading="lazy" decoding="async"></div>
+			</a>
+		</section><!-- /.index_zoomin -->
+
+	</div><!-- /.hanabi_area -->
+
+
+	<section class="index_smiles mov_show">
+		<a href="smiles/">
+			<div class="ph_loop mov_show fadeup"></div>
+			<header>
+				<p class="title_en ff_en mov_show fadeup">Let's Celebration</p>
+				<h2 class="mov_show fadeup"><img src="smiles/images/head_en.svg" alt="SMILES" width="524" height="134" loading="lazy" decoding="async"></h2>
+			</header>
+			<p class="lead mov_show fadeup">アニバーサリーを祝して<br>いつもの笑顔を未来へ</p>
+			<div class="ph_loop mov_show fadeup"></div>
+			<p class="mov_show fadeup">「<span class="num">50</span>周年おめでとう！」の声を寄せに<br>集まったスタッフたち。<br><span class="num">50</span>名のはじける笑顔をお届けします。</p>
+			<p class="all_btn ff_en"><span>View All <?php echo $svg_arrow; ?></span></p>
+
+			<div class="ph_bg ph01"></div>
+			<div class="ph_bg ph02"></div>
+		</a>
+	</section><!-- /.index_smiles -->
+
+
+	<template id="smiles_phs"><?php
+$phs = glob('images/index/smiles/*.webp');
+foreach ($phs as $ph) {
+	if (is_file($ph)) {
+		echo '<img src="' . $ph . '" alt="" width="300" height="300" loading="lazy" decoding="async">';
+	}
+}
+?></template>
+
+
+	<section class="index_memory">
+		<a href="memory/" class="mov_show fadeup">
+			<h2><span><img src="memory/images/logo.svg" alt="#JOINUS" width="198" height="34" loading="lazy" decoding="async">の思い出</span><span>教えてください</span></h2>
+			<p>「相鉄 公式」X（旧Twitter）に寄せられた<br>皆様からの思い出を<br class="sp">当時の写真とともに紹介します。<br>
+				（「#JOINUSの思い出教えてください」<br class="sp">2023年7月14日～23日実施）</p>
+			<p class="more box_btn ff_en">View More</p>
+			<div class="ph1"><img src="images/index/memory_ph01.jpg" alt="" width="444" height="346" loading="lazy" decoding="async"></div>
+			<div class="ph2"><img src="images/index/memory_ph02.jpg" alt="" width="444" height="346" loading="lazy" decoding="async"></div>
+			<div class="j"><img src="images/j/j-21.webp" alt="" width="260" height="320" loading="lazy" decoding="async"></div>
+		</a>
+	</section><!-- /.index_memory -->
+
+
+
+	<div class="index_bnr hv_op">
+		<ul class="large">
+			<li class="mov_show fadeup"><a href="https://www.sotetsu-joinus.com/news/4329" target="_blank"><img src="images/index/bnr_point.png" alt="JOINUSポイント5倍！" width="700" height="960" loading="lazy" decoding="async"></a></li>
+			<li class="mov_show fadeup"><a href="premium-okaimono/"><img src="images/index/bnr_premium.png" alt="プレミアムお買物券 5,000円が6,000円分のお買物券・お食事券に！" width="700" height="960" loading="lazy" decoding="async"></a></li>
+		</ul>
+		<ul class="small">
+			<li class="mov_show fadeup"><a href="https://www.sotetsu-joinus.com/news/4328" target="_blank">
+				<picture>
+					<source media="screen and (max-width: 767px)" srcset="images/index/bnr_onlyone_sp.png">
+					<img src="images/index/bnr_onlyone.png" alt="廃材を使って作ろう！世界にひとつだけのJちゃん" width="440" height="540" loading="lazy" decoding="async">
+				</picture>
+			</a></li>
+			<li class="mov_show fadeup"><a href="https://www.sotetsu-joinus.com/news/4330" target="_blank">
+				<picture>
+					<source media="screen and (max-width: 767px)" srcset="images/index/bnr_shokuju_sp.png">
+					<img src="images/index/bnr_shokuju.png" alt="50周年記念植樹＆さつまいも掘り" width="440" height="540" loading="lazy" decoding="async">
+				</picture>
+			</a></li>
+			<li class="mov_show fadeup"><a href="https://www.sotetsu-joinus.com/news/4283" target="_blank">
+				<picture>
+					<source media="screen and (max-width: 767px)" srcset="images/index/bnr_densya_sp.jpg">
+					<img src="images/index/bnr_densya.jpg" alt="JOINUS 50th Anniversary おかいもの電車が帰ってきた！" width="440" height="540" loading="lazy" decoding="async">
+				</picture>
+			</a></li>
+		</ul>
+		<div class="j_images" id="bnr_j"></div>
+	</div><!-- /.index_bnr -->
+
+	<div class="hidden" id="hide_bnr_j"></div>
+
+<?php include_once 'common-foot.php'; ?>
+
+<?php
+/*
+<div class="fix_btn hv_op">
+	<a href="https://www.sotetsu-joinus.com/news/4329" target="_blank"><img src="images/index/fix_btn_point5bai.png" alt="JOINUSポイント5倍!" width="450" height="450"></a>
+</div><!-- /.fix_bnr -->
+*/
+?>
+
+<div class="fix_bnr">
+	<a href="premium-okaimono/">
+		<span class="title">プレミアムお買物券</span>
+		<span class="start"><span class="num">11</span>月<span class="num">2</span>日事前予約スタート!!</span>
+		<span class="more basic_trs">受け付けはコチラ</span>
+	</a>
+</div><!-- /.fix_bnr -->
 
 </body>
 </html>

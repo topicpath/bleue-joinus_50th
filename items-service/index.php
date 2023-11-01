@@ -45,6 +45,7 @@ include_once 'common-meta.php';
 $datas = [];
 $categories = [];
 $lines = [
+	'0' => 'id',
 	'1' => 'category',
 	'2' => 'floor',
 	'3' => 'name',
@@ -79,6 +80,9 @@ foreach ($file as $i => $line) {
 			}
 			if($l == 'img') {
 				$a = $line[$k];
+			}
+			if($l == 'id') {
+				$a = sprintf('%03d', intval($line[$k]));
 			}
 			if(strpos($l, 'arr_') === 0) {
 				$l = str_replace('arr_', '', $l);
@@ -129,9 +133,16 @@ $categories = [
 
 		<div class="items all"><div class="xw">
 <?php foreach ($datas as $item) : ?>
-			<section data-category="<?php echo htmlspecialchars($item['category']); ?>" style="order:<?php echo $item['order']; ?>"><div>
+			<section data-category="<?php echo htmlspecialchars($item['category']); ?>" style="order:<?php echo $item['order']; ?>"><a id="item<?php echo $item['id']; ?>" class="target abs pt" tabindex="-1"></a><div>
 <?php if($item['img']) : ?>
-				<p class="img"><img src="item/<?php echo $item['img']; ?>" alt="<?php echo htmlspecialchars($item['name']); ?>" width="510" height="365" loading="lazy" decoding="async"></p>
+<?php
+$filetime = '';
+$img_file = __DIR__ . '/item/' . $item['img'];
+if(file_exists($img_file)) {
+	$filetime = '?' . filemtime($img_file);
+}
+?>
+				<p class="img"><img src="item/<?php echo $item['img'] . $filetime; ?>" alt="<?php echo htmlspecialchars($item['name']); ?>" width="510" height="365" loading="lazy" decoding="async"></p>
 <?php endif; ?>
 				<div class="info">
 <?php if($item['title'] && is_array($item['title'])) : ?>
@@ -164,6 +175,8 @@ $categories = [
 	</section>
 
 <?php include_once 'common-foot.php'; ?>
+
+<a href="#" id="pagedown" class="show"></a>
 
 </body>
 </html>

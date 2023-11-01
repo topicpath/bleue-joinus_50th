@@ -372,20 +372,20 @@ a.target {
 	display: block;
 	position: relative;
 	width: 1px;
-	top: calc(-80 * var(--px));
+	top: calc(-100 * var(--px));
 }
 a.target.pt {
-	top: calc(-120 * var(--px));
+	top: calc(-130 * var(--px));
 }
 a.target.abs {
 	position: absolute;
 }
 @media screen and (max-width: 767px) {
 	a.target {
-		top: 0;
+		top: -75px;
 	}
 	a.target.pt {
-		top: calc(-40 * var(--px));
+		top: -100px;
 	}
 }
 
@@ -941,7 +941,6 @@ a .box_btn {
 	text-decoration: none;
 	text-align: center;
 	color: #fff;
-	font-size: 1.4rem;
 	font-size: calc(1.4rem * (10 / 8));
 	line-height: 1.5;
 	letter-spacing: 0.1em;
@@ -1005,6 +1004,7 @@ a .box_btn {
 	a .box_btn {
 		width: 100%;
 		max-width: calc(295 / 375 * 100vw);
+		font-size: 1.4rem;
 	}
 	.box_btn.arrow {
 		padding-right: 10px;
@@ -1187,6 +1187,15 @@ a .box_btn {
 		transition: transform .5s cubic-bezier(0.5, 1, 0.89, 1), opacity .5s linear;
 		opacity: 1;
 		transform: translateY(0);
+	}
+	.mov_show.zoomin {
+		opacity: 0;
+		transform: scale(1.5);
+	}
+	.mov_show.zoomin.showed {
+		transition: transform .5s cubic-bezier(0.34, 1.56, 0.64, 1), opacity .5s linear;
+		opacity: 1;
+		transform: scale(1);
 	}
 	@media screen and (min-width: 768px) {
 		.mov_show.pc_delay1.showed {
