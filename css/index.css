@@ -1454,7 +1454,7 @@
 }
 
 .index_bnr .fin a::before {
-	content: "終了しました";
+	content: "終了いたしました";
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -1465,7 +1465,7 @@
 	align-items: center;
 	color: #fff;
 	font-weight: 700;
-	background-color: rgba(97,97,97,.8);
+	background-color: rgba(97,97,97,.6);
 	font-size: 3rem;
 	z-index: 3;
 }

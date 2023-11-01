@@ -286,7 +286,7 @@ foreach ($phs as $ph) {
 	<div class="index_bnr hv_op">
 		<ul class="large">
 			<li class="mov_show fadeup" data-limit="2023-11-26 23:00"><a href="https://www.sotetsu-joinus.com/news/4329" target="_blank"><img src="images/index/bnr_point.png" alt="JOINUSポイント5倍！" width="700" height="960" loading="lazy" decoding="async"></a></li>
-			<li class="mov_show fadeup" data-limit="2023-11-11 21:00"><a href="premium-okaimono/"><img src="images/index/bnr_premium.png" alt="プレミアムお買物券 5,000円が6,000円分のお買物券・お食事券に！" width="700" height="960" loading="lazy" decoding="async"><span class="fin_txt">ご盛況により<br>予約は終了いたしました。</span></a></li>
+			<li class="mov_show fadeup" data-limit="2023-11-11 21:00"><a href="premium-okaimono/"><img src="images/index/bnr_premium_fin.png" alt="プレミアムお買物券 5,000円が6,000円分のお買物券・お食事券に！" width="700" height="960" loading="lazy" decoding="async"></a></li>
 		</ul>
 		<ul class="small">
 			<li class="mov_show fadeup" data-limit="2023-11-05 09:00"><a href="https://www.sotetsu-joinus.com/news/4328" target="_blank">
