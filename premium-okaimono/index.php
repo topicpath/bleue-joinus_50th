@@ -45,27 +45,17 @@ include_once 'common-meta.php';
 		<div class="premium-okaimono_contents w sp_mg">
 			<p class="lead mov_show fadeup">購入にはこちらのサイトからの<span class="strong"><strong><span>事</span><span>前</span><span>予</span><span>約</span></strong>が<br class="sp"><span class="em">必要</span>です。</span></p>
 
-			<div class="coming_box mov_show fadeup">
+			<div class="start_box mov_show fadeup">
 				<p>ジョイナスポイント会員限定</p>
 				<p class="fuki">限定<br class="sp"><span class="num ff_en">5,000</span>セット！<span class="note">お1人様1回2セット<br class="sp">まで</span></p>
-				<p class="start"><picture>
-					<source media="screen and (max-width: 767px)" srcset="images/coming_txt_sp.svg">
-					<img src="images/coming_txt.svg" alt="11.2 THU 朝10時予約スタート！" width="770" height="70">
-				</picture></p>
+				<p class="start">予約<br class="sp">受付中<span>！</span></p>
+				<p class="start_notes">※上限に達し次第終了</p>
 				<p class="notes">購入日・購入時間を指定した予約となります。<br>予約にはジョイナスポイント会員番号の入力が必要になります。<br>※ご購入は現金のみとなります。</p>
-			</div><!-- /.coming_box -->
-
-			<div class="period_box mov_show fadeup">
-				<p><picture>
-					<source media="screen and (max-width: 767px)" srcset="images/period_sp.svg">
-					<img src="images/period.svg" alt="[販売期間]11.10 FRI 11 SAT 10時～20時（日時予約制）" width="800" height="76">
-				</picture></p>
-				<p class="btn"><a href="sale/" class="box_btn outline large arrow">販売についてはこちら</a></p>
-			</div><!-- /.period_box -->
+			</div><!-- /.start_box -->
 
 
 			<section class="outline_section">
-				<p class="outline_lead mov_show fadeup">以下の内容をご確認の上、<br class="sp">ご予約をお願いします。</p>
+				<p class="outline_lead mov_show fadeup">以下の内容をご確認の上、<br>ページ下部の<br class="sp"><span class="pink">チェックボックスにチェック</span>して、<br>予約ページにお進みください。</p>
 
 				<h2 class="mov_show fadeup">事前予約について</h2>
 				<table class="mov_show fadeup">
@@ -123,6 +113,21 @@ include_once 'common-meta.php';
 						<li>受信フォルダにメールが届かない場合は、迷惑メールフォルダに振り分けられている可能性がございます。迷惑メールフォルダにも届いていない場合は、メールアドレスやメールサーバーの容量をご確認の上、再度予約操作をお願いします。</li>
 					</ul>
 				</section><!-- /.outline_notes -->
+
+				<div class="period_box mov_show fadeup">
+					<p><picture>
+						<source media="screen and (max-width: 767px)" srcset="images/period_sp.svg">
+						<img src="images/period.svg" alt="[販売期間]11.10 FRI 11 SAT 10時～20時（日時予約制）" width="800" height="76">
+					</picture></p>
+					<p class="btn"><a href="sale/" class="box_btn outline large arrow">販売についてはこちら</a></p>
+				</div><!-- /.period_box -->
+
+
+				<div class="reserve_btn mov_show fadeup">
+					<input type="checkbox" id="reserve_check">
+					<label for="reserve_check"><span>上記確認しました。</span></label>
+					<p class="btn"><a href="https://hijapan01.jmb0.com/JOINUS_Premium/" target="_blank" class="box_btn arrow">予約へ進む</a></p>
+				</div><!-- /.reserve_btn -->
 			</section><!-- /.outline_section -->
 
 		</div><!-- /.premium-okaimono_contents -->
