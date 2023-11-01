@@ -57,7 +57,7 @@ include_once 'common-meta.php';
 				</li></a>
 				<li><a href="premium-okaimono/">
 					<span class="time ff_en">2023.11.2</span>
-					<span class="title">「プレミアムお買物券」事前予約受付を開始いたしました。</span>
+					<span class="title">「プレミアムお買物券」事前予約受付を開始。</span>
 				</li></a>
 				<li><a href="https://www.sotetsu-joinus.com/news/4329" target="_blank">
 					<span class="time ff_en">2023.11.1</span>
