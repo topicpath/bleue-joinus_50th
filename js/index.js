@@ -162,115 +162,198 @@
 }());
 
 (function () {
-	var jlen = 50;
-	var len = 22;
-	var gap = 6;
-	var j = $('#main_j');
+	var _fff = true;
+	var _isIntersecting = false;
 
-	var e_arr = [];
-	for (let i = 0; i < len; i++) {
-		e_arr.push(('00' + (i+1)).slice(-2));
-	}
-	e_arr = arrayShuffle(e_arr);
-
-	var j_arr = [];
-	for (let i = 0; i < jlen; i++) {
-		j_arr.push('<img src="images/j/j-' + ('00' + (i+1)).slice(-2) + '.webp" alt="" width="260" height="320">');
-	}
-	j_arr = arrayShuffle(j_arr);
-
-	for (let i = 0; i < len; i++) {
-		var div = '<div class="j' + ('00' + (i+1)).slice(-2) + '"></div>';
-		j.append(div);
-	}
-
-	var e_count = 0;
-	var j_count = 0;
-	for (let i = 0; i < (len - gap); i++) {
-		var ele = creJ(j_arr[j_count], true);
-		$('.j' + e_arr[e_count],j).append(ele);
-		e_count = (e_count + 1) % len;
-		j_count = (j_count + 1) % jlen;
+	const index_main = document.querySelectorAll('.index_main');
+	const options = {
+		root: null,
+		rootMargin: '10% 0px',
+		threshold: 0,
+	};
+	const observer = new IntersectionObserver(intersectionCallback, options);
+	index_main.forEach((tgt) => {
+		observer.observe(tgt);
+	});
+	function intersectionCallback(entries) {
+		entries.forEach((entry) => {
+			if (entry.isIntersecting) {
+				_isIntersecting = true;
+				$('#main_j').html('');
+				$('#hide_main_j').html('');
+				setMainJ();
+			} else {
+				_isIntersecting = false;
+				$('#main_j').html('');
+				$('#hide_main_j').html('');
+			}
+		});
 	}
 
-	function movJ() {
-		var c = Math.floor(Math.random() * 3);
-		for (let i = 0; i < c; i++) {
-			var o_ele_num = ((e_count + len) + gap) % len;
-			var o_ele = $('.j' + e_arr[o_ele_num] + ' .jiw',j);
+	function setMainJ() {
+		var jlen = 50;
+		var len = 22;
+		var gap = 10;
+		var j = $('#main_j');
+		var hj = $('#hide_main_j');
+		var load_imgs = [];
 
-			var ele = creJ(j_arr[j_count]);
+		var e_arr = [];
+		for (let i = 0; i < len; i++) {
+			e_arr.push(('00' + (i+1)).slice(-2));
+		}
+		e_arr = arrayShuffle(e_arr);
+
+		var j_arr = [];
+		for (let i = 0; i < jlen; i++) {
+			var src = 'images/j/j-' + ('00' + (i+1)).slice(-2) + '.webp';
+			var img = $('<div class="jiw" data-hide-ele="#hide_main_j"><div class="ji"><img src="' + src + '" alt="" width="260" height="320"></div></div>');
+			hj.append(img);
+			j_arr.push(img);
+			load_imgs.push(src);
+		}
+		j_arr = arrayShuffle(j_arr);
+
+		if(_fff) {
+			$.each(load_imgs, function(i, v) {
+				var nimg = $(new Image());
+				nimg.attr('src', v);
+			})
+		}
+		_fff = false;
+
+		for (let i = 0; i < len; i++) {
+			var div = '<div class="j' + ('00' + (i+1)).slice(-2) + '"></div>';
+			j.append(div);
+		}
+
+		var e_count = 0;
+		var j_count = 0;
+		for (let i = 0; i < (len - gap); i++) {
+			var ele = creJ(j_arr[j_count], true);
 			$('.j' + e_arr[e_count],j).append(ele);
-			showhideJ(o_ele, ele, i);
-
 			e_count = (e_count + 1) % len;
 			j_count = (j_count + 1) % jlen;
 		}
 
-		setTimeout(() => {
-			movJ();
-		}, Math.random() * (c * 100 + 200) + 100);
+		function movJ() {
+			if(!_isIntersecting) return false;
+
+			var c = Math.floor(Math.random() * 3);
+			for (let i = 0; i < c; i++) {
+				var o_ele_num = ((e_count + len) + gap) % len;
+				var o_ele = $('.j' + e_arr[o_ele_num] + ' .jiw',j);
+
+				var ele = creJ(j_arr[j_count]);
+				$('.j' + e_arr[e_count],j).append(ele);
+				showhideJ(o_ele, ele, i);
+
+				e_count = (e_count + 1) % len;
+				j_count = (j_count + 1) % jlen;
+			}
+
+			var tim = isSpW()
+					? Math.random() * (c * 100 + 300) + 500
+					: Math.random() * (c * 100 + 200) + 300;
+			setTimeout(() => {
+				movJ();
+			}, tim);
+		}
+		movJ();
 	}
-	movJ();
+
 }());
+
+
 (function () {
-	var jlen = 50;
-	var len = 11;
-	var gap = 4;
-	var j = $('#bnr_j');
-	var load_imgs = [];
+	if(isSpW())	return false;
 
-	var e_arr = [];
-	for (let i = 0; i < len; i++) {
-		e_arr.push(('00' + (i+1)).slice(-2));
-	}
-	e_arr = arrayShuffle(e_arr);
+	var _fff = true;
+	var _isIntersecting = false;
 
-	var j_arr = [];
-	for (let i = 0; i < jlen; i++) {
-		var src = 'images/j/j-' + ('00' + (i+1)).slice(-2) + '.webp';
-		j_arr.push('<img src="' + src + '" alt="" width="260" height="320">');
-		load_imgs.push(src);
-	}
-	j_arr = arrayShuffle(j_arr);
-	$.each(load_imgs, function(i, v) {
-		var nimg = $(new Image());
-		nimg.attr('src', v);
-	})
-
-	for (let i = 0; i < len; i++) {
-		var div = '<div class="j' + ('00' + (i+1)).slice(-2) + '"></div>';
-		j.append(div);
-	}
-
-	var e_count = 0;
-	var j_count = 0;
-	for (let i = 0; i < (len - gap); i++) {
-		var ele = creJ(j_arr[j_count], true);
-		$('.j' + e_arr[e_count],j).append(ele);
-		e_count = (e_count + 1) % len;
-		j_count = (j_count + 1) % jlen;
+	const index_bnr = document.querySelectorAll('.index_bnr');
+	const options = {
+		root: null,
+		rootMargin: '10% 0px',
+		threshold: 0,
+	};
+	const observer = new IntersectionObserver(intersectionCallback, options);
+	index_bnr.forEach((tgt) => {
+		observer.observe(tgt);
+	});
+	function intersectionCallback(entries) {
+		entries.forEach((entry) => {
+			if (entry.isIntersecting) {
+				_isIntersecting = true;
+				$('#bnr_j').html('');
+				$('#hide_bnr_j').html('');
+				setBnrJ();
+			} else {
+				_isIntersecting = false;
+				$('#bnr_j').html('');
+				$('#hide_bnr_j').html('');
+			}
+		});
 	}
 
-	function movJ() {
-		var c = Math.floor(Math.random() * 3);
-		for (let i = 0; i < c; i++) {
-			var o_ele_num = ((e_count + len) + gap) % len;
-			var o_ele = $('.j' + e_arr[o_ele_num] + ' .jiw',j);
+	function setBnrJ() {
+		var jlen = 50;
+		var len = 11;
+		var gap = 4;
+		var j = $('#bnr_j');
+		var hj = $('#hide_bnr_j');
 
-			var ele = creJ(j_arr[j_count]);
+		var e_arr = [];
+		for (let i = 0; i < len; i++) {
+			e_arr.push(('00' + (i+1)).slice(-2));
+		}
+		e_arr = arrayShuffle(e_arr);
+
+		var j_arr = [];
+		for (let i = 0; i < jlen; i++) {
+			var src = 'images/j/j-' + ('00' + (i+1)).slice(-2) + '.webp';
+			var img = $('<div class="jiw" data-hide-ele="#hide_bnr_j"><div class="ji"><img src="' + src + '" alt="" width="260" height="320" loading="lazy" decoding="async"></div></div>');
+			hj.append(img);
+			j_arr.push(img);
+		}
+		j_arr = arrayShuffle(j_arr);
+
+		for (let i = 0; i < len; i++) {
+			var div = '<div class="j' + ('00' + (i+1)).slice(-2) + '"></div>';
+			j.append(div);
+		}
+
+		var e_count = 0;
+		var j_count = 0;
+		for (let i = 0; i < (len - gap); i++) {
+			var ele = creJ(j_arr[j_count], true);
 			$('.j' + e_arr[e_count],j).append(ele);
-			showhideJ(o_ele, ele, i);
-
 			e_count = (e_count + 1) % len;
 			j_count = (j_count + 1) % jlen;
 		}
 
-		setTimeout(() => {
-			movJ();
-		}, Math.random() * (c * 100 + 200) + 300);
+		function movJ() {
+			if(!_isIntersecting) return false;
+
+			var c = Math.floor(Math.random() * 3);
+			for (let i = 0; i < c; i++) {
+				var o_ele_num = ((e_count + len) + gap) % len;
+				var o_ele = $('.j' + e_arr[o_ele_num] + ' .jiw',j);
+
+				var ele = creJ(j_arr[j_count]);
+				$('.j' + e_arr[e_count],j).append(ele);
+				showhideJ(o_ele, ele, i);
+
+				e_count = (e_count + 1) % len;
+				j_count = (j_count + 1) % jlen;
+			}
+
+			setTimeout(() => {
+				movJ();
+			}, Math.random() * (c * 100 + 200) + 300);
+		}
+		movJ();
 	}
-	movJ();
 }());
 
 function setJ(ele) {
@@ -284,8 +367,9 @@ function setJ(ele) {
 	return ele;
 }
 function creJ(img,show) {
-	var ele = $('<div class="jiw' + (show ? ' show' : '') + '"><div class="ji">' + img + '</div></div>');
-	ele = setJ(ele);
+	if(show) img.addClass('show');
+	else img.removeClass('show');
+	var ele = setJ(img);
 	return ele;
 }
 function showhideJ(o_ele, n_ele, i) {
@@ -297,7 +381,8 @@ function showhideJ(o_ele, n_ele, i) {
 }
 function removeJ(ele) {
 	setTimeout(() => {
-		ele.remove();
+		$(ele.data('hide-ele')).append(ele);
+		ele.removeClass('show hide');
 	}, 500);
 }
 
@@ -311,7 +396,7 @@ function removeJ(ele) {
 		slidesPerView: 'auto',
 		autoplay: {
 			delay: 2000,
-			disableOnInteraction: false
+			disableOnInteracInteraction: false
 		},
 	});
 }());
@@ -335,9 +420,43 @@ function removeJ(ele) {
 	var smiles_phs_obj = $($('#smiles_phs').html());
 	var smiles_phs_arr = [];
 	smiles_phs_obj.each(function(){
-		smiles_phs_arr.push($(this).prop('outerHTML'));
+		smiles_phs_arr.push($(this));
 	});
 	smiles_phs_arr = arrayShuffle(smiles_phs_arr);
+
+	if(isSpW()) {
+		// SP
+		var half = Math.floor(smiles_phs_arr.length / 2);
+		var ph_loop_imgs = [smiles_phs_arr.slice(0, half), smiles_phs_arr.slice(half)];
+		var ph_loop = $('.index_smiles .ph_loop');
+		ph_loop.each(function(i) {
+			var img_tag = '';
+			$.each(ph_loop_imgs[i], function(k, v) {
+				img_tag += v.prop('outerHTML');
+			});
+			var anid = ph_loop_imgs[i].length * 1.8;
+			$(this).html('<div><div style="animation-duration: ' + anid + 's;">' + img_tag + img_tag + '</div></div>')
+		});
+
+		const ph_loop_qs = document.querySelectorAll('.ph_loop');
+		const observer = new IntersectionObserver(entries => {
+			entries.forEach(entry => {
+				if (entry.intersectionRatio > 0) {
+					var img = entry.target.querySelectorAll('img');
+					img.forEach(ele => {
+						ele.removeAttribute("loading");
+						ele.removeAttribute("decoding");
+					});
+					observer.unobserve(entry.target);
+				}
+			});
+		});
+		ph_loop_qs.forEach(ele => {
+			observer.observe(ele);
+		});
+
+		return false;
+	}
 
 	var count = 0;
 	var c_count = 0;
@@ -357,7 +476,7 @@ function removeJ(ele) {
 	for (let i = 0; i < c_arr.length; i++) {
 		var phs = $('.index_smiles .ph_bg > *');
 		var target = phs.eq(c_arr[i]);
-		target.append(smiles_phs_arr[count].replace('">', '" loading="lazy" decoding="async">'));
+		target.append(smiles_phs_arr[count]);
 		count = (count + 1) % smiles_phs_arr.length;
 	}
 
@@ -367,7 +486,7 @@ function removeJ(ele) {
 		if(!target.hasClass('showing')) {
 			target.addClass('showing');
 			var old_img = $('img', target);
-			var new_img = $(smiles_phs_arr[count]);
+			var new_img = smiles_phs_arr[count].clone();
 			new_img.addClass('hide');
 			target.append(new_img);
 			setTimeout(() => {
@@ -377,28 +496,15 @@ function removeJ(ele) {
 				old_img.remove();
 				target.removeClass('showing');
 			}, 1200);
-			count = (count + 1) % smiles_phs_arr.length;
-			c_count = (c_count + 1) % c_arr.length;
 		}
+		count = (count + 1) % smiles_phs_arr.length;
+		c_count = (c_count + 1) % c_arr.length;
 		setTimeout(() => {
 			changePh();
 		}, Math.random() * 100 + 50);
 	}
 	changePh();
 
-
-	// SP
-	var half = Math.floor(smiles_phs_arr.length / 2);
-	var ph_loop_imgs = [smiles_phs_arr.slice(0, half), smiles_phs_arr.slice(half)];
-	var ph_loop = $('.index_smiles .ph_loop');
-	ph_loop.each(function(i) {
-		var img_tag = '';
-		$.each(ph_loop_imgs[i], function(k, v) {
-			img_tag += v.replace('">', '" loading="lazy" decoding="async">');
-		});
-		var anid = ph_loop_imgs[i].length * 1.8;
-		$(this).html('<div><div style="animation-duration: ' + anid + 's;">' + img_tag + img_tag + '</div></div>')
-	})
 }());
 
 function arrayShuffle(array) {
