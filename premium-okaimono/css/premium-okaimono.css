@@ -251,6 +251,9 @@
 	transform: rotate(-45deg);
 	z-index: -1;
 }
+.start_box .fuki.no-point::after {
+	content: none;
+}
 .start_box .fuki .num {
 	margin: 0 .1em 0 .15em;
 	font-size: 3.8rem;
@@ -309,6 +312,9 @@
 		margin: 10px auto 30px;
 		padding: 10px 0;
 		line-height: 1.3;
+	}
+	.start_box .fuki.no-point {
+		margin-bottom: 10px;
 	}
 	.start_box .fuki .num {
 		margin-left: 0.2em;

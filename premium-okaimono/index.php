@@ -47,15 +47,14 @@ include_once 'common-meta.php';
 
 			<div class="start_box mov_show fadeup">
 				<p>ジョイナスポイント会員限定</p>
-				<p class="fuki">限定<br class="sp"><span class="num ff_en">5,000</span>セット！<span class="note">お1人様1回2セット<br class="sp">まで</span></p>
-				<p class="start">予約<br class="sp">受付中<span>！</span></p>
+				<p class="fuki no-point">限定<br class="sp"><span class="num ff_en">5,000</span>セット！<span class="note">お1人様1回2セット<br class="sp">まで</span></p>
 				<p class="start_notes">※上限に達し次第終了</p>
 				<p class="notes">購入日・購入時間を指定した予約となります。<br>予約にはジョイナスポイント会員番号の入力が必要になります。<br>※ご購入は現金のみとなります。</p>
 			</div><!-- /.start_box -->
 
 
 			<section class="outline_section">
-				<p class="outline_lead mov_show fadeup">以下の内容をご確認の上、<br>ページ下部の<br class="sp"><span class="pink">チェックボックスにチェック</span>して、<br>予約ページにお進みください。</p>
+				<p class="outline_lead mov_show fadeup">以下の内容をご確認の上、<br>ページ下部の<br class="sp"><span class="pink">チェックボックスにチェック</span>して、<br>予約ページにお進みいただき、<br>予約受付状況をご確認ください。</p>
 
 				<h2 class="mov_show fadeup">事前予約について</h2>
 				<table class="mov_show fadeup">
