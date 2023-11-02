@@ -52,7 +52,7 @@ include_once 'common-meta.php';
 		<div>
 			<ul class="topics def_topics">
 				<li><a>
-					<span class="time ff_en">2023.11.2</span>
+					<span class="time ff_en">2023.11.3</span>
 					<span class="title">「プレミアムお買物券」事前予約は数量に達した為、終了いたしました。 </span>
 				</li></a>
 				<li><a href="premium-okaimono/">
