@@ -120,7 +120,7 @@ $svg_arrow = '<svg xmlns="http://www.w3.org/2000/svg" width="40" height="35" vie
 					<h2 class="mov_show fadeup"><img src="images/index/items_en.svg" alt="ANNIVERSARY ITEMS & SERVICE" width="406" height="148" loading="lazy" decoding="async"></h2>
 				</header>
 				<p class="lead mov_show fadeup">限定アイテムをはじめ、<br>特別メニューや特典が<br class="sp">盛りだくさん！</p>
-				<p class="check mov_show fadeup">180のショップが参加！<strong>今すぐCheck！</strong></p>
+				<p class="check mov_show fadeup">170のショップが参加！<strong>今すぐCheck！</strong></p>
 			</a>
 
 			<div class="items swiper mov_show fadeup">
@@ -219,7 +219,7 @@ $svg_arrow = '<svg xmlns="http://www.w3.org/2000/svg" width="40" height="35" vie
 			</div><!-- /.items -->
 
 			<a href="items-service/">
-				<p class="all_btn ff_en"><span>View All 180 Shops  <?php echo $svg_arrow; ?></span></p>
+				<p class="all_btn ff_en"><span>View All 170 Shops  <?php echo $svg_arrow; ?></span></p>
 			</a>
 		</section><!-- /.index_items -->
 
