@@ -64,6 +64,46 @@
 }());
 
 (function () {
+	let now = new Date();
+
+	let url = new URL(window.location.href);
+	let params = url.searchParams;
+	let check_date = params.get('check_date');
+	if(check_date) {
+		check_date = check_date.replace('_', ' ');
+		now = new Date(check_date);
+	}
+
+	if($('#add_topics').length) {
+		var add_topics = $($('#add_topics').html());
+		$('li', add_topics).each(function() {
+			var my_date = $(this).data('publish');
+			if(now >= new Date(my_date)) {
+				$('.index_topics .def_topics').prepend($(this));
+				$('.index_topics .def_topics li:last-child').prependTo('.index_topics .more_topics .topics')
+			}
+		})
+	}
+
+	$('.index_bnr li[data-limit]').each(function() {
+		var my_date = $(this).data('limit');
+		if(now >= new Date(my_date)) {
+			$(this).addClass('fin');
+			$('a', this).removeAttr('href');
+			var p = $(this).parent();
+			p.append($(this));
+		}
+	})
+	$('.fix_btn[data-limit]').each(function() {
+		var my_date = $(this).data('limit');
+		if(now >= new Date(my_date)) {
+			$(this).remove();
+		}
+	})
+}());
+
+
+(function () {
 	const hanabi_area = document.querySelectorAll('.hanabi_area');
 	const options = {
 		root: null,
