@@ -113,6 +113,8 @@ $svg_arrow = '<svg xmlns="http://www.w3.org/2000/svg" width="40" height="35" vie
 ?>
 
 	<div class="hanabi_area">
+<?php
+/*
 		<section class="index_items">
 			<a href="items-service/">
 				<header class="mov_show">
@@ -222,7 +224,8 @@ $svg_arrow = '<svg xmlns="http://www.w3.org/2000/svg" width="40" height="35" vie
 				<p class="all_btn ff_en"><span>View All 170 Shops  <?php echo $svg_arrow; ?></span></p>
 			</a>
 		</section><!-- /.index_items -->
-
+*/
+?>
 
 		<section class="index_zoomin">
 			<a href="zoomin/">
@@ -286,23 +289,26 @@ foreach ($phs as $ph) {
 
 	<div class="index_bnr hv_op">
 		<ul class="large">
-			<li class="mov_show fadeup" data-limit="2023-11-26 23:00"><a href="https://www.sotetsu-joinus.com/news/4329" target="_blank"><img src="images/index/bnr_point.png" alt="JOINUSポイント5倍！" width="700" height="960" loading="lazy" decoding="async"></a></li>
-			<li class="mov_show fadeup" data-limit="2023-11-11 21:00"><a href="premium-okaimono/"><img src="images/index/bnr_premium_fin.png" alt="プレミアムお買物券 5,000円が6,000円分のお買物券・お食事券に！" width="700" height="960" loading="lazy" decoding="async"></a></li>
+			<li class="mov_show fadeup fin"><a><img src="images/index/bnr_items.png" alt="ANNIVERSARY ITEMS & SERVICE 限定アイテムをはじめ、特別メニューや特典が盛りだくさん！" width="700" height="960" loading="lazy" decoding="async"></a></li>
+		</ul>
+		<ul class="large">
+			<li class="mov_show fadeup fin"><a><img src="images/index/bnr_point.png" alt="JOINUSポイント5倍！" width="700" height="960" loading="lazy" decoding="async"></a></li>
+			<li class="mov_show fadeup fin"><a><img src="images/index/bnr_premium_fin.png" alt="プレミアムお買物券 5,000円が6,000円分のお買物券・お食事券に！" width="700" height="960" loading="lazy" decoding="async"></a></li>
 		</ul>
 		<ul class="small">
-			<li class="mov_show fadeup" data-limit="2023-11-05 09:00"><a href="https://www.sotetsu-joinus.com/news/4328" target="_blank">
+			<li class="mov_show fadeup fin"><a>
 				<picture>
 					<source media="screen and (max-width: 767px)" srcset="images/index/bnr_onlyone_sp.png">
 					<img src="images/index/bnr_onlyone.png" alt="廃材を使って作ろう！世界にひとつだけのJちゃん" width="440" height="540" loading="lazy" decoding="async">
 				</picture>
 			</a></li>
-			<li class="mov_show fadeup" data-limit="2023-11-20 09:00"><a href="https://www.sotetsu-joinus.com/news/4330" target="_blank">
+			<li class="mov_show fadeup fin"><a>
 				<picture>
 					<source media="screen and (max-width: 767px)" srcset="images/index/bnr_shokuju_sp.png">
 					<img src="images/index/bnr_shokuju.png" alt="50周年記念植樹＆さつまいも掘り" width="440" height="540" loading="lazy" decoding="async">
 				</picture>
 			</a></li>
-			<li class="mov_show fadeup" data-limit="2023-11-20 09:00"><a href="https://www.sotetsu-joinus.com/news/4283" target="_blank">
+			<li class="mov_show fadeup fin"><a>
 				<picture>
 					<source media="screen and (max-width: 767px)" srcset="images/index/bnr_densya_sp.jpg">
 					<img src="images/index/bnr_densya.jpg" alt="JOINUS 50th Anniversary おかいもの電車が帰ってきた！" width="440" height="540" loading="lazy" decoding="async">

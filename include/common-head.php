@@ -10,7 +10,11 @@
 
 		<nav>
 			<ul class="gnav ff_en">
+<?php
+/*
 				<li><a href="<?php echo $root; ?>items-service/"<?php if($page_category == 'items-service') : ?> class="current"<?php endif; ?>>ANNIVERSARY<br> ITEM＆SERVICE</a></li>
+*/
+?>
 				<li><a href="<?php echo $root; ?>zoomin/"<?php if($page_category == 'zoomin') : ?> class="current"<?php endif; ?>>Staff Interview<br> Zoom in!</a></li>
 				<li><a href="<?php echo $root; ?>smiles/"<?php if($page_category == 'smiles') : ?> class="current"<?php endif; ?>>Let's Celebration<br> SMILES</a></li>
 				<li><a href="<?php echo $root; ?>memory/"<?php if($page_category == 'memory') : ?> class="current"<?php endif; ?>>#JOINUS<span>の<br>思い出教えてください</span></a></li>
