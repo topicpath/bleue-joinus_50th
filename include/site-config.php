@@ -2,7 +2,7 @@
 $site_domain = 'https://campaign.sotetsu-joinus.com';	// ドメイン（末尾 '/' なし）
 $site_root = '/50th_anniversary/';	// サイトルート（'/'から）
 
-$test_dir = ['test', 'itac-g'];	// テストアップする場合のディレクトリ（配列）
+$test_dir = ['test', 'campaign.sotetsu-joinus.com'];	// テストアップする場合のディレクトリ（配列）
 $include_dir = ['/'];	// インクルードファイルのディレクトリ（このファイルからのパス）
 
 
@@ -65,8 +65,8 @@ if(count($dir)) {
 
 	if(isset($test_dir)) {
 		if(in_array($dir[0], $test_dir)) {
-//			$root = '/' . $dir[0] . $root;
-			$root .= $dir[0] . '/';
+			$root = '/' . $dir[0] . $root;
+//			$root .= $dir[0] . '/';
 			array_shift($dir);
 		}
 //		elseif(in_array($dir[1], $test_dir)) {
