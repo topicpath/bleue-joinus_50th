@@ -900,6 +900,9 @@
 	background-color: rgba(255,255,255,.8);
 	z-index: 4;
 }
+.index_zoomin:first-child {
+	padding-top: 0;
+}
 .index_zoomin a {
 	position: relative;
 	display: block;
@@ -1431,7 +1434,7 @@
 .index_bnr a::before {
 	border-radius: 30px;
 }
-.index_bnr .small {
+.index_bnr ul + ul {
 	margin-top: 60px;
 }
 .index_bnr .small dt {
@@ -1485,6 +1488,9 @@
 	}
 	.index_bnr .large li {
 		width: 350px;
+	}
+	.index_bnr .large li:only-child {
+		margin: 0 auto;
 	}
 	.index_bnr .small {
 		max-width: calc(750px + 45px * 2);
