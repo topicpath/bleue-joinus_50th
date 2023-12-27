@@ -24,6 +24,14 @@ $topicpath = [
 // config読み込み
 require_once __DIR__ . '/../include/site-config.php';
 
+// close
+if(isset($item_service_close_flg)) {
+	header("HTTP/1.1 404 Not Found");
+	echo "404 Not Found";
+	exit;
+}
+
+
 // meta読み込み
 include_once 'common-meta.php';
 ?>
