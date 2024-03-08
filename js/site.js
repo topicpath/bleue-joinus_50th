@@ -13,6 +13,8 @@ setTimeout(
 	}, 200);
 }());
 (function () {
+	if($('.pekopa_container').length) return false;
+
 	const mov_show = document.querySelectorAll('.mov_show');
 	if(!mov_show.length) return false;
 

@@ -1811,3 +1811,16 @@
 		width: 100px;
 	}
 }
+
+/* pekopa_bnr
+============================================================================================================ */
+.pekopa_bnr {
+	margin-bottom: -50px;
+}
+@media screen and (max-width: 767px) {
+	.pekopa_bnr {
+		width: calc(335 / 375 * 100vw);
+		margin-left: auto;
+		margin-right: auto;
+	}
+}

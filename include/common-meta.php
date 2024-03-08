@@ -30,7 +30,7 @@ if ((ua.indexOf('iphone') != -1) || ua.indexOf('ipod') != -1 || (ua.indexOf("and
 <!-- font -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Arvo:wght@700&family=Zen+Kaku+Gothic+New:wght@500;700;900&family=Barlow+Condensed:wght@100;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Arvo:wght@700&family=Zen+Kaku+Gothic+New:wght@500;700;900&family=Barlow+Condensed:wght@100;600&family=Jost:wght@700;800&display=swap" rel="stylesheet">
 <!-- /font -->
 
 <!-- css -->
