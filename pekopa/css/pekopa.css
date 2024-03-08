@@ -15,7 +15,7 @@
 }
 @media screen and (max-width: 767px) {
 	.w920 {
-		width: calc((295 / 375) * 100vw) !important;
+		width: calc((305 / 375) * 100vw) !important;
 		margin-left: auto !important;
 		margin-right: auto !important;
 	}
@@ -318,7 +318,7 @@
 }
 @media screen and (max-width: 767px) {
 	.pekopa_contents .section02 {
-		width: calc((295 / 375) * 100vw);
+		width: calc((305 / 375) * 100vw);
 		margin-left: auto;
 		margin-right: auto;
 		margin-bottom: calc((30 / 375) * 100vw);
@@ -440,7 +440,7 @@
 	display: flex;
 	align-items: center;
 	height: calc(120 * var(--px));
-	padding: 0 calc(20 * var(--px));;
+	padding: 0 calc(20 * var(--px));
 	background-color: #fff100;
 	border-radius: calc(20 * var(--px));
 	font-size: 2rem;
@@ -450,16 +450,29 @@
 	text-decoration: none;
 }
 .pekopa_contents .section03 .howto .num {
+	position: relative;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	flex-shrink: 0;
 	width: calc(55 * var(--px));
 	height: calc(55 * var(--px));
+	margin-top: calc(10 * var(--px));
 	background-color: var(--color-theme);
 	border-radius: 100%;
 	color: #fff;
-	font-size: 2.4rem;
+	font-size: 2.8rem;
+	line-height: 1;
+}
+.pekopa_contents .section03 .howto .num > span {
+	position: absolute;
+	right: 0;
+	left: 0;
+	bottom: 100%;
+	display: block;
+	font-weight: 700;
+	color: var(--color-theme);
+	font-size: 60%;
 }
 .pekopa_contents .section03 .howto .txt {
 	flex-grow: 1;
@@ -542,11 +555,13 @@
 		margin-bottom: calc((10 / 375) * 100vw);
 	}
 	.pekopa_contents .section03 .howto a {
-		height: calc((85 / 375) * 100vw);
+		height: auto;
+		min-height: calc((85 / 375) * 100vw);
 		padding: 0 calc((15 / 375) * 100vw);
 		border-radius: calc((20 / 375) * 100vw);
 		font-size: calc(15 * var(--sp-fz));
 	}
+	/*
 	.pekopa_contents .section03 .howto a[href] {
 		padding-right: calc((30 / 375) * 100vw);
 	}
@@ -562,10 +577,53 @@
 		transform-origin: 100% 0;
 		transform: rotate(45deg);
 	}
+	*/
+	.pekopa_contents .section03 .howto a[href] {
+		padding-top: calc((10 / 375) * 100vw);
+		padding-bottom: calc((10 / 375) * 100vw);
+	}
 	.pekopa_contents .section03 .howto .num {
 		width: calc((40 / 375) * 100vw);
 		height: calc((40 / 375) * 100vw);
-		font-size: calc(16 * var(--sp-fz));
+		margin-right: calc((10 / 375) * 100vw);
+		font-size: calc(20 * var(--sp-fz));
+	}
+	.pekopa_contents .section03 .howto .btn {
+		position: relative;
+		display: block;
+		margin-top: calc((5 / 375) * 100vw);
+		padding: calc((10 / 375) * 100vw) 0;
+		/* padding-right: calc((10 / 375) * 100vw); */
+		background-color: #fff;
+		border-radius: 100px;
+		font-weight: 700;
+	}
+	/* .pekopa_contents .section03 .howto .btn::after {
+		content: "";
+		position: absolute;
+		top: 50%;
+		right: calc((10 / 375) * 100vw);
+		width: calc((10 / 375) * 100vw);
+		height: calc((10 / 375) * 100vw);
+		border-top: 2px solid;
+		border-right: 2px solid;
+		transform-origin: 100% 0;
+		transform: rotate(45deg);
+	} */
+	.pekopa_contents .section03 .howto .btn > span {
+		position: relative;
+		padding-left: calc((30 / 375) * 100vw);
+	}
+	.pekopa_contents .section03 .howto .btn > span::before {
+		content: "";
+		position: absolute;
+		left: 0;
+		top: 50%;
+		width: calc((22 / 375) * 100vw);
+		height: calc((22 / 375) * 100vw);
+		background: url(../../images/ico-insta.png) no-repeat 50%;
+		background-size: 100%;
+		transform: translateY(-50%);
 	}
 	.pekopa_contents .section03 .howto_notes {
 		font-size: calc(12 * var(--sp-fz));
@@ -783,5 +841,11 @@
 		transition: transform 0.7s .8s cubic-bezier(0.34, 1.56, 0.64, 1), opacity .7s .8s linear;
 		transform: translateY(0);
 		opacity: 1;
+	}
+}
+
+@media screen and (max-width: 767px) {
+	.back_btn a.box_btn {
+		max-width: calc((305 / 375) * 100vw);
 	}
 }
