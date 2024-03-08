@@ -77,9 +77,8 @@ if(count($dir)) {
 */
 
 	if(isset($test_dir)) {
-		if(in_array($dir[0], $test_dir)) {
-			$root = '/' . $dir[0] . $root;
-//			$root .= $dir[0] . '/';
+		if(in_array($dir[1], $test_dir)) {
+			$root .= $dir[1] . '/';
 			array_shift($dir);
 		}
 //		elseif(in_array($dir[1], $test_dir)) {
