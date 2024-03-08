@@ -92,6 +92,12 @@ include_once 'common-meta.php';
 						<dd>15組30名様</dd>
 					</dl>
 				</div><!-- /.info -->
+<?php
+date_default_timezone_set('Asia/Tokyo');
+$now = date('Y-m-d H:i:s');
+if($now >= '2024-03-18 09:00:00') : ?>
+				<p class="fin">募集は終了しました。</p>
+<?php endif; ?>
 				<p class="lead">ジョイナス1日館長就任式を<br class="sp">一緒に見よう！<br>事前応募に当選した<br class="sp">観覧者の方には<br>記念品をプレゼントします！</p>
 				<section>
 					<h3>応募方法</h3>
