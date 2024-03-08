@@ -92,7 +92,7 @@ include_once 'common-meta.php';
 						<dd>15組30名様</dd>
 					</dl>
 				</div><!-- /.info -->
-				<p class="lead">ジョイナス1日館長就任式を<br class="sp">一緒に見よう！<br>事前応募者には記念品を<br class="sp">プレゼントします！</p>
+				<p class="lead">ジョイナス1日館長就任式を<br class="sp">一緒に見よう！<br>事前応募に当選した<br class="sp">観覧者の方には<br>記念品をプレゼントします！</p>
 				<section>
 					<h3>応募方法</h3>
 					<ol class="howto">
@@ -113,7 +113,7 @@ include_once 'common-meta.php';
 				<section>
 					<h3>応募の注意</h3>
 					<ul class="notes point_li">
-						<li><span>●</span>3月24日（日）10時30分にジョイナスのB2広場にお越しいただける方</li>
+						<li><span>●</span>3月24日（日）10時20分にジョイナスのB2広場にお越しいただける方</li>
 						<li><span>●</span>当日はメディアによる取材が入りますので、映像や静止画像など、事後にジョイナスのホームページや他の媒体などで使用する場合があります。<br>その際の対価等はお支払いできませんのであらかじめご了承ください。</li>
 						<li><span>●</span>ご提供いただいた個人情報は、この募集のみに使用します。（ご案内、ご連絡等）</li>
 						<li><span>●</span>応募者多数の場合は抽選となります。</li>
