@@ -97,7 +97,7 @@ include_once 'common-meta.php';
 					<h3>応募方法</h3>
 					<ol class="howto">
 						<li><a href="https://www.instagram.com/joinus.official?igsh=MXB1NDg2YWN4YTA5Zw==" target="_blank" class="hv_op">
-							<span class="num">1</span>
+							<span class="num"><span>STEP</span>1</span>
 							<span class="txt">ジョイナス公式<br>インスタグラムに<br>アクセス</span>
 							<span class="qr pc"><img src="images/qr.png" alt="ジョイナス公式インスタグラムQRコード" width="540" height="540" loading="lazy" decoding="async"></span>
 						</a></li>
