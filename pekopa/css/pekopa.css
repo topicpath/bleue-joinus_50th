@@ -408,6 +408,16 @@
 	font-weight: 700;
 	font-size: calc(22 / 27 * 100%);
 }
+.pekopa_contents .section03 .fin {
+	text-align: center;
+	background-color: #C3002F;
+	border-radius: 100px;
+	color: #fff;
+	font-size: 3rem;
+	padding: calc(10 * var(--px));
+	margin-bottom: calc(30 * var(--px));
+	font-weight: 900;
+}
 .pekopa_contents .section03 .lead {
 	text-align: center;
 	color: #FFF100;
@@ -535,6 +545,11 @@
 	}
 	.pekopa_contents .section03 .info dl {
 		margin-bottom: 0.5em;
+	}
+	.pekopa_contents .section03 .fin {
+		font-size: calc(20 * var(--sp-fz));
+		margin-bottom: calc((15 / 375) * 100vw);
+		padding: calc((5 / 375) * 100vw) 0;
 	}
 	.pekopa_contents .section03 .lead {
 		font-size: calc(19 * var(--sp-fz));
